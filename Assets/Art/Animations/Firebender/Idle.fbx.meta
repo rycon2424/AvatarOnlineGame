@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: 947c9a1f8dc240f49a2c4af0eb484eee
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Firebender:Head
+    100002: Firebender:HeadTop_End
+    100004: Firebender:Hips
+    100006: Firebender:LeftArm
+    100008: Firebender:LeftFoot
+    100010: Firebender:LeftForeArm
+    100012: Firebender:LeftHand
+    100014: Firebender:LeftHandIndex1
+    100016: Firebender:LeftHandIndex2
+    100018: Firebender:LeftHandIndex3
+    100020: Firebender:LeftHandIndex4
+    100022: Firebender:LeftLeg
+    100024: Firebender:LeftShoulder
+    100026: Firebender:LeftToe_End
+    100028: Firebender:LeftToeBase
+    100030: Firebender:LeftUpLeg
+    100032: Firebender:Mesh
+    100034: Firebender:Neck
+    100036: Firebender:RightArm
+    100038: Firebender:RightFoot
+    100040: Firebender:RightForeArm
+    100042: Firebender:RightHand
+    100044: Firebender:RightHandIndex1
+    100046: Firebender:RightHandIndex2
+    100048: Firebender:RightHandIndex3
+    100050: Firebender:RightHandIndex4
+    100052: Firebender:RightLeg
+    100054: Firebender:RightShoulder
+    100056: Firebender:RightToe_End
+    100058: Firebender:RightToeBase
+    100060: Firebender:RightUpLeg
+    100062: Firebender:Spine
+    100064: Firebender:Spine1
+    100066: Firebender:Spine2
+    100068: //RootNode
+    400000: Firebender:Head
+    400002: Firebender:HeadTop_End
+    400004: Firebender:Hips
+    400006: Firebender:LeftArm
+    400008: Firebender:LeftFoot
+    400010: Firebender:LeftForeArm
+    400012: Firebender:LeftHand
+    400014: Firebender:LeftHandIndex1
+    400016: Firebender:LeftHandIndex2
+    400018: Firebender:LeftHandIndex3
+    400020: Firebender:LeftHandIndex4
+    400022: Firebender:LeftLeg
+    400024: Firebender:LeftShoulder
+    400026: Firebender:LeftToe_End
+    400028: Firebender:LeftToeBase
+    400030: Firebender:LeftUpLeg
+    400032: Firebender:Mesh
+    400034: Firebender:Neck
+    400036: Firebender:RightArm
+    400038: Firebender:RightFoot
+    400040: Firebender:RightForeArm
+    400042: Firebender:RightHand
+    400044: Firebender:RightHandIndex1
+    400046: Firebender:RightHandIndex2
+    400048: Firebender:RightHandIndex3
+    400050: Firebender:RightHandIndex4
+    400052: Firebender:RightLeg
+    400054: Firebender:RightShoulder
+    400056: Firebender:RightToe_End
+    400058: Firebender:RightToeBase
+    400060: Firebender:RightUpLeg
+    400062: Firebender:Spine
+    400064: Firebender:Spine1
+    400066: Firebender:Spine2
+    400068: //RootNode
+    2100000: No Name
+    4300000: Firebender:Mesh
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: Firebender:Mesh
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 197
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Firebender:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Firebender:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firebender:Mesh
+      parentName: Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firebender:Hips
+      parentName: Idle(Clone)
+      position: {x: 0.000008196189, y: 0.009031012, z: -0.000019070892}
+      rotation: {x: -0.0000000029103826, y: 0.000000005820767, z: -1.8189895e-10,
+        w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Firebender:LeftUpLeg
+      parentName: Firebender:Hips
+      position: {x: -0.0013462098, y: -0.0005949026, z: -0.00005109349}
+      rotation: {x: 0.00010928231, y: 0.0034318827, z: 0.9994874, w: -0.031830493}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000002}
+    - name: Firebender:LeftLeg
+      parentName: Firebender:LeftUpLeg
+      position: {x: -6.454934e-12, y: 0.0037331271, z: -7.4631035e-13}
+      rotation: {x: -0.033527974, y: 0.0008629852, z: -0.0257162, w: 0.9991066}
+      scale: {x: 1.0000015, y: 1.0000018, z: 0.9999998}
+    - name: Firebender:LeftFoot
+      parentName: Firebender:LeftLeg
+      position: {x: -6.8066706e-13, y: 0.0035124081, z: -4.0996004e-12}
+      rotation: {x: 0.5144005, y: 0.010662263, z: -0.006396398, w: 0.8574599}
+      scale: {x: 0.9999992, y: 0.99999964, z: 0.9999994}
+    - name: Firebender:LeftToeBase
+      parentName: Firebender:LeftFoot
+      position: {x: 1.3929807e-12, y: 0.0018331085, z: -1.0787428e-11}
+      rotation: {x: 0.29349667, y: -0.080611445, z: 0.024846084, w: 0.95223117}
+      scale: {x: 1.0000018, y: 1.0000019, z: 0.99999976}
+    - name: Firebender:LeftToe_End
+      parentName: Firebender:LeftToeBase
+      position: {x: 1.066823e-12, y: 0.00077547476, z: -1.0650488e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firebender:RightUpLeg
+      parentName: Firebender:Hips
+      position: {x: 0.0013462098, y: -0.0005949026, z: 0.000069646}
+      rotation: {x: -0.0017320351, y: 0.054712024, z: 0.99800074, w: 0.03159382}
+      scale: {x: 1.000001, y: 1.0000005, z: 1.0000001}
+    - name: Firebender:RightLeg
+      parentName: Firebender:RightUpLeg
+      position: {x: -1.3629143e-11, y: 0.0037554547, z: -2.1029373e-11}
+      rotation: {x: -0.15056604, y: -0.0038219485, z: 0.02508611, w: 0.9882743}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000002}
+    - name: Firebender:RightFoot
+      parentName: Firebender:RightLeg
+      position: {x: 1.8809388e-12, y: 0.0035719692, z: -3.466175e-11}
+      rotation: {x: 0.5707515, y: -0.0101149, z: 0.007031523, w: 0.8210305}
+      scale: {x: 1.0000007, y: 1.0000006, z: 1.0000006}
+    - name: Firebender:RightToeBase
+      parentName: Firebender:RightFoot
+      position: {x: -1.4378501e-12, y: 0.0018390444, z: -2.4748502e-11}
+      rotation: {x: 0.29380947, y: 0.081949964, z: -0.025291461, w: 0.9520087}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000005}
+    - name: Firebender:RightToe_End
+      parentName: Firebender:RightToeBase
+      position: {x: 3.0327145e-12, y: 0.000736379, z: 1.0229749e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firebender:Spine
+      parentName: Firebender:Hips
+      position: {x: -0, y: 0.0010739034, z: -0.000057068763}
+      rotation: {x: -0.026542637, y: -0.000000008718418, z: -5.954174e-10, w: 0.9996477}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Firebender:Spine1
+      parentName: Firebender:Spine
+      position: {x: -0, y: 0.0012546551, z: -1.7448265e-12}
+      rotation: {x: -0.000000040978193, y: 0.000000002877324, z: 6.99372e-10, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: Firebender:Spine2
+      parentName: Firebender:Spine1
+      position: {x: -0, y: 0.0014338897, z: 1.3926282e-12}
+      rotation: {x: -0.0000000018626451, y: -0.0000000029255873, z: 2.0884097e-10,
+        w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.99999976}
+    - name: Firebender:Neck
+      parentName: Firebender:Spine2
+      position: {x: -0, y: 0.0016131276, z: 1.5667793e-10}
+      rotation: {x: 0.026542678, y: 0.000000008728073, z: 2.3174826e-10, w: 0.9996477}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: Firebender:Head
+      parentName: Firebender:Neck
+      position: {x: -0, y: 0.0012097323, z: 0.00030695152}
+      rotation: {x: 0.000000011641532, y: -0.000000005820767, z: 7.730704e-10, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Firebender:HeadTop_End
+      parentName: Firebender:Head
+      position: {x: -0, y: 0.0024558294, z: 0.00062313006}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firebender:LeftShoulder
+      parentName: Firebender:Spine2
+      position: {x: -0.00087583374, y: 0.0012340185, z: -0.000033564862}
+      rotation: {x: 0.5639962, y: -0.41950426, z: 0.5861691, w: 0.4029023}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000005}
+    - name: Firebender:LeftArm
+      parentName: Firebender:LeftShoulder
+      position: {x: 7.2938487e-13, y: 0.0014190488, z: 5.9798165e-12}
+      rotation: {x: -0.13863568, y: 0.00037491322, z: -0.00453642, w: 0.990333}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: Firebender:LeftForeArm
+      parentName: Firebender:LeftArm
+      position: {x: -7.156248e-12, y: 0.0030164884, z: 1.11150394e-10}
+      rotation: {x: 0.014609499, y: 0.000053716438, z: 0.0023759815, w: 0.9998905}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000007}
+    - name: Firebender:LeftHand
+      parentName: Firebender:LeftForeArm
+      position: {x: -8.7418083e-13, y: 0.0019113416, z: 4.783257e-11}
+      rotation: {x: -0.005814463, y: 0.000034846365, z: -0.00598906, w: 0.9999652}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.9999993}
+    - name: Firebender:LeftHandIndex1
+      parentName: Firebender:LeftHand
+      position: {x: 4.595117e-12, y: 0.0016664545, z: -1.2912404e-11}
+      rotation: {x: -0.040766414, y: -0.00034681705, z: 0.008500679, w: 0.99913245}
+      scale: {x: 0.99999994, y: 1.000001, z: 1.0000006}
+    - name: Firebender:LeftHandIndex2
+      parentName: Firebender:LeftHandIndex1
+      position: {x: -2.766437e-13, y: 0.00014190759, z: 4.1553492e-12}
+      rotation: {x: 0.000000115483985, y: 0.000000026804624, z: 0.00000003836794,
+        w: 1}
+      scale: {x: 0.99999994, y: 0.9999994, z: 1.0000002}
+    - name: Firebender:LeftHandIndex3
+      parentName: Firebender:LeftHandIndex2
+      position: {x: -0.00000016833832, y: 0.00020837014, z: 0.0000060318944}
+      rotation: {x: -0.0023979507, y: -0.00031436596, z: 0.010791342, w: 0.99993885}
+      scale: {x: 1.0000007, y: 1.0000011, z: 1.0000006}
+    - name: Firebender:LeftHandIndex4
+      parentName: Firebender:LeftHandIndex3
+      position: {x: 0.000014962587, y: 0.00014761063, z: 0.0000076235024}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Firebender:RightShoulder
+      parentName: Firebender:Spine2
+      position: {x: 0.00087583374, y: 0.0012325963, z: -0.0000068033137}
+      rotation: {x: -0.57488364, y: -0.4088486, z: 0.5764217, w: -0.41241938}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000006}
+    - name: Firebender:RightArm
+      parentName: Firebender:RightShoulder
+      position: {x: 1.7368673e-12, y: 0.0014190488, z: 5.8366888e-12}
+      rotation: {x: -0.13802655, y: -0.0031725015, z: 0.013077078, w: 0.9903372}
+      scale: {x: 0.9999994, y: 1.0000002, z: 0.9999996}
+    - name: Firebender:RightForeArm
+      parentName: Firebender:RightArm
+      position: {x: -3.2202574e-12, y: 0.0030155734, z: -5.3309104e-11}
+      rotation: {x: 0.014538962, y: 0.00014629654, z: 0.006937449, w: 0.9998703}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000006}
+    - name: Firebender:RightHand
+      parentName: Firebender:RightForeArm
+      position: {x: -2.5525847e-12, y: 0.0019111279, z: -5.877263e-11}
+      rotation: {x: -0.04116009, y: -0.0023431033, z: -0.056786016, w: -0.9975349}
+      scale: {x: 1.0000001, y: 1.0000008, z: 1.0000004}
+    - name: Firebender:RightHandIndex1
+      parentName: Firebender:RightHand
+      position: {x: 3.6988208e-12, y: 0.0007366036, z: -1.8993107e-11}
+      rotation: {x: 0.0437239, y: 0.8129641, z: -0.06156173, w: 0.57739735}
+      scale: {x: 1, y: 1.0000007, z: 1.000001}
+    - name: Firebender:RightHandIndex2
+      parentName: Firebender:RightHandIndex1
+      position: {x: -8.740748e-12, y: 0.0005178887, z: -8.881596e-12}
+      rotation: {x: 0.2548855, y: -0.0000009834763, z: 0.08629453, w: 0.96311307}
+      scale: {x: 1.0000008, y: 1, z: 1.0000005}
+    - name: Firebender:RightHandIndex3
+      parentName: Firebender:RightHandIndex2
+      position: {x: 0.00007762051, y: 0.00035267934, z: -0.00022926068}
+      rotation: {x: -0.10423579, y: -0.014694016, z: -0.05789423, w: 0.99275744}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.000001}
+    - name: Firebender:RightHandIndex4
+      parentName: Firebender:RightHandIndex3
+      position: {x: 0.000015345742, y: 0.00048142648, z: -0.0001498176}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
