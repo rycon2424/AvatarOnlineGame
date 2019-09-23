@@ -8,11 +8,9 @@ public class PlayerController : UsingOnline
 
     private Animator anim;
     private Transform playerCamera;
-    private PhotonView pv;
 
     void Start()
     {
-        pv = GetComponent<PhotonView>();
         anim = GetComponent<Animator>();
         playerCamera = GetComponentInChildren<OrbitCamera>().transform;
 

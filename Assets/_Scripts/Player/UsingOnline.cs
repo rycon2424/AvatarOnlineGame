@@ -8,5 +8,10 @@ using Photon.Pun;
 /// </summary>
 public class UsingOnline : MonoBehaviourPun
 {
+    public PhotonView pv;
 
+    void Awake()
+    {
+        pv = GetComponent<PhotonView>();
+    }
 }
