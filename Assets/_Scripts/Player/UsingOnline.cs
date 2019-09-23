@@ -8,6 +8,7 @@ using Photon.Pun;
 /// </summary>
 public class UsingOnline : MonoBehaviourPun
 {
+    [HideInInspector]
     public PhotonView pv;
 
     void Awake()
