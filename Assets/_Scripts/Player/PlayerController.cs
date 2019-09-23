@@ -8,6 +8,7 @@ public class PlayerController : UsingOnline
 
     private Animator anim;
     private Transform playerCamera;
+    private int _health;
 
     void Start()
     {
@@ -33,6 +34,11 @@ public class PlayerController : UsingOnline
         }
         Movement();
         RotateToLook();
+    }
+
+    public void TakeDamage(int damage)
+    {
+        _health -= damage;
     }
 
     void Movement()
