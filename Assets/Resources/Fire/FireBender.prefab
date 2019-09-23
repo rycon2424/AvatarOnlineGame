@@ -831,7 +831,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
-  _cube: {fileID: 987585929923827354, guid: 9543f115007cb0c45914fcedddd242ea, type: 3}
 --- !u!143 &3446853432355501856
 CharacterController:
   m_ObjectHideFlags: 0
