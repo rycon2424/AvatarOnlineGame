@@ -10,6 +10,9 @@ public class PlayerController : UsingOnline
     private Transform playerCamera;
     private int _health;
 
+    [HideInInspector]
+    public bool rotateTowardsCamera;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -58,6 +61,11 @@ public class PlayerController : UsingOnline
         {
             anim.SetBool("Running", false);
         }
+    }
+
+    public void ToggleRotation()
+    {
+        rotateTowardsCamera = !rotateTowardsCamera;
     }
 
     void RotateToLook()
