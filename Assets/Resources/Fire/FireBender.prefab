@@ -831,6 +831,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
+  _lightAttack: {fileID: 0}
+  _heavyAttack: {fileID: 0}
+  _ultimate: {fileID: 0}
+  _shield: {fileID: 0}
 --- !u!143 &3446853432355501856
 CharacterController:
   m_ObjectHideFlags: 0
