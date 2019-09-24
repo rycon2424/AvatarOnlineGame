@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    protected int _damage;
-    protected float _speed;
-    protected float _range;
+    protected int _damage = 0;
+    protected float _speed = 0;
+    protected float _range = 0;
 
     public void Fired(int damage, float speed, float range)
     {
@@ -26,11 +26,24 @@ public class Projectile : MonoBehaviour
 
     protected void Movement()
     {
-        transform.position += transform.forward * _speed;
+        transform.position += transform.forward * _speed * Time.deltaTime;
     }
 
     protected void Destroy()
     {
         Destroy(gameObject);
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        PlayerController player = collider.gameObject.GetComponent<PlayerController>();
+        if (player != null)
+        {
+            player.TakeDamage(_damage);
+        }
+        if (_speed != 0)
+        {
+            Destroy();
+        }
     }
 }

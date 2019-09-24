@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Melee : Attack
 {
-    public override void UseMove()
+    public override void UseMove(Vector3 lookAt)
     {
 
     }

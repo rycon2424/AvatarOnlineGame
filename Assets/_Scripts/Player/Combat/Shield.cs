@@ -6,7 +6,7 @@ public class Shield : Moves
 {
     protected float _shieldDuration;
 
-    public override void UseMove()
+    public override void UseMove(Vector3 lookAt)
     {
         
     }

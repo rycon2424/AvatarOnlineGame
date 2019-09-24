@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Attack : Moves
 {
+    [SerializeField]
     protected int _damage;
 
 }

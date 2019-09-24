@@ -6,6 +6,9 @@ using Photon.Pun;
 public class PlayerCombat : UsingOnline
 {
     [SerializeField]
+    private Transform _cameraTarnsform;
+
+    [SerializeField]
     private Moves _lightAttack;
 
     [SerializeField]
@@ -17,11 +20,35 @@ public class PlayerCombat : UsingOnline
     [SerializeField]
     private Moves _shield;
 
+    [SerializeField]
+    private LayerMask LayerMask;
+
+    private float _raycastRange = 100;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            LightAttack();
+        }
+    }
+
+    private Vector3 GetDirection()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(_cameraTarnsform.position, _cameraTarnsform.forward, out hit, _raycastRange, LayerMask))
+        {
+            Debug.DrawRay(_cameraTarnsform.position, hit.point, Color.red, 1);
+            return hit.point;
+        }
+        return _cameraTarnsform.forward * _raycastRange;
+    }
+
     public void LightAttack()
     {
         if (_lightAttack._isReady)
         {
-            _lightAttack.UseMove();
+            _lightAttack.UseMove(GetDirection());
         }
     }
 
@@ -29,7 +56,7 @@ public class PlayerCombat : UsingOnline
     {
         if (_heavyAttack._isReady)
         {
-            _heavyAttack.UseMove();
+            _heavyAttack.UseMove(GetDirection());
         }
     }
 
@@ -37,7 +64,7 @@ public class PlayerCombat : UsingOnline
     {
         if (_ultimate._isReady)
         {
-            _ultimate.UseMove();
+            _ultimate.UseMove(GetDirection());
         }
     }
 
@@ -45,7 +72,7 @@ public class PlayerCombat : UsingOnline
     {
         if (_shield._isReady)
         {
-            _shield.UseMove();
+            _shield.UseMove(GetDirection());
         }
     }
 }

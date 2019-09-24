@@ -8,6 +8,8 @@ public class PlayerController : UsingOnline
 
     private Animator anim;
     private Transform playerCamera;
+
+    [SerializeField]
     private int _health;
 
     [HideInInspector]
