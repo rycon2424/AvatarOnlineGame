@@ -14,15 +14,16 @@ public class PlayerController : UsingOnline
     {
         anim = GetComponent<Animator>();
         playerCamera = GetComponentInChildren<OrbitCamera>().transform;
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
+        
         //De if statement om te checken of jij de controle hebt over dat character
         if (pv.IsMine == false)
         {
             return;
         }
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         playerCamera.GetComponent<Camera>().enabled = true;
     }
     
