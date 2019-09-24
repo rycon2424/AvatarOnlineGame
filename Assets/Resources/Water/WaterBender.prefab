@@ -1312,6 +1312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
+  rotateTowardsCamera: 0
 --- !u!143 &3321020004709669567
 CharacterController:
   m_ObjectHideFlags: 0

@@ -17,13 +17,15 @@ public class PlayerController : UsingOnline
     {
         anim = GetComponent<Animator>();
         playerCamera = GetComponentInChildren<OrbitCamera>().transform;
-        
+        rotateTowardsCamera = true;
+
         //De if statement om te checken of jij de controle hebt over dat character
         if (pv.IsMine == false)
         {
             return;
         }
 
+        gameObject.layer = 9;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -37,7 +39,10 @@ public class PlayerController : UsingOnline
             return;
         }
         Movement();
-        RotateToLook();
+        if (rotateTowardsCamera)
+        {
+            RotateToLook();
+        }
     }
 
     public void TakeDamage(int damage)
