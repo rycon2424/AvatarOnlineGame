@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8727010727816325333}
   - component: {fileID: 8727010727825016127}
   - component: {fileID: 8727010727824571889}
+  - component: {fileID: 114310832113602566}
   m_Layer: 0
   m_Name: FireExplosion
   m_TagString: Untagged
@@ -4662,6 +4663,19 @@ MonoBehaviour:
   FadeOutSpeed: 1.5
   FadeOutAfterCollision: 0
   UseHideStatus: 0
+--- !u!114 &114310832113602566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8727010727835846673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a30fff9f4352d47a8bd843aefd3037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
 --- !u!1 &8727010727835846679
 GameObject:
   m_ObjectHideFlags: 0
