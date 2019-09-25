@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoubleFlameShot : ProjectileBased
 {
-    [Header("Transforms + Prefab")]
+    [Header("Transforms")]
     public Transform leftHand;
     public Transform rightHand;
 
@@ -19,14 +19,14 @@ public class DoubleFlameShot : ProjectileBased
 
     public void FlameShotLeftHand()
     {
-        flameShot = Instantiate(_projectile, leftHand.position, leftHand.rotation);
+        flameShot = Instantiate(_projectile, _spawnPosition[0].position, _spawnPosition[0].rotation);
         flameShot.transform.LookAt(_playerCombat.GetDirection());
         flameShot.Fired(_damage, _speed, _range);
     }
 
     public void FlameShotRightHand()
     {
-        flameShot = Instantiate(_projectile, rightHand.position, rightHand.rotation);
+        flameShot = Instantiate(_projectile, _spawnPosition[1].position, _spawnPosition[1].rotation);
         flameShot.transform.LookAt(_playerCombat.GetDirection());
         flameShot.Fired(_damage, _speed, _range);
     }

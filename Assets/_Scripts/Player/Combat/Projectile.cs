@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    [Header("Mesh Collider if necessary")]
     public MeshRenderer _meshRenderer;
+
+    [Header("Particles after destroy")]
+    public GameObject destroyEffect;
 
     protected int _damage = 0;
     protected float _speed = 0;
@@ -33,6 +37,10 @@ public class Projectile : MonoBehaviour
 
     protected void Destroy()
     {
+        if (destroyEffect != null)
+        {
+            Instantiate(destroyEffect, transform.position, transform.rotation);
+        }
         Destroy(gameObject);
     }
 
