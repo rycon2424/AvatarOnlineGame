@@ -1301,6 +1301,8 @@ GameObject:
   - component: {fileID: 7541230228231853708}
   - component: {fileID: 4041694097386615189}
   - component: {fileID: 8310013665935521654}
+  - component: {fileID: 8557479911597982117}
+  - component: {fileID: 1444148617575089278}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1371,7 +1373,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6747388834449435054}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &8310013665935521654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,3 +1402,40 @@ MonoBehaviour:
   maxVerticalAngle: 60
   useRMBToAim: 0
   pause: 0
+--- !u!114 &8557479911597982117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747388834449435054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 1444148617575089278}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1444148617575089278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747388834449435054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0

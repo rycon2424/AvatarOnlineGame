@@ -31,6 +31,7 @@ public class PlayerController : UsingOnline
         Cursor.visible = false;
 
         playerCamera.GetComponent<Camera>().enabled = true;
+        playerCamera.GetComponent<AudioListener>().enabled = true;
     }
     
     void Update()
