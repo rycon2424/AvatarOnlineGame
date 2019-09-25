@@ -50,6 +50,13 @@ public class PlayerController : UsingOnline
     public void TakeDamage(int damage)
     {
         _health -= damage;
+        pv.RPC("SyncHP", RpcTarget.All, _health);
+    }
+
+    [PunRPC]
+    void SyncHP(int hp)
+    {
+        _health = hp;
     }
 
     void Movement()
