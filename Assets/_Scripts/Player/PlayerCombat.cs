@@ -52,6 +52,7 @@ public class PlayerCombat : UsingOnline
         pv.RPC("SyncedLightAttack", RpcTarget.All);
     }
 
+    [PunRPC]
     private void SyncedLightAttack()
     {
         if (_lightAttack._isReady)
@@ -68,6 +69,7 @@ public class PlayerCombat : UsingOnline
         pv.RPC("SyncedHeavyAttack", RpcTarget.All);
     }
 
+    [PunRPC]
     private void SyncedHeavyAttack()
     {
         if (_heavyAttack._isReady)
