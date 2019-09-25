@@ -19,8 +19,8 @@ public class RockPunch : ProjectileBased
     {
         base.UseMove(playerCombat);
         _playerCombat = playerCombat;
-        _spawnedProjectile = Instantiate(_projectile, new Vector3(_spawnPosition.position.x, _spawnPosition.position.y - _rayRange, _spawnPosition.position.z), _spawnPosition.rotation);
-        if (!_playerCombat.GroundTest(_spawnPosition, _spawnedProjectile, _rayRange))
+        _spawnedProjectile = Instantiate(_projectile, new Vector3(_spawnPosition[0].position.x, _spawnPosition[0].position.y - _rayRange, _spawnPosition[0].position.z), _spawnPosition[0].rotation);
+        if (!_playerCombat.GroundTest(_spawnPosition[0], _spawnedProjectile, _rayRange))
         {
             Destroy(_spawnedProjectile.gameObject);
         }
@@ -43,7 +43,7 @@ public class RockPunch : ProjectileBased
         while (_lerp && _spawnedProjectile != null)
         {
             yield return new WaitForEndOfFrame();
-            _spawnedProjectile.transform.position = Vector3.Lerp(_spawnedProjectile.transform.position, _spawnPosition.position, _lerpSpeed * Time.deltaTime);
+            _spawnedProjectile.transform.position = Vector3.Lerp(_spawnedProjectile.transform.position, _spawnPosition[0].position, _lerpSpeed * Time.deltaTime);
         }
     }
 }

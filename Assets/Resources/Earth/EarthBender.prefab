@@ -847,7 +847,8 @@ MonoBehaviour:
   _range: 20
   _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
     type: 3}
-  _spawnPosition: {fileID: 3252693238255255570}
+  _spawnPosition:
+  - {fileID: 3252693238255255570}
   _speed: 20
   _rayRange: 2
   _lerpSpeed: 10
