@@ -13,24 +13,23 @@ public class AnimationProjectile : ProjectileBased
 
     private Projectile _spawnedProjectile;
     private bool _lerp;
-    private Vector3 _lookAt;
-    
-    public override void UseMove(Vector3 lookAt)
+    private PlayerCombat _playerCombat;
+
+    public override void UseMove(PlayerCombat playerCombat)
     {
-        base.UseMove(lookAt);
-        _lookAt = lookAt;
+        base.UseMove(playerCombat);
+        _playerCombat = playerCombat;
         _spawnedProjectile = Instantiate(_projectile, _spawnPosition.position, _spawnPosition.rotation);
-        StartCoroutine(LerpProjectile());
     }
 
     public void LaunchProjectile()
     {
         _lerp = false;
-        _spawnedProjectile.transform.LookAt(_lookAt);
+        _spawnedProjectile.transform.LookAt(_playerCombat.GetDirection());
         _spawnedProjectile.Fired(_damage, _speed, _range);
     }
 
-    private IEnumerator LerpProjectile()
+    public IEnumerator LerpProjectile()
     {
         _lerp = true;
 

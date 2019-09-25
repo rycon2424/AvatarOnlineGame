@@ -20,7 +20,7 @@ public abstract class Moves : UsingOnline
         _isReady = true;
     }
 
-    public virtual void UseMove(Vector3 lookAt)
+    public virtual void UseMove(PlayerCombat playerCombat)
     {
         _isReady = false;
     }

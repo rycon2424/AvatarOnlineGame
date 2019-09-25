@@ -48,7 +48,7 @@ public class PlayerCombat : UsingOnline
         }
     }
 
-    private Vector3 GetDirection()
+    public Vector3 GetDirection()
     {
         RaycastHit hit;
         if (Physics.Raycast(_cameraTarnsform.position, _cameraTarnsform.forward, out hit, _raycastRange, LayerMask))
@@ -65,7 +65,7 @@ public class PlayerCombat : UsingOnline
         if (_lightAttack._isReady)
         {
             _animator.Play("LightAttack");
-            _lightAttack.UseMove(GetDirection());
+            _lightAttack.UseMove(this);
         }
     }
     
@@ -75,7 +75,7 @@ public class PlayerCombat : UsingOnline
         if (_heavyAttack._isReady)
         {
             _animator.Play("HeavyAttack");
-            _heavyAttack.UseMove(GetDirection());
+            _heavyAttack.UseMove(this);
         }
     }
     
@@ -83,7 +83,7 @@ public class PlayerCombat : UsingOnline
     {
         if (_ultimate._isReady)
         {
-            _ultimate.UseMove(GetDirection());
+            _ultimate.UseMove(this);
         }
     }
     
@@ -91,7 +91,7 @@ public class PlayerCombat : UsingOnline
     {
         if (_shield._isReady)
         {
-            _shield.UseMove(GetDirection());
+            _shield.UseMove(this);
         }
     }
 }
