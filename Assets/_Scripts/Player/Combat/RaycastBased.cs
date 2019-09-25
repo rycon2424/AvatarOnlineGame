@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class RaycastBased : Ranged
 {
-    public override void UseMove(PlayerCombat playerCombat)
-    {
 
-    }
 }

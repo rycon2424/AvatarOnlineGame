@@ -18,6 +18,9 @@ public class PlayerCombat : UsingOnline
     private Moves _ultimate;
 
     [SerializeField]
+    private Moves _melee;
+
+    [SerializeField]
     private Moves _shield;
 
     [SerializeField]
@@ -45,6 +48,18 @@ public class PlayerCombat : UsingOnline
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             pv.RPC("HeavyAttack", RpcTarget.All);
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            pv.RPC("Ultimate", RpcTarget.All);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            pv.RPC("Shield", RpcTarget.All);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            pv.RPC("Melee", RpcTarget.All);
         }
     }
 
@@ -92,20 +107,34 @@ public class PlayerCombat : UsingOnline
             _heavyAttack.UseMove(this);
         }
     }
-    
+
+    [PunRPC]
     public void Ultimate()
     {
         if (_ultimate._isReady)
         {
+            _animator.Play("Ultimate");
             _ultimate.UseMove(this);
         }
     }
-    
+
+    [PunRPC]
     public void Shield()
     {
         if (_shield._isReady)
         {
+            _animator.Play("Shield");
             _shield.UseMove(this);
+        }
+    }
+
+    [PunRPC]
+    public void Melee()
+    {
+        if (_melee._isReady)
+        {
+            _animator.Play("Melee");
+            _melee.UseMove(this);
         }
     }
 }
