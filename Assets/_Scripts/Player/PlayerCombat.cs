@@ -58,7 +58,21 @@ public class PlayerCombat : UsingOnline
         }
         return _cameraTarnsform.forward * _raycastRange;
     }
-    
+
+    public bool GroundTest(Transform drawrayPosition, Projectile projectile, float rayRange)
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(drawrayPosition.position, -drawrayPosition.up, out hit, rayRange))
+        {
+            if (projectile._meshRenderer != null)
+            {
+                projectile._meshRenderer.material = hit.collider.GetComponent<MeshRenderer>().material;
+            }
+            return true;
+        }
+        return false;
+    }
+
     [PunRPC]
     void LightAttack()
     {

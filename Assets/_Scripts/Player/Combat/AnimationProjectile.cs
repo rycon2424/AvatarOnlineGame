@@ -6,7 +6,7 @@ using Photon.Pun;
 public class AnimationProjectile : ProjectileBased
 {
     [SerializeField]
-    protected Transform _lerpPosition;
+    protected float _rayRange;
 
     [SerializeField]
     protected float _lerpSpeed;
@@ -19,24 +19,31 @@ public class AnimationProjectile : ProjectileBased
     {
         base.UseMove(playerCombat);
         _playerCombat = playerCombat;
-        _spawnedProjectile = Instantiate(_projectile, _spawnPosition.position, _spawnPosition.rotation);
+        _spawnedProjectile = Instantiate(_projectile, new Vector3(_spawnPosition.position.x, _spawnPosition.position.y - _rayRange, _spawnPosition.position.z), _spawnPosition.rotation);
+        if (!_playerCombat.GroundTest(_spawnPosition, _spawnedProjectile, _rayRange))
+        {
+            Destroy(_spawnedProjectile.gameObject);
+        }
     }
 
     public void LaunchProjectile()
     {
-        _lerp = false;
-        _spawnedProjectile.transform.LookAt(_playerCombat.GetDirection());
-        _spawnedProjectile.Fired(_damage, _speed, _range);
+        if (_spawnedProjectile != null)
+        {
+            _lerp = false;
+            _spawnedProjectile.transform.LookAt(_playerCombat.GetDirection());
+            _spawnedProjectile.Fired(_damage, _speed, _range);
+        }
     }
 
     public IEnumerator LerpProjectile()
     {
         _lerp = true;
 
-        while (_lerp)
+        while (_lerp && _spawnedProjectile != null)
         {
             yield return new WaitForEndOfFrame();
-            _spawnedProjectile.transform.position = Vector3.Lerp(_spawnedProjectile.transform.position, _lerpPosition.position, _lerpSpeed * Time.deltaTime);
+            _spawnedProjectile.transform.position = Vector3.Lerp(_spawnedProjectile.transform.position, _spawnPosition.position, _lerpSpeed * Time.deltaTime);
         }
     }
 }

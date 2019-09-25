@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public MeshRenderer _meshRenderer;
+
     protected int _damage = 0;
     protected float _speed = 0;
     protected float _range = 0;

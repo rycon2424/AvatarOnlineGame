@@ -111,38 +111,6 @@ MonoBehaviour:
   maxVerticalAngle: 60
   useRMBToAim: 0
   pause: 0
---- !u!1 &5108759905053459687
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4838886173914597819}
-  m_Layer: 0
-  m_Name: Attacks
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4838886173914597819
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108759905053459687}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1899893258214504666}
-  - {fileID: 3252693238255255570}
-  m_Father: {fileID: 5599882848004124411}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5599882848003764865
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +641,7 @@ Transform:
   m_LocalPosition: {x: 496.3476, y: 483.07968, z: -733.6897}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
-  - {fileID: 4838886173914597819}
+  - {fileID: 3252693238255255570}
   - {fileID: 5599882848004124347}
   - {fileID: 5599882848004124319}
   - {fileID: 7496165202928246154}
@@ -835,14 +803,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
   _isReady: 1
-  _coolDown: 1
-  _damage: 10
+  _coolDown: 0.5
+  _damage: 25
   _range: 20
   _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
     type: 3}
-  _spawnPosition: {fileID: 1899893258214504666}
-  _speed: 10
-  _lerpPosition: {fileID: 3252693238255255570}
+  _spawnPosition: {fileID: 3252693238255255570}
+  _speed: 20
+  _rayRange: 1.5
   _lerpSpeed: 10
 --- !u!1 &5599882848003764957
 GameObject:
@@ -1489,7 +1457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3252693238255255570}
   m_Layer: 0
-  m_Name: LerpPosision
+  m_Name: SpawnPosision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1502,40 +1470,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5821110523000554943}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.01, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4838886173914597819}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6810629460979875796
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1899893258214504666}
-  m_Layer: 0
-  m_Name: RockSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1899893258214504666
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6810629460979875796}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.02, z: 0.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4838886173914597819}
+  m_Father: {fileID: 5599882848004124411}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
