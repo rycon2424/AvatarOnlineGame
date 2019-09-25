@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Photon.Pun;
 
 public class OrbitCamera : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class OrbitCamera : MonoBehaviour
     public bool useRMBToAim = false;
     public bool pause;
 
+    private PhotonView pv;
+
     /* These variables are meant to store values given by the script and
      * not the user */
     private float h, v, newDistance, smoothDistance;
@@ -32,6 +35,7 @@ public class OrbitCamera : MonoBehaviour
     void Start()
     {
         Initialize();
+        pv = GetComponentInParent<PhotonView>();
     }
 
     /* This is where we set our private variables, check for null errors,
@@ -67,7 +71,7 @@ public class OrbitCamera : MonoBehaviour
     void LateUpdate()
     {
         
-        if (!viewTarget)
+        if (!viewTarget || pv.IsMine == false)
             return;
         if (pause == false)
         {

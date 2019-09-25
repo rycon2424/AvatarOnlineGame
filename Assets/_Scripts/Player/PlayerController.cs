@@ -27,7 +27,6 @@ public class PlayerController : UsingOnline
             return;
         }
 
-        gameObject.layer = 9;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 

@@ -6,7 +6,7 @@ using Photon.Pun;
 public class PlayerCombat : UsingOnline
 {
     [SerializeField]
-    private Transform _cameraTarnsform;
+    private Transform _cameraTransform;
 
     [SerializeField]
     private Moves _lightAttack;
@@ -51,12 +51,12 @@ public class PlayerCombat : UsingOnline
     public Vector3 GetDirection()
     {
         RaycastHit hit;
-        if (Physics.Raycast(_cameraTarnsform.position, _cameraTarnsform.forward, out hit, _raycastRange, LayerMask))
+        if (Physics.Raycast(_cameraTransform.position, _cameraTransform.forward, out hit, _raycastRange, LayerMask))
         {
-            Debug.DrawRay(_cameraTarnsform.position, hit.point, Color.red, 1);
+            Debug.DrawRay(_cameraTransform.position, hit.point, Color.red, 1);
             return hit.point;
         }
-        return _cameraTarnsform.forward * _raycastRange;
+        return _cameraTransform.forward * _raycastRange;
     }
 
     public bool GroundTest(Transform drawrayPosition, Projectile projectile, float rayRange)

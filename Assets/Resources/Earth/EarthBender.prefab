@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4785329886889713072}
   - component: {fileID: 8942224612243876140}
   - component: {fileID: 3432171521546841865}
+  - component: {fileID: 6988136669867109223}
+  - component: {fileID: 6912724609760720572}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -98,19 +100,56 @@ MonoBehaviour:
   viewTarget: {fileID: 5599882848004124411}
   collisionLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   distance: 4
   distanceSpeed: 150
   collisionOffset: 0.3
   minDistance: 4
   maxDistance: 4
-  height: 1.5
+  height: 2
   sensitivity: 150
   rotationDampening: 0.75
   minVerticalAngle: -60
   maxVerticalAngle: 60
   useRMBToAim: 0
   pause: 0
+--- !u!114 &6988136669867109223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601552598834735537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 6912724609760720572}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6912724609760720572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601552598834735537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
 --- !u!1 &5599882848003764865
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +662,7 @@ GameObject:
   - component: {fileID: 3307350438433564719}
   - component: {fileID: 3870630194946312666}
   - component: {fileID: 5688553412623002484}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EarthBender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
-  _cameraTarnsform: {fileID: 7496165202928246154}
+  _cameraTransform: {fileID: 7496165202928246154}
   _lightAttack: {fileID: 5688553412623002484}
   _heavyAttack: {fileID: 0}
   _ultimate: {fileID: 0}
