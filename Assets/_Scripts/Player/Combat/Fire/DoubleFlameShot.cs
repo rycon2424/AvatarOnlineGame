@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class DoubleFlameShot : ProjectileBased
 {
-    [Header("Transforms")]
-    public Transform leftHand;
-    public Transform rightHand;
-
     private Projectile flameShot;
     private PlayerCombat _playerCombat;
     
