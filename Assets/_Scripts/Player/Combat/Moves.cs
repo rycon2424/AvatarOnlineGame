@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public abstract class Moves : UsingOnline
 {
@@ -8,13 +9,6 @@ public abstract class Moves : UsingOnline
 
     [SerializeField]
     private float _coolDown;
-
-    protected Animator _animator;
-
-    protected void Start()
-    {
-        _animator = GetComponent<Animator>();
-    }
 
     public void DoneAnimating()
     {
@@ -30,4 +24,5 @@ public abstract class Moves : UsingOnline
     {
         _isReady = false;
     }
+
 }

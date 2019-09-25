@@ -120,7 +120,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838886173914597819}
-  - component: {fileID: 6222656608720710934}
   m_Layer: 0
   m_Name: Attacks
   m_TagString: Untagged
@@ -144,29 +143,6 @@ Transform:
   m_Father: {fileID: 5599882848004124411}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6222656608720710934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108759905053459687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe217a48f394afc4c90e8aa8083ec00a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pv: {fileID: 0}
-  _isReady: 1
-  _coolDown: 1
-  _damage: 10
-  _range: 20
-  _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
-    type: 3}
-  _spawnPosition: {fileID: 1899893258214504666}
-  _speed: 10
-  _lerpPosition: {fileID: 3252693238255255570}
-  _lerpSpeed: 10
 --- !u!1 &5599882848003764865
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +654,7 @@ GameObject:
   - component: {fileID: 3447666628227374964}
   - component: {fileID: 3307350438433564719}
   - component: {fileID: 3870630194946312666}
+  - component: {fileID: 5688553412623002484}
   m_Layer: 0
   m_Name: EarthBender
   m_TagString: Untagged
@@ -751,7 +728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
   _cameraTarnsform: {fileID: 7496165202928246154}
-  _lightAttack: {fileID: 6222656608720710934}
+  _lightAttack: {fileID: 5688553412623002484}
   _heavyAttack: {fileID: 0}
   _ultimate: {fileID: 0}
   _shield: {fileID: 0}
@@ -844,6 +821,29 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &5688553412623002484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5599882848003764955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe217a48f394afc4c90e8aa8083ec00a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pv: {fileID: 0}
+  _isReady: 1
+  _coolDown: 1
+  _damage: 10
+  _range: 20
+  _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
+    type: 3}
+  _spawnPosition: {fileID: 1899893258214504666}
+  _speed: 10
+  _lerpPosition: {fileID: 3252693238255255570}
+  _lerpSpeed: 10
 --- !u!1 &5599882848003764957
 GameObject:
   m_ObjectHideFlags: 0

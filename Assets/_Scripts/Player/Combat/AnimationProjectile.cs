@@ -13,16 +13,7 @@ public class AnimationProjectile : ProjectileBased
     private Projectile _spawnedProjectile;
     private bool _lerp;
     private Vector3 _lookAt;
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            LaunchProjectile();
-            _isReady = true;
-        }
-    }
-
+    
     public override void UseMove(Vector3 lookAt)
     {
         base.UseMove(lookAt);

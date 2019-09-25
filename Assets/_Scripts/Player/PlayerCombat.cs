@@ -25,6 +25,13 @@ public class PlayerCombat : UsingOnline
 
     private float _raycastRange = 100;
 
+    protected Animator _animator;
+
+    protected void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
     private void Update()
     {
         if (pv.IsMine == false)
@@ -34,6 +41,10 @@ public class PlayerCombat : UsingOnline
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             pv.RPC("LightAttack", RpcTarget.All);
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            pv.RPC("HeavyAttack", RpcTarget.All);
         }
     }
 
@@ -49,10 +60,11 @@ public class PlayerCombat : UsingOnline
     }
     
     [PunRPC]
-    public void LightAttack()
+    void LightAttack()
     {
         if (_lightAttack._isReady)
         {
+            _animator.Play("LightAttack");
             _lightAttack.UseMove(GetDirection());
         }
     }
@@ -62,13 +74,11 @@ public class PlayerCombat : UsingOnline
     {
         if (_heavyAttack._isReady)
         {
+            _animator.Play("HeavyAttack");
             _heavyAttack.UseMove(GetDirection());
         }
     }
-
-    /// <summary>
-    /// ULTIMATE ATTACK
-    /// </summary>
+    
     public void Ultimate()
     {
         if (_ultimate._isReady)
@@ -76,10 +86,7 @@ public class PlayerCombat : UsingOnline
             _ultimate.UseMove(GetDirection());
         }
     }
-
-    /// <summary>
-    /// SHIELD ABILITY
-    /// </summary>
+    
     public void Shield()
     {
         if (_shield._isReady)
