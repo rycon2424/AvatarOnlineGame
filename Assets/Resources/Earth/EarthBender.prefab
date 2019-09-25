@@ -741,7 +741,7 @@ MonoBehaviour:
   _shield: {fileID: 0}
   LayerMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 4294967295
 --- !u!143 &8097288207576166809
 CharacterController:
   m_ObjectHideFlags: 0
