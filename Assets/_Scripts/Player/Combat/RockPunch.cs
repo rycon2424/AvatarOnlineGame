@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class AnimationProjectile : ProjectileBased
+public class RockPunch : ProjectileBased
 {
     [SerializeField]
     protected float _rayRange;

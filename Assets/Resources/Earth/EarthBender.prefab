@@ -810,7 +810,7 @@ MonoBehaviour:
     type: 3}
   _spawnPosition: {fileID: 3252693238255255570}
   _speed: 20
-  _rayRange: 1.5
+  _rayRange: 2
   _lerpSpeed: 10
 --- !u!1 &5599882848003764957
 GameObject:
