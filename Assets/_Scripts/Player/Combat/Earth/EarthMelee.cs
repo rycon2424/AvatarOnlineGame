@@ -15,7 +15,6 @@ public class EarthMelee : RaycastBased
                 player.TakeDamage(_damage);
             }
         }
-        DoneAnimating();
     }
 }
 
