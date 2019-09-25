@@ -34,7 +34,7 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
-  - SpawnWeaponCrate
-  - Spawn
+  - SyncedHeavyAttack
+  - SyncedLightAttack
   DisableAutoOpenWizard: 1
   ShowSettings: 0

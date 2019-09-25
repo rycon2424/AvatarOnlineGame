@@ -29,7 +29,7 @@ public class PlayerCombat : UsingOnline
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            LightAttack();
+            pv.RPC("LightAttack", RpcTarget.All);
         }
     }
 
@@ -43,34 +43,18 @@ public class PlayerCombat : UsingOnline
         }
         return _cameraTarnsform.forward * _raycastRange;
     }
-
-    /// <summary>
-    /// LIGHT ATTACK
-    /// </summary>
-    public void LightAttack()
-    {
-        pv.RPC("SyncedLightAttack", RpcTarget.All);
-    }
-
+    
     [PunRPC]
-    private void SyncedLightAttack()
+    public void LightAttack()
     {
         if (_lightAttack._isReady)
         {
             _lightAttack.UseMove(GetDirection());
         }
     }
-
-    /// <summary>
-    /// HEAVY ATTACK
-    /// </summary>
-    public void HeavyAttack()
-    {
-        pv.RPC("SyncedHeavyAttack", RpcTarget.All);
-    }
-
+    
     [PunRPC]
-    private void SyncedHeavyAttack()
+    void HeavyAttack()
     {
         if (_heavyAttack._isReady)
         {

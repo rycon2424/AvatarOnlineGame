@@ -120,7 +120,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838886173914597819}
-  - component: {fileID: 1803309891191608433}
   - component: {fileID: 6222656608720710934}
   m_Layer: 0
   m_Name: Attacks
@@ -145,27 +144,6 @@ Transform:
   m_Father: {fileID: 5599882848004124411}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1803309891191608433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5108759905053459687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d5de620c7c43a40aef511a10cff13a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pv: {fileID: 0}
-  _cameraTarnsform: {fileID: 7496165202928246154}
-  _lightAttack: {fileID: 6222656608720710934}
-  _heavyAttack: {fileID: 0}
-  _ultimate: {fileID: 0}
-  _shield: {fileID: 0}
-  LayerMask:
-    serializedVersion: 2
-    m_Bits: 311
 --- !u!114 &6222656608720710934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,6 +673,7 @@ GameObject:
   - component: {fileID: 5599882848004124411}
   - component: {fileID: 5599882848011043167}
   - component: {fileID: 5148893593482967298}
+  - component: {fileID: 8783688603642312896}
   - component: {fileID: 8097288207576166809}
   - component: {fileID: 3447666628227374964}
   - component: {fileID: 3307350438433564719}
@@ -758,6 +737,27 @@ MonoBehaviour:
   pv: {fileID: 0}
   _health: 100
   rotateTowardsCamera: 0
+--- !u!114 &8783688603642312896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5599882848003764955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d5de620c7c43a40aef511a10cff13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pv: {fileID: 0}
+  _cameraTarnsform: {fileID: 7496165202928246154}
+  _lightAttack: {fileID: 6222656608720710934}
+  _heavyAttack: {fileID: 0}
+  _ultimate: {fileID: 0}
+  _shield: {fileID: 0}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 311
 --- !u!143 &8097288207576166809
 CharacterController:
   m_ObjectHideFlags: 0
