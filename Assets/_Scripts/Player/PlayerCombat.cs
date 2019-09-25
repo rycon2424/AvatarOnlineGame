@@ -27,6 +27,10 @@ public class PlayerCombat : UsingOnline
 
     private void Update()
     {
+        if (pv.IsMine == false)
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             pv.RPC("LightAttack", RpcTarget.All);
