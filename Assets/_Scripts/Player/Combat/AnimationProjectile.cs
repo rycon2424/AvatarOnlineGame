@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class AnimationProjectile : ProjectileBased
 {
@@ -24,11 +25,17 @@ public class AnimationProjectile : ProjectileBased
 
     public void LaunchProjectile()
     {
+        pv.RPC("SyncShot", RpcTarget.All);
+    }
+
+    [PunRPC]
+    void SyncShot()
+    {
         _lerp = false;
         _spawnedProjectile.transform.LookAt(_lookAt);
         _spawnedProjectile.Fired(_damage, _speed, _range);
     }
-
+    
     private IEnumerator LerpProjectile()
     {
         _lerp = true;
