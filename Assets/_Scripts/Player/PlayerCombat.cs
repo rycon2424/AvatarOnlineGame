@@ -44,7 +44,15 @@ public class PlayerCombat : UsingOnline
         return _cameraTarnsform.forward * _raycastRange;
     }
 
+    /// <summary>
+    /// LIGHT ATTACK
+    /// </summary>
     public void LightAttack()
+    {
+        pv.RPC("SyncedLightAttack", RpcTarget.All);
+    }
+
+    private void SyncedLightAttack()
     {
         if (_lightAttack._isReady)
         {
@@ -52,7 +60,15 @@ public class PlayerCombat : UsingOnline
         }
     }
 
+    /// <summary>
+    /// HEAVY ATTACK
+    /// </summary>
     public void HeavyAttack()
+    {
+        pv.RPC("SyncedHeavyAttack", RpcTarget.All);
+    }
+
+    private void SyncedHeavyAttack()
     {
         if (_heavyAttack._isReady)
         {
@@ -60,6 +76,9 @@ public class PlayerCombat : UsingOnline
         }
     }
 
+    /// <summary>
+    /// ULTIMATE ATTACK
+    /// </summary>
     public void Ultimate()
     {
         if (_ultimate._isReady)
@@ -68,6 +87,9 @@ public class PlayerCombat : UsingOnline
         }
     }
 
+    /// <summary>
+    /// SHIELD ABILITY
+    /// </summary>
     public void Shield()
     {
         if (_shield._isReady)

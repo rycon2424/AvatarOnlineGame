@@ -14,5 +14,10 @@ public class UsingOnline : MonoBehaviourPun
     void Awake()
     {
         pv = GetComponent<PhotonView>();
+        if (pv == null)
+        {
+            pv = GetComponentInParent<PhotonView>();
+        }
     }
+
 }
