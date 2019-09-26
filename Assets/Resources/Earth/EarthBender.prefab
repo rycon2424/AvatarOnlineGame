@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 3870630194946312666}
   - component: {fileID: 5688553412623002484}
   - component: {fileID: 72662890139955068}
+  - component: {fileID: 4675268580148837491}
   m_Layer: 9
   m_Name: EarthBender
   m_TagString: Untagged
@@ -741,7 +742,7 @@ MonoBehaviour:
   _heavyAttack: {fileID: 5688553412623002484}
   _ultimate: {fileID: 5688553412623002484}
   _melee: {fileID: 72662890139955068}
-  _shield: {fileID: 5688553412623002484}
+  _shield: {fileID: 4675268580148837491}
   LayerMask:
     serializedVersion: 2
     m_Bits: 311
@@ -878,6 +879,31 @@ MonoBehaviour:
   _range: 1
   _spawnPosition:
   - {fileID: 2602301671960695927}
+  _wallDamage: 40
+  _wallSpeed: 10
+  _wallRange: 20
+--- !u!114 &4675268580148837491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5599882848003764955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe703163e931fa4995db2ffd0326680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pv: {fileID: 0}
+  _isReady: 1
+  _isReadyAnimating: 1
+  _coolDown: 8
+  _attack: 4
+  _shieldDuration: 8
+  _spawnPosition: {fileID: 3252693238255255570}
+  _wall: {fileID: 114024190521300950, guid: 03e5389e53ab60843b61e0ed321ad2fe, type: 3}
+  _rayRange: 2
+  _lerpSpeed: 3
 --- !u!1 &5599882848003764957
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Shield : Moves
 {
+    [SerializeField]
     protected float _shieldDuration;
-
-    public override void UseMove(PlayerCombat playerCombat)
-    {
-        
-    }
 }

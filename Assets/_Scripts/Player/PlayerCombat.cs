@@ -80,7 +80,7 @@ public class PlayerCombat : UsingOnline
     public bool GroundTest(Transform drawrayPosition, Projectile projectile, float rayRange)
     {
         RaycastHit hit;
-        if (Physics.Raycast(drawrayPosition.position, -drawrayPosition.up, out hit, rayRange))
+        if (Physics.Raycast(drawrayPosition.position, -drawrayPosition.up, out hit, rayRange, LayerMask))
         {
             if (projectile._meshRenderer != null)
             {

@@ -20,22 +20,19 @@ public class Projectile : MonoBehaviour
         _speed = speed;
 
         Invoke("Destroy", range / speed);
+        StartCoroutine(Movement());
     }
 
-    protected void Update()
+    public virtual IEnumerator Movement()
     {
-        if (_speed != 0)
+        while (true)
         {
-            Movement();
+            yield return new WaitForEndOfFrame();
+            transform.position += transform.forward * _speed * Time.deltaTime;
         }
     }
 
-    protected void Movement()
-    {
-        transform.position += transform.forward * _speed * Time.deltaTime;
-    }
-
-    protected void Destroy()
+    public void Destroy()
     {
         if (destroyEffect != null)
         {
@@ -44,7 +41,7 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void OnTriggerEnter(Collider collider)
+    protected void OnTriggerEnter(Collider collider)
     {
         PlayerController player = collider.gameObject.GetComponent<PlayerController>();
         if (player != null)

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1259813064167340003}
   - component: {fileID: 1259813064153182895}
   - component: {fileID: 1259813064153139983}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4583,7 +4583,7 @@ GameObject:
   - component: {fileID: 1259813064167340009}
   - component: {fileID: 1259813064177739499}
   - component: {fileID: 1259813064178196013}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4672,7 +4672,7 @@ GameObject:
   - component: {fileID: 1259813064153182891}
   - component: {fileID: 1259813064153139979}
   - component: {fileID: 1259813064178196011}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9393,7 +9393,7 @@ GameObject:
   - component: {fileID: 1230643229270627347}
   - component: {fileID: 1259813064166910920}
   - component: {fileID: 1259813064166910922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FlameShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9510,7 +9510,7 @@ GameObject:
   - component: {fileID: 1259813064167340015}
   - component: {fileID: 1259813064153182889}
   - component: {fileID: 1259813064153139977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
