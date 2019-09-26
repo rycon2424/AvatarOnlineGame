@@ -6,13 +6,21 @@ using Photon.Pun;
 public abstract class Moves : UsingOnline
 {
     public bool _isReady = true;
+    public bool _isReadyAnimating = true;
 
     [SerializeField]
     private float _coolDown;
 
-    public void DoneAnimating()
+    [SerializeField]
+    private AttackEnum _attack;
+
+    public void DoneAnimating(AttackEnum attack)
     {
-        Invoke("DoneCooldown", _coolDown);
+        if (_attack == attack)
+        {
+            _isReadyAnimating = true;
+            Invoke("DoneCooldown", _coolDown);
+        }
     }
 
     private void DoneCooldown()
@@ -22,6 +30,7 @@ public abstract class Moves : UsingOnline
 
     public virtual void UseMove(PlayerCombat playerCombat)
     {
+        _isReadyAnimating = false;
         _isReady = false;
     }
 

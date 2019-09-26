@@ -41,7 +41,7 @@ public class PlayerCombat : UsingOnline
         {
             return;
         }
-        if (_lightAttack._isReady && _heavyAttack._isReady && _ultimate._isReady && _melee._isReady && _shield._isReady)
+        if (_lightAttack._isReadyAnimating && _heavyAttack._isReadyAnimating && _ultimate._isReadyAnimating && _melee._isReadyAnimating && _shield._isReadyAnimating)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
@@ -94,35 +94,50 @@ public class PlayerCombat : UsingOnline
     [PunRPC]
     void LightAttack()
     {
+        if (_lightAttack._isReady)
+        {
         _animator.Play("LightAttack");
         _lightAttack.UseMove(this);
+        }
     }
 
     [PunRPC]
     void HeavyAttack()
     {
-        _animator.Play("HeavyAttack");
-        _heavyAttack.UseMove(this);
+        if (_heavyAttack._isReady)
+        {
+            _animator.Play("HeavyAttack");
+            _heavyAttack.UseMove(this);
+        }
     }
 
     [PunRPC]
     public void Ultimate()
     {
-        _animator.Play("Ultimate");
-        _ultimate.UseMove(this);
+        if (_ultimate._isReady)
+        {
+            _animator.Play("Ultimate");
+            _ultimate.UseMove(this);
+        }
     }
 
     [PunRPC]
     public void Shield()
     {
-        _animator.Play("Shield");
-        _shield.UseMove(this);
+        if (_shield._isReady)
+        {
+            _animator.Play("Shield");
+            _shield.UseMove(this);
+        }
     }
 
     [PunRPC]
     public void Melee()
     {
-        _animator.Play("Melee");
-        _melee.UseMove(this);
+        if (_melee._isReady)
+        {
+            _animator.Play("Melee");
+            _melee.UseMove(this);
+        }
     }
 }

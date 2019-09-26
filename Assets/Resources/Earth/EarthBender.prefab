@@ -844,7 +844,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
   _isReady: 1
+  _isReadyAnimating: 1
   _coolDown: 0.5
+  _attack: 0
   _damage: 25
   _range: 20
   _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
@@ -868,7 +870,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
   _isReady: 1
+  _isReadyAnimating: 1
   _coolDown: 0.1
+  _attack: 2
   _damage: 20
   _range: 1
 --- !u!1 &5599882848003764957
