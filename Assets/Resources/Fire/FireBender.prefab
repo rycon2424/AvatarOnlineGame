@@ -875,9 +875,10 @@ MonoBehaviour:
   pv: {fileID: 0}
   _cameraTransform: {fileID: 3446853432144689127}
   _lightAttack: {fileID: 114045081311031148}
-  _heavyAttack: {fileID: 0}
-  _ultimate: {fileID: 0}
-  _shield: {fileID: 0}
+  _heavyAttack: {fileID: 114045081311031148}
+  _ultimate: {fileID: 114045081311031148}
+  _melee: {fileID: 114045081311031148}
+  _shield: {fileID: 114045081311031148}
   LayerMask:
     serializedVersion: 2
     m_Bits: 512
