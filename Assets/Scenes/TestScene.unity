@@ -349,6 +349,11 @@ PrefabInstance:
       propertyPath: viewIdField
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6988136669867109223, guid: a3d8bf9af6ce12f4c9e8372afbc6cdce,
+        type: 3}
+      propertyPath: viewIdField
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d8bf9af6ce12f4c9e8372afbc6cdce, type: 3}
 --- !u!1001 &3321020004859239743
@@ -422,6 +427,11 @@ PrefabInstance:
         type: 3}
       propertyPath: viewIdField
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264728662430389555, guid: 3234d5ba589f76e4ba6ee837bf41d567,
+        type: 3}
+      propertyPath: viewIdField
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3234d5ba589f76e4ba6ee837bf41d567, type: 3}
@@ -502,6 +512,76 @@ PrefabInstance:
       propertyPath: viewIdField
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8794541444363865103, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: viewIdField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560051314251, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560051314251, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560051314251, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560051523073, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560051226759, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037114875, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037114875, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037110101, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037110101, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.0002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037110101, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037110101, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037110101, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504236560037110101, guid: f07bcc60447b15a4393ee8fdd4b7fa59,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07bcc60447b15a4393ee8fdd4b7fa59, type: 3}
 --- !u!1001 &8769489628247785941
@@ -575,6 +655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: viewIdField
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557479911597982117, guid: 175363cb46f8c274faaecd7adf50ef8a,
+        type: 3}
+      propertyPath: viewIdField
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 175363cb46f8c274faaecd7adf50ef8a, type: 3}
