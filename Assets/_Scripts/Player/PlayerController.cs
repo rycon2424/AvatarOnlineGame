@@ -11,8 +11,7 @@ public class PlayerController : UsingOnline
 
     [SerializeField]
     private int _health;
-
-    [HideInInspector]
+    
     public bool rotateTowardsCamera;
 
     void Start()
@@ -76,12 +75,7 @@ public class PlayerController : UsingOnline
             anim.SetBool("Running", false);
         }
     }
-
-    public void ToggleRotation()
-    {
-        rotateTowardsCamera = !rotateTowardsCamera;
-    }
-
+    
     void RotateToLook()
     {
         var CharacterRotation = playerCamera.transform.rotation;
