@@ -33,7 +33,7 @@ public class EarthWall : Shield
 
     public void DestroyWall()
     {
-        if (_spawnedWall != null)
+        if (_spawnedWall != null && _spawnedWall._speed == 0)
         {
             _spawnedWall.Destroy();
         }

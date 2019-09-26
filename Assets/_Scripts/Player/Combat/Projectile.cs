@@ -10,8 +10,10 @@ public class Projectile : MonoBehaviour
     [Header("Particles after destroy")]
     public GameObject destroyEffect;
 
+    [HideInInspector]
+    public float _speed = 0;
+
     protected int _damage = 0;
-    protected float _speed = 0;
     protected float _range = 0;
 
     public void Fired(int damage, float speed, float range)
@@ -41,7 +43,7 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected void OnTriggerEnter(Collider collider)
+    protected virtual void OnTriggerEnter(Collider collider)
     {
         PlayerController player = collider.gameObject.GetComponent<PlayerController>();
         if (player != null)
