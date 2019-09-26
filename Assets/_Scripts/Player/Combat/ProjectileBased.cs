@@ -8,9 +8,6 @@ public abstract class ProjectileBased : Ranged
     protected Projectile _projectile;
 
     [SerializeField]
-    protected List<Transform> _spawnPosition;
-
-    [SerializeField]
     protected float _speed;
 
 }

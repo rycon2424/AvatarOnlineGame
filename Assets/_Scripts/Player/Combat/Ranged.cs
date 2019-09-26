@@ -6,4 +6,7 @@ public abstract class Ranged : Attack
 {
     [SerializeField]
     protected float _range;
+
+    [SerializeField]
+    protected List<Transform> _spawnPosition;
 }

@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5599882848004124411}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &4785329886889713072
 Camera:
@@ -582,7 +582,7 @@ Transform:
   - {fileID: 5599882848004124291}
   - {fileID: 5599882848004124289}
   m_Father: {fileID: 5599882848004124411}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5599882848003764893
 GameObject:
@@ -681,6 +681,7 @@ Transform:
   m_LocalPosition: {x: 496.3476, y: 483.07968, z: -733.6897}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
+  - {fileID: 2602301671960695927}
   - {fileID: 3252693238255255570}
   - {fileID: 5599882848004124347}
   - {fileID: 5599882848004124319}
@@ -845,14 +846,14 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 0.5
+  _coolDown: 1
   _attack: 0
   _damage: 25
   _range: 20
-  _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
-    type: 3}
   _spawnPosition:
   - {fileID: 3252693238255255570}
+  _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
+    type: 3}
   _speed: 20
   _rayRange: 2
   _lerpSpeed: 10
@@ -875,6 +876,8 @@ MonoBehaviour:
   _attack: 2
   _damage: 20
   _range: 1
+  _spawnPosition:
+  - {fileID: 2602301671960695927}
 --- !u!1 &5599882848003764957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1434,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5599882848004124411}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &5599882848015335327
 SkinnedMeshRenderer:
@@ -1535,6 +1538,36 @@ Transform:
   m_GameObject: {fileID: 5821110523000554943}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5599882848004124411}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7703700005085412921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2602301671960695927}
+  m_Layer: 9
+  m_Name: Melee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2602301671960695927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7703700005085412921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5599882848004124411}
