@@ -982,14 +982,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
   _isReady: 1
+  _isReadyAnimating: 1
   _coolDown: 1
+  _attack: 0
   _damage: 5
   _range: 20
-  _projectile: {fileID: 1232666572101488849, guid: 0fe34efc7abeb2241a6a3d96eb8c7063,
-    type: 3}
   _spawnPosition:
   - {fileID: 3446853432355662676}
   - {fileID: 3446853432355662706}
+  _projectile: {fileID: 1232666572101488849, guid: 0fe34efc7abeb2241a6a3d96eb8c7063,
+    type: 3}
   _speed: 10
 --- !u!1 &3446853432355501920
 GameObject:
