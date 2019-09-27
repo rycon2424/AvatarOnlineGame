@@ -699,6 +699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3446853432355662718}
+  - component: {fileID: 2316110172318904950}
   m_Layer: 0
   m_Name: Firebender:RightFoot
   m_TagString: Untagged
@@ -721,6 +722,19 @@ Transform:
   m_Father: {fileID: 3446853432355662700}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2316110172318904950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446853432355501854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.003, y: 0.003, z: 0.003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3446853432355501880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1029,8 @@ MonoBehaviour:
   dashEffect: {fileID: 5504236560051523073}
   flameTrail: {fileID: 4472387050216073546, guid: a8b0701673539404789ea4779bd85880,
     type: 3}
+  damageTrigger: {fileID: 2316110172318904950}
+  _damage: 15
 --- !u!1 &3446853432355501920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,10 +1621,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 10811546, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: m_Range
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 19867436, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.0001
@@ -1668,6 +1680,10 @@ PrefabInstance:
     - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10811546, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: m_Range
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198209609425588582, guid: ff6f0f6ed5fb04648a63068803ce172a,
         type: 3}
