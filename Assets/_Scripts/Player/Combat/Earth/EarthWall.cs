@@ -45,7 +45,6 @@ public class EarthWall : Shield
 
         while (_spawnedWall != null && Vector3.Distance(_spawnedWall.transform.position, lerpPosition) > 0.25)
         {
-            Debug.Log("Lerp");
             yield return new WaitForEndOfFrame();
             _spawnedWall.transform.position = Vector3.Lerp(_spawnedWall.transform.position, lerpPosition, _lerpSpeed * Time.deltaTime);
         }

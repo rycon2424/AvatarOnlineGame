@@ -71,7 +71,6 @@ public class PlayerCombat : UsingOnline
         RaycastHit hit;
         if (Physics.Raycast(_cameraTransform.position, _cameraTransform.forward, out hit, _raycastRange, LayerMask))
         {
-            Debug.DrawRay(_cameraTransform.position, hit.point, Color.red, 1);
             return hit.point;
         }
         return _cameraTransform.forward * _raycastRange;

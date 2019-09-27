@@ -16,11 +16,8 @@ public abstract class Moves : UsingOnline
 
     public void DoneAnimating(AttackEnum attack)
     {
-        Debug.Log(attack + " attack");
-        Debug.Log(_attack + " _attack");
         if (_attack == attack)
         {
-            Debug.Log("succeeded with " + attack);
             _isReadyAnimating = true;
             Invoke("DoneCooldown", _coolDown);
         }
