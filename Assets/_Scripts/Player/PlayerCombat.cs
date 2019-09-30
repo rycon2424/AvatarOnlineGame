@@ -5,6 +5,8 @@ using Photon.Pun;
 
 public class PlayerCombat : UsingOnline
 {
+    public PlayerController _playerController;
+
     [SerializeField]
     private Transform _cameraTransform;
 
