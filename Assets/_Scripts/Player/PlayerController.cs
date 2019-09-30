@@ -40,15 +40,15 @@ public class PlayerController : UsingOnline
     
     void Update()
     {
+        if (rotateTowardsCamera)
+        {
+            RotateToLook();
+        }
         if (pv.IsMine == false)
         {
             return;
         }
         Movement();
-        if (rotateTowardsCamera)
-        {
-            RotateToLook();
-        }
     }
 
     public void TakeDamage(int damage)
@@ -87,7 +87,7 @@ public class PlayerController : UsingOnline
         var CharacterRotation = playerCamera.transform.rotation;
         CharacterRotation.x = 0;
         CharacterRotation.z = 0;
-        transform.rotation = Quaternion.Slerp(transform.rotation, CharacterRotation, Time.deltaTime * 12);
+        transform.rotation = CharacterRotation;
     }
 
 }
