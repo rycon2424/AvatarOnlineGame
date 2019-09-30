@@ -14,7 +14,9 @@ public class PlayerController : UsingOnline
 
     [HideInInspector]
     public int _maxHealth;
-    
+    [HideInInspector]
+    public bool canMove = true;
+
     public bool rotateTowardsCamera;
 
     void Start()
@@ -48,7 +50,10 @@ public class PlayerController : UsingOnline
         {
             return;
         }
-        Movement();
+        if (canMove)
+        {
+            Movement();
+        }
     }
 
     public void TakeDamage(int damage)
