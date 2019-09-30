@@ -8,9 +8,12 @@ public class PlayerController : UsingOnline
 
     private Animator anim;
     private Transform playerCamera;
+    private PlayerUI pu;
+    
+    public int _health;
 
-    [SerializeField]
-    private int _health;
+    [HideInInspector]
+    public int _maxHealth;
     
     public bool rotateTowardsCamera;
 
@@ -18,7 +21,9 @@ public class PlayerController : UsingOnline
     {
         anim = GetComponent<Animator>();
         playerCamera = GetComponentInChildren<OrbitCamera>().transform;
+        pu = GetComponent<PlayerUI>();
         rotateTowardsCamera = true;
+        pu.StartUI();
 
         //De if statement om te checken of jij de controle hebt over dat character
         if (pv.IsMine == false)
@@ -49,6 +54,7 @@ public class PlayerController : UsingOnline
     public void TakeDamage(int damage)
     {
         _health -= damage;
+        pu.UpdateHealth(_health);
         //pv.RPC("SyncHP", RpcTarget.All, _health);
     }
 
