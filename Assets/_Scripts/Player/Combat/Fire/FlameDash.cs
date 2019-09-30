@@ -6,7 +6,6 @@ public class FlameDash : Moves
 {
     public GameObject dashEffect;
     public GameObject flameTrail;
-    public BoxCollider damageTrigger;
     public int _damage;
     private PlayerCombat _playerCombat;
 
@@ -16,32 +15,44 @@ public class FlameDash : Moves
         _playerCombat = playerCombat;
     }
 
+    void Update()
+    {
+
+    }
+
     public void EnableEffect()
     {
         dashEffect.SetActive(true);
-        Debug.Log("enable trigger comp");
-        damageTrigger.enabled = true;
     }
 
     public void DisableEffect()
     {
         Invoke("DisableDashEffect", 1.5f);
-        damageTrigger.enabled = false;
     }
 
     void DisableDashEffect()
     {
-        Debug.Log("disable trigger comp");
         dashEffect.SetActive(false);
     }
 
-    void OnTriggerEnter(Collider collider)
+    void DashDamage()
     {
-        PlayerController player = collider.gameObject.GetComponent<PlayerController>();
-        if (player != null)
+        RaycastHit hit;
+
+        Vector3 rayOrigin = transform.position + transform.forward * 0.1f + transform.up * 0.5f;
+        Debug.DrawRay(rayOrigin, transform.forward * 1.35f, Color.blue, 5);
+        if (Physics.Raycast(rayOrigin, transform.forward, out hit, 1.35f))
         {
-            player.TakeDamage(_damage);
-            damageTrigger.enabled = false;
+            if (hit.collider.tag != "")
+            {
+                Debug.Log("Raycast hit " + hit.collider.name);
+                PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
+                if (player != null)
+                {
+                    player.TakeDamage(_damage);
+                }
+            }
         }
     }
+    
 }
