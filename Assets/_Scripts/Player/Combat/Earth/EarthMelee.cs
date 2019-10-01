@@ -24,6 +24,7 @@ public class EarthMelee : RaycastBased
     public void Melee()
     {
         RaycastHit hit;
+        Debug.DrawRay(_spawnPosition[0].position, _spawnPosition[0].forward, Color.red, 3);
         if (Physics.Raycast(_spawnPosition[0].position, _spawnPosition[0].forward, out hit, _range))
         {
             PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
@@ -41,6 +42,7 @@ public class EarthMelee : RaycastBased
                 wall.Fired(_wallDamage, _wallSpeed, _wallRange);
                 return;
             }
+            Debug.Log(hit.collider.name);
         }
     }
 }
