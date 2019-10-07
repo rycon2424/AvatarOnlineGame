@@ -37,24 +37,22 @@ public class PlayerUI : MonoBehaviour
     {
         _images[(int)attackEnum].color = Color.grey;
 
-        Debug.Log(move._coolDown);
-
         for (float i = move._coolDown; i > 0;)
         {
             if (move._isReadyAnimating)
             {
-                yield return new WaitForSeconds(1);
-                i--;
-                Debug.Log("text");
-                _timerText[(int)attackEnum].text = i +"";
+                if (move._coolDown >= 1)
+                {
+                    yield return new WaitForSeconds(1);
+                    i--;
+                    _timerText[(int)attackEnum].text = i +"";
+                }
             }
             else
             {
-                Debug.Log("wait");
                 yield return new WaitForEndOfFrame();
             }
         }
-        Debug.Log("reset");
         _timerText[(int)attackEnum].text = "";
         _images[(int)attackEnum].color = Color.white;
     }
