@@ -60,10 +60,16 @@ public class PlayerController : UsingOnline
     {
         _health -= damage;
         pu.UpdateHealth(_health);
-        if (_health < 1)
+        if (pv.IsMine == true)
         {
-            pv.RPC("Death", RpcTarget.All);
+            pv.RPC("SyncHealth", RpcTarget.All, _health);
         }
+    }
+
+    [PunRPC]
+    void SyncHealth(int health)
+    {
+        _health = health;
     }
 
     [PunRPC]

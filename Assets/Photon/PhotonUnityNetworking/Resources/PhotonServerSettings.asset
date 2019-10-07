@@ -42,5 +42,6 @@ MonoBehaviour:
   - Shield
   - Ultimate
   - Death
+  - SyncHealth
   DisableAutoOpenWizard: 1
   ShowSettings: 0
