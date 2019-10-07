@@ -62,9 +62,10 @@ public class GroundSlam : Ranged
             {
                 Projectile rock = Instantiate(_rock, hit.point, Random.rotation);
                 _rocks.Add(rock);
-                if (rock._meshRenderer != null)
+                MeshRenderer mesh = hit.collider.GetComponent<MeshRenderer>();
+                if (rock._meshRenderer != null && mesh != null)
                 {
-                    rock._meshRenderer.material = hit.collider.GetComponent<MeshRenderer>().material;
+                    rock._meshRenderer.material = mesh.material;
                 }
             }
         }

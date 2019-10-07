@@ -85,9 +85,10 @@ public class PlayerCombat : UsingOnline
         RaycastHit hit;
         if (Physics.Raycast(drawrayPosition.position, -drawrayPosition.up, out hit, rayRange, LayerMask))
         {
-            if (projectile._meshRenderer != null)
+            MeshRenderer mesh = hit.collider.GetComponent<MeshRenderer>();
+            if (projectile._meshRenderer != null && mesh != null)
             {
-                projectile._meshRenderer.material = hit.collider.GetComponent<MeshRenderer>().material;
+                projectile._meshRenderer.material = mesh.material;
             }
             return true;
         }
