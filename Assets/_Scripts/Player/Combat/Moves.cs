@@ -8,8 +8,7 @@ public abstract class Moves : UsingOnline
     public bool _isReady = true;
     public bool _isReadyAnimating = true;
 
-    [SerializeField]
-    private float _coolDown;
+    public float _coolDown;
 
     [SerializeField]
     private AttackEnum _attack;

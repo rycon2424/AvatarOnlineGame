@@ -11,6 +11,10 @@ public class PlayerCombat : UsingOnline
     private Transform _cameraTransform;
 
     [SerializeField]
+    private LayerMask LayerMask;
+
+    [Header("Moves")]
+    [SerializeField]
     private Moves _lightAttack;
 
     [SerializeField]
@@ -25,15 +29,13 @@ public class PlayerCombat : UsingOnline
     [SerializeField]
     private Moves _shield;
 
-    [SerializeField]
-    private LayerMask LayerMask;
-
     private float _raycastRange = 1000;
-
-    protected Animator _animator;
+    private PlayerUI pu;
+    private Animator _animator;
 
     protected void Start()
     {
+        pu = GetComponent<PlayerUI>();
         _animator = GetComponent<Animator>();
     }
 
@@ -97,8 +99,9 @@ public class PlayerCombat : UsingOnline
     {
         if (_lightAttack._isReady)
         {
-        _animator.Play("LightAttack");
-        _lightAttack.UseMove(this);
+            _animator.Play("LightAttack");
+            _lightAttack.UseMove(this);
+            StartCoroutine(pu.CooldownIndicator(_lightAttack, AttackEnum.LightAttack));
         }
     }
 
@@ -109,6 +112,7 @@ public class PlayerCombat : UsingOnline
         {
             _animator.Play("HeavyAttack");
             _heavyAttack.UseMove(this);
+            StartCoroutine(pu.CooldownIndicator(_heavyAttack, AttackEnum.HeavyAttack));
         }
     }
 
@@ -119,6 +123,7 @@ public class PlayerCombat : UsingOnline
         {
             _animator.Play("Ultimate");
             _ultimate.UseMove(this);
+            StartCoroutine(pu.CooldownIndicator(_ultimate, AttackEnum.Ultimate));
         }
     }
 
@@ -129,6 +134,7 @@ public class PlayerCombat : UsingOnline
         {
             _animator.Play("Shield");
             _shield.UseMove(this);
+            StartCoroutine(pu.CooldownIndicator(_shield, AttackEnum.Shield));
         }
     }
 
@@ -139,6 +145,7 @@ public class PlayerCombat : UsingOnline
         {
             _animator.Play("Melee");
             _melee.UseMove(this);
+            StartCoroutine(pu.CooldownIndicator(_melee, AttackEnum.Melee));
         }
     }
 }
