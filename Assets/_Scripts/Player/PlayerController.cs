@@ -70,9 +70,12 @@ public class PlayerController : UsingOnline
     void SyncHealth(int health)
     {
         _health = health;
+        if (_health < 1)
+        {
+            pv.RPC("Death", RpcTarget.All, _health);
+        }
     }
 
-    [PunRPC]
     void Death()
     {
         anim.Play("Death");

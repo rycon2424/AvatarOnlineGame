@@ -35,13 +35,10 @@ MonoBehaviour:
   - Fire
   - HeavyAttack
   - LightAttack
-  - RespawnSpaceship
-  - SyncShot
-  - SyncHP
   - Melee
+  - RespawnSpaceship
   - Shield
-  - Ultimate
-  - Death
   - SyncHealth
+  - Ultimate
   DisableAutoOpenWizard: 1
   ShowSettings: 0
