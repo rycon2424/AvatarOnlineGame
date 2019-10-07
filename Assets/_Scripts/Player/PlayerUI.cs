@@ -47,6 +47,10 @@ public class PlayerUI : MonoBehaviour
                     i--;
                     _timerText[(int)attackEnum].text = i +"";
                 }
+                else
+                {
+                    i = 0;
+                }
             }
             else
             {
