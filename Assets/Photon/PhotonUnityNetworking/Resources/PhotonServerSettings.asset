@@ -41,5 +41,6 @@ MonoBehaviour:
   - Melee
   - Shield
   - Ultimate
+  - Death
   DisableAutoOpenWizard: 1
   ShowSettings: 0
