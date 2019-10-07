@@ -72,7 +72,7 @@ public class PlayerController : UsingOnline
         _health = health;
         if (_health < 1)
         {
-            pv.RPC("Death", RpcTarget.All, _health);
+            Death();
         }
     }
 
