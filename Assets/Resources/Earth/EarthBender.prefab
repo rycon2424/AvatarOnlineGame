@@ -728,6 +728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
+  _respawnTime: 4
   _health: 100
   _maxHealth: 0
   canMove: 1

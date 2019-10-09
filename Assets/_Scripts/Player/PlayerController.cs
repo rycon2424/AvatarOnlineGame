@@ -5,6 +5,8 @@ using Photon.Pun;
 
 public class PlayerController : UsingOnline
 {
+    [SerializeField]
+    private float _respawnTime;
 
     private Animator anim;
     private Transform playerCamera;
@@ -73,12 +75,22 @@ public class PlayerController : UsingOnline
         if (_health < 1)
         {
             Death();
+            Invoke("Respawn", _respawnTime);
         }
     }
 
     void Death()
     {
         anim.Play("Death");
+
+    }
+
+    void Respawn()
+    {
+        transform.position = Vector3.zero;
+        _health = _maxHealth;
+        pv.RPC("SyncHealth", RpcTarget.All, _health);
+        anim.Play("Walk");
     }
 
     void Movement()
