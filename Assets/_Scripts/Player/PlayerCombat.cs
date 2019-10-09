@@ -47,7 +47,7 @@ public class PlayerCombat : UsingOnline
         }
         if (_lightAttack._isReadyAnimating && _heavyAttack._isReadyAnimating && _ultimate._isReadyAnimating && _melee._isReadyAnimating && _shield._isReadyAnimating)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 pv.RPC("LightAttack", RpcTarget.All);
             }

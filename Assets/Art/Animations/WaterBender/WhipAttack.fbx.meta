@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: b3a0c6aa6f39af94492d062d4ceeff0f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Dai_Li_Agent1:Head
+    100002: Dai_Li_Agent1:HeadTop_End
+    100004: Dai_Li_Agent1:Hips
+    100006: Dai_Li_Agent1:LeftArm
+    100008: Dai_Li_Agent1:LeftFoot
+    100010: Dai_Li_Agent1:LeftForeArm
+    100012: Dai_Li_Agent1:LeftHand
+    100014: Dai_Li_Agent1:LeftHandIndex1
+    100016: Dai_Li_Agent1:LeftHandIndex2
+    100018: Dai_Li_Agent1:LeftHandIndex3
+    100020: Dai_Li_Agent1:LeftHandIndex4
+    100022: Dai_Li_Agent1:LeftLeg
+    100024: Dai_Li_Agent1:LeftShoulder
+    100026: Dai_Li_Agent1:LeftToe_End
+    100028: Dai_Li_Agent1:LeftToeBase
+    100030: Dai_Li_Agent1:LeftUpLeg
+    100032: Dai_Li_Agent1:Neck
+    100034: Dai_Li_Agent1:RightArm
+    100036: Dai_Li_Agent1:RightFoot
+    100038: Dai_Li_Agent1:RightForeArm
+    100040: Dai_Li_Agent1:RightHand
+    100042: Dai_Li_Agent1:RightHandIndex1
+    100044: Dai_Li_Agent1:RightHandIndex2
+    100046: Dai_Li_Agent1:RightHandIndex3
+    100048: Dai_Li_Agent1:RightHandIndex4
+    100050: Dai_Li_Agent1:RightLeg
+    100052: Dai_Li_Agent1:RightShoulder
+    100054: Dai_Li_Agent1:RightToe_End
+    100056: Dai_Li_Agent1:RightToeBase
+    100058: Dai_Li_Agent1:RightUpLeg
+    100060: Dai_Li_Agent1:Spine
+    100062: Dai_Li_Agent1:Spine1
+    100064: Dai_Li_Agent1:Spine2
+    100066: //RootNode
+    400000: Dai_Li_Agent1:Head
+    400002: Dai_Li_Agent1:HeadTop_End
+    400004: Dai_Li_Agent1:Hips
+    400006: Dai_Li_Agent1:LeftArm
+    400008: Dai_Li_Agent1:LeftFoot
+    400010: Dai_Li_Agent1:LeftForeArm
+    400012: Dai_Li_Agent1:LeftHand
+    400014: Dai_Li_Agent1:LeftHandIndex1
+    400016: Dai_Li_Agent1:LeftHandIndex2
+    400018: Dai_Li_Agent1:LeftHandIndex3
+    400020: Dai_Li_Agent1:LeftHandIndex4
+    400022: Dai_Li_Agent1:LeftLeg
+    400024: Dai_Li_Agent1:LeftShoulder
+    400026: Dai_Li_Agent1:LeftToe_End
+    400028: Dai_Li_Agent1:LeftToeBase
+    400030: Dai_Li_Agent1:LeftUpLeg
+    400032: Dai_Li_Agent1:Neck
+    400034: Dai_Li_Agent1:RightArm
+    400036: Dai_Li_Agent1:RightFoot
+    400038: Dai_Li_Agent1:RightForeArm
+    400040: Dai_Li_Agent1:RightHand
+    400042: Dai_Li_Agent1:RightHandIndex1
+    400044: Dai_Li_Agent1:RightHandIndex2
+    400046: Dai_Li_Agent1:RightHandIndex3
+    400048: Dai_Li_Agent1:RightHandIndex4
+    400050: Dai_Li_Agent1:RightLeg
+    400052: Dai_Li_Agent1:RightShoulder
+    400054: Dai_Li_Agent1:RightToe_End
+    400056: Dai_Li_Agent1:RightToeBase
+    400058: Dai_Li_Agent1:RightUpLeg
+    400060: Dai_Li_Agent1:Spine
+    400062: Dai_Li_Agent1:Spine1
+    400064: Dai_Li_Agent1:Spine2
+    400066: //RootNode
+    7400000: mixamo.com
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Dai_Li_Agent1:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Dai_Li_Agent1:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: WhipAttack(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:Hips
+      parentName: WhipAttack(Clone)
+      position: {x: -0.0000096649765, y: 0.008399129, z: -0.00010795469}
+      rotation: {x: -0.002170448, y: 0.00047334013, z: 0.012717647, w: 0.9999167}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:Spine
+      parentName: Dai_Li_Agent1:Hips
+      position: {x: -0, y: 0.001207, z: 0.000003}
+      rotation: {x: 0.14533257, y: -0.0026521718, z: -0.0067171543, w: 0.9893565}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:Spine1
+      parentName: Dai_Li_Agent1:Spine
+      position: {x: -0, y: 0.001408, z: 0}
+      rotation: {x: 0.10193762, y: -0.0021876802, z: -0.007879873, w: 0.99475724}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:Spine2
+      parentName: Dai_Li_Agent1:Spine1
+      position: {x: -0, y: 0.0016089999, z: 0}
+      rotation: {x: -0.0019360629, y: -0.0017414927, z: -0.0049786535, w: 0.9999842}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:Neck
+      parentName: Dai_Li_Agent1:Spine2
+      position: {x: -0, y: 0.0018109999, z: 0}
+      rotation: {x: -0.09467381, y: 0.0027632483, z: 0.0028833018, w: 0.9955004}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:Head
+      parentName: Dai_Li_Agent1:Neck
+      position: {x: -0, y: 0.000994, z: -0.000033}
+      rotation: {x: 0.00866951, y: 0.0026717677, z: -0.00030106516, w: 0.9999588}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:HeadTop_End
+      parentName: Dai_Li_Agent1:Head
+      position: {x: -0, y: 0.002841, z: -0.000093999995}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftShoulder
+      parentName: Dai_Li_Agent1:Spine2
+      position: {x: -0.000594, y: 0.0014429999, z: 0.000003}
+      rotation: {x: 0.70210594, y: -0.4606063, z: 0.40028918, w: 0.36695758}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftArm
+      parentName: Dai_Li_Agent1:LeftShoulder
+      position: {x: -0, y: 0.00139, z: 0}
+      rotation: {x: -0.12047589, y: 0.16179006, z: 0.081570625, w: 0.97604084}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftForeArm
+      parentName: Dai_Li_Agent1:LeftArm
+      position: {x: -0, y: 0.0026399998, z: 0}
+      rotation: {x: -0.004787354, y: -0.15521294, z: -0.0027487122, w: 0.9878656}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftHand
+      parentName: Dai_Li_Agent1:LeftForeArm
+      position: {x: -0, y: 0.002829, z: 0}
+      rotation: {x: -0.06951593, y: 0.37642223, z: -0.19384296, w: 0.9032712}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftHandIndex1
+      parentName: Dai_Li_Agent1:LeftHand
+      position: {x: -0, y: 0.001331, z: 0}
+      rotation: {x: 0.07050484, y: 0.012388344, z: 0.027318059, w: 0.9970604}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftHandIndex2
+      parentName: Dai_Li_Agent1:LeftHandIndex1
+      position: {x: -0, y: 0.00016899999, z: 0}
+      rotation: {x: -0.06397229, y: 0.005092075, z: -0.15690732, w: 0.9855261}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftHandIndex3
+      parentName: Dai_Li_Agent1:LeftHandIndex2
+      position: {x: -0.000088999994, y: 0.000263, z: 0.000054}
+      rotation: {x: 0.028115513, y: 0.03719399, z: -0.12823777, w: 0.9906469}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftHandIndex4
+      parentName: Dai_Li_Agent1:LeftHandIndex3
+      position: {x: -0.000116999996, y: 0.000172, z: 0.000035999998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightShoulder
+      parentName: Dai_Li_Agent1:Spine2
+      position: {x: 0.000594, y: 0.0014429999, z: -0.000002}
+      rotation: {x: 0.67860836, y: 0.46820235, z: -0.43218344, w: 0.36536938}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightArm
+      parentName: Dai_Li_Agent1:RightShoulder
+      position: {x: -0, y: 0.00139, z: 0}
+      rotation: {x: -0.12447302, y: -0.14319088, z: -0.07530095, w: 0.9789447}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightForeArm
+      parentName: Dai_Li_Agent1:RightArm
+      position: {x: -0, y: 0.0026409999, z: 0}
+      rotation: {x: -0.013075551, y: -0.007811739, z: 0.0021144447, w: 0.9998818}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightHand
+      parentName: Dai_Li_Agent1:RightForeArm
+      position: {x: -0, y: 0.0028279999, z: 0}
+      rotation: {x: 0.095844, y: -0.13537444, z: 0.0057193497, w: 0.98613137}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightHandIndex1
+      parentName: Dai_Li_Agent1:RightHand
+      position: {x: -0, y: 0.00074600003, z: 0}
+      rotation: {x: 0.06827041, y: 0.1844133, z: -0.015329706, w: 0.98035496}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightHandIndex2
+      parentName: Dai_Li_Agent1:RightHandIndex1
+      position: {x: -0, y: 0.00057599996, z: 0}
+      rotation: {x: 0.16868924, y: 0.018000158, z: -0.10001989, w: 0.9804162}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightHandIndex3
+      parentName: Dai_Li_Agent1:RightHandIndex2
+      position: {x: -0.00006699999, y: 0.000294, z: -0.000088999994}
+      rotation: {x: 0.009560807, y: 0.016326046, z: 0.104116075, w: 0.99438524}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightHandIndex4
+      parentName: Dai_Li_Agent1:RightHandIndex3
+      position: {x: -0.000031, y: 0.00048099997, z: -0.000131}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftUpLeg
+      parentName: Dai_Li_Agent1:Hips
+      position: {x: -0.000726, y: -0.00067100005, z: -0.000023}
+      rotation: {x: -0.10849274, y: 0.09737174, z: 0.984315, w: 0.09935833}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftLeg
+      parentName: Dai_Li_Agent1:LeftUpLeg
+      position: {x: -0, y: 0.003519, z: 0}
+      rotation: {x: -0.3187988, y: -0.013966208, z: 0.08059582, w: 0.9442863}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftFoot
+      parentName: Dai_Li_Agent1:LeftLeg
+      position: {x: -0, y: 0.002813, z: 0}
+      rotation: {x: 0.54780173, y: 0.072939806, z: -0.007758338, w: 0.8333864}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftToeBase
+      parentName: Dai_Li_Agent1:LeftFoot
+      position: {x: -0, y: 0.002088, z: 0}
+      rotation: {x: 0.44619572, y: -0.16930328, z: 0.1799004, w: 0.86016375}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:LeftToe_End
+      parentName: Dai_Li_Agent1:LeftToeBase
+      position: {x: -0, y: 0.0013629999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightUpLeg
+      parentName: Dai_Li_Agent1:Hips
+      position: {x: 0.000726, y: -0.00067100005, z: -0.000039}
+      rotation: {x: 0.18461378, y: 0.10223243, z: 0.9754966, w: -0.062230762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightLeg
+      parentName: Dai_Li_Agent1:RightUpLeg
+      position: {x: -0, y: 0.003519, z: 0}
+      rotation: {x: -0.33149877, y: 0.059015725, z: -0.027825471, w: 0.9411968}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightFoot
+      parentName: Dai_Li_Agent1:RightLeg
+      position: {x: -0, y: 0.0028099997, z: 0}
+      rotation: {x: 0.5514582, y: -0.069490395, z: -0.021732826, w: 0.8310191}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightToeBase
+      parentName: Dai_Li_Agent1:RightFoot
+      position: {x: -0, y: 0.00209, z: 0}
+      rotation: {x: 0.41769525, y: 0.08647667, z: -0.1987712, w: 0.88235056}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dai_Li_Agent1:RightToe_End
+      parentName: Dai_Li_Agent1:RightToeBase
+      position: {x: -0, y: 0.001384, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
