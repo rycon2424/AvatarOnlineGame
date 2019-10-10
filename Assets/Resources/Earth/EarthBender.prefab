@@ -732,6 +732,7 @@ MonoBehaviour:
   _health: 100
   _maxHealth: 0
   canMove: 1
+  _damageReduction: 1
   rotateTowardsCamera: 0
 --- !u!114 &8783688603642312896
 MonoBehaviour:

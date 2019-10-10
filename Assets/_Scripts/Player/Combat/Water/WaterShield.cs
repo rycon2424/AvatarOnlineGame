@@ -8,7 +8,7 @@ public class WaterShield : Shield
     private List<GameObject> _shieldParts;
 
     [SerializeField]
-    private int _damageReduction;
+    private float _damageReduction;
 
     private PlayerCombat _playerCombat;
 
