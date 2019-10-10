@@ -19,7 +19,7 @@ public class PlayerController : UsingOnline
     [HideInInspector]
     public bool canMove = true;
     [HideInInspector]
-    public int _damageReduction = 1;
+    public float _damageReduction = 1;
 
     public bool rotateTowardsCamera;
 
@@ -62,7 +62,8 @@ public class PlayerController : UsingOnline
 
     public void TakeDamage(float damage)
     {
-        _health -= Mathf.RoundToInt(damage / _damageReduction);
+        damage /= _damageReduction;
+        _health -= Mathf.RoundToInt(damage);
         pu.UpdateHealth(_health);
         if (pv.IsMine == true)
         {

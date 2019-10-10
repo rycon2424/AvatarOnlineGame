@@ -6322,7 +6322,7 @@ MonoBehaviour:
   - {fileID: 7666637212270222476}
   - {fileID: 5741298986452196695}
   - {fileID: 2551146454299962511}
-  _damageReduction: 50
+  _damageReduction: 33
 --- !u!1 &3321020004709571816
 GameObject:
   m_ObjectHideFlags: 0
