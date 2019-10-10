@@ -77,6 +77,7 @@ public class PlayerController : UsingOnline
         if (_health < 1)
         {
             Death();
+            rotateTowardsCamera = false;
             Invoke("Respawn", _respawnTime);
         }
     }
@@ -84,11 +85,11 @@ public class PlayerController : UsingOnline
     void Death()
     {
         anim.Play("Death");
-
     }
 
     void Respawn()
     {
+        rotateTowardsCamera = true;
         transform.position = Vector3.zero;
         _health = _maxHealth;
         pv.RPC("SyncHealth", RpcTarget.All, _health);
