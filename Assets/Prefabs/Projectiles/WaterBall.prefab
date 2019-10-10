@@ -192,30 +192,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
-      propertyPath: moveWithTransform
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.39215687
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400012, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
-      propertyPath: UseSharedMaterial
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
       propertyPath: EffectOnHit
       value: 
       objectReference: {fileID: 5249717659989922950}
+    - target: {fileID: 11400012, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: UseSharedMaterial
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
       value: 3
@@ -230,7 +214,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.39215687
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: simulationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800002, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: simulationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13500000, guid: b70016a879bbfc144a7ef8cf21f79396, type: 3}

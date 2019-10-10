@@ -38,7 +38,7 @@ Material:
     m_Floats:
     - _BumpAmt: 100
     - _CubeMapOpacity: 0.08928572
-    - _Cutoff: 0.4
+    - _Cutoff: 1
     - _FPOW: 2
     - _Height: 0.35714284
     - _OffsetHeightMap: 1
@@ -47,7 +47,7 @@ Material:
     - _R0: 0.05
     - _Shininess: 10.000001
     m_Colors:
-    - _Color: {r: 0.72156864, g: 0.8787906, b: 1, a: 1}
-    - _ReflectColor: {r: 0.44766438, g: 0.47030485, b: 0.50735295, a: 1}
-    - _RimColor: {r: 0.49264705, g: 0.5801218, b: 1, a: 1}
+    - _Color: {r: 0.5801887, g: 0.81670207, b: 1, a: 1}
+    - _ReflectColor: {r: 0.5246529, g: 0.8156146, b: 0.8490566, a: 1}
+    - _RimColor: {r: 0.21181916, g: 0.265793, b: 0.5283019, a: 1}
     - _SpecColor: {r: 0.8014706, g: 0.8603448, b: 1, a: 1}

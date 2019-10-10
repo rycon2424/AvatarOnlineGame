@@ -4802,7 +4802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3860361800924613508
 Transform:
   m_ObjectHideFlags: 0
@@ -6048,6 +6048,7 @@ GameObject:
   - component: {fileID: 5705989360883074273}
   - component: {fileID: 1900467475747173761}
   - component: {fileID: 4328320391226154830}
+  - component: {fileID: 5234123577831419253}
   m_Layer: 9
   m_Name: WaterBender
   m_TagString: Untagged
@@ -6116,6 +6117,7 @@ MonoBehaviour:
   _health: 100
   _maxHealth: 0
   canMove: 1
+  _damageReduction: 1
   rotateTowardsCamera: 0
 --- !u!143 &3321020004709669567
 CharacterController:
@@ -6251,7 +6253,7 @@ MonoBehaviour:
   _heavyAttack: {fileID: 4328320391226154830}
   _ultimate: {fileID: 4328320391226154830}
   _melee: {fileID: 4328320391226154830}
-  _shield: {fileID: 4328320391226154830}
+  _shield: {fileID: 5234123577831419253}
 --- !u!114 &1900467475747173761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6298,6 +6300,29 @@ MonoBehaviour:
   _range: 1
   _spawnPosition:
   - {fileID: 9110286926743715196}
+--- !u!114 &5234123577831419253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3321020004709571814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dd2a737eced0a4690025674327e987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pv: {fileID: 0}
+  _isReady: 1
+  _isReadyAnimating: 1
+  _coolDown: 12
+  _attack: 4
+  _shieldDuration: 8
+  _shieldParts:
+  - {fileID: 7666637212270222476}
+  - {fileID: 5741298986452196695}
+  - {fileID: 2551146454299962511}
+  _damageReduction: 50
 --- !u!1 &3321020004709571816
 GameObject:
   m_ObjectHideFlags: 0
@@ -16894,7 +16919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6140437007224263696
 Transform:
   m_ObjectHideFlags: 0
@@ -21673,7 +21698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4484314176464412426
 Transform:
   m_ObjectHideFlags: 0

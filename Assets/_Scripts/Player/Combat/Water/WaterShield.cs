@@ -7,6 +7,9 @@ public class WaterShield : Shield
     [SerializeField]
     private List<GameObject> _shieldParts;
 
+    [SerializeField]
+    private int _damageReduction;
+
     private PlayerCombat _playerCombat;
 
     public override void UseMove(PlayerCombat playerCombat)
@@ -21,7 +24,8 @@ public class WaterShield : Shield
         {
             _shieldParts[i].SetActive(true);
         }
-        //_playerCombat._playerController();
+        _playerCombat._playerController._damageReduction = _damageReduction;
+        Invoke("ShieldEnd", _shieldDuration);
     }
 
     public void ShieldEnd()
@@ -30,5 +34,6 @@ public class WaterShield : Shield
         {
             _shieldParts[i].SetActive(false);
         }
+        _playerCombat._playerController._damageReduction = 1;
     }
 }
