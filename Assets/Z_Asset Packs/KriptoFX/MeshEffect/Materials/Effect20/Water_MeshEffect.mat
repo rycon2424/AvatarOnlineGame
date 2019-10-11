@@ -92,7 +92,7 @@ Material:
     - _FresnelPow: 2.5
     - _FresnelR0: -0.2
     - _Glossiness: 0.5
-    - _Height: 0.00125
+    - _Height: 0
     - _InvFade: 3
     - _Metallic: 0
     - _Mode: 0

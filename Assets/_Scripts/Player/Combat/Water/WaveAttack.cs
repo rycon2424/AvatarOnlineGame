@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class WaveAttack : ProjectileBased
 {
-    public override void UseMove(PlayerCombat playerCombat)
-    {
-        base.UseMove(playerCombat);
-    }
-
-    public void WaterWave()
+   public void WaterWave()
     {
         for (int i = 0; i < _spawnPosition.Count; i++)
         {

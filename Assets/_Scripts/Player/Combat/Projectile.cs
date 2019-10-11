@@ -13,6 +13,9 @@ public class Projectile : MonoBehaviour
     [HideInInspector]
     public float _speed = 0;
 
+    [SerializeField]
+    protected bool _destroyByBullet = true;
+
     protected int _damage = 0;
     protected float _range = 0;
 
@@ -52,6 +55,11 @@ public class Projectile : MonoBehaviour
         }
         if (_speed != 0)
         {
+            Projectile projectile = collider.gameObject.GetComponent<Projectile>();
+            if (projectile != null && !_destroyByBullet)
+            {
+                return;
+            }
             Destroy();
         }
     }

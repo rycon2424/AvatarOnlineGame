@@ -61,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
         m_Texture: {fileID: 2800000, guid: fd1e47788d217004b8b7325ef23ad5d0, type: 3}
-        m_Scale: {x: 1.5, y: 1}
+        m_Scale: {x: 2, y: 5}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -85,15 +85,15 @@ Material:
     - _Cutout: 1.042
     - _CutoutThreshold: 0
     - _DetailNormalMapScale: 1
-    - _Distortion: 200
+    - _Distortion: 1
     - _DstBlend: 0
     - _FPOW: 0.3
     - _FresnelDistort: -300
     - _FresnelPow: 2
     - _FresnelR0: -0.2
     - _Glossiness: 0.5
-    - _Height: 0.1
-    - _InvFade: 3
+    - _Height: 0
+    - _InvFade: 100
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -101,7 +101,7 @@ Material:
     - _OffsetYHeightMap: 0
     - _Parallax: 0.02
     - _R0: 0.05
-    - _RefractiveStrength: -0.25
+    - _RefractiveStrength: -1
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseAlphaCliping: 0
@@ -120,7 +120,7 @@ Material:
     - _DropWavesScale: {r: 1, g: 0.5, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 0.6838236, g: 1.0947263, b: 1.5, a: 1}
-    - _HeightUVScrollDistort: {r: 0, g: 10, b: 0, a: 0}
+    - _HeightUVScrollDistort: {r: 10, g: 0, b: 0, a: 0}
     - _MainColor: {r: 0.994853, g: 1.0477891, b: 1.1, a: 1}
     - _NoiseScale: {r: 0, g: 0, b: 0, a: 0}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
