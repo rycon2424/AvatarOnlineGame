@@ -44,6 +44,12 @@ public class RockPunch : ProjectileBased
         {
             yield return new WaitForEndOfFrame();
             _spawnedProjectile.transform.position = Vector3.Lerp(_spawnedProjectile.transform.position, _spawnPosition[0].position, _lerpSpeed * Time.deltaTime);
+
+            if (!_playerCombat._playerController._isAlive)
+            {
+                _lerp = false;
+                Destroy(_spawnedProjectile.gameObject);
+            }
         }
     }
 }

@@ -264,6 +264,7 @@ MonoBehaviour:
   _health: 100
   _maxHealth: 0
   canMove: 1
+  _isAlive: 1
   _damageReduction: 1
   rotateTowardsCamera: 1
 --- !u!143 &6021810497504790012

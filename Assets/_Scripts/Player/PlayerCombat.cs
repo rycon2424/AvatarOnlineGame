@@ -41,10 +41,26 @@ public class PlayerCombat : UsingOnline
 
     private void Update()
     {
+        if (!_playerController._isAlive)
+        {
+            _lightAttack._isReady = true;
+            _lightAttack._isReadyAnimating = true;
+            _heavyAttack._isReady = true;
+            _heavyAttack._isReadyAnimating = true;
+            _melee._isReady = true;
+            _melee._isReadyAnimating = true;
+            _shield._isReady = true;
+            _shield._isReadyAnimating = true;
+            _ultimate._isReady = true;
+            _ultimate._isReadyAnimating = true;
+            return;
+        }
+
         if (pv.IsMine == false)
         {
             return;
         }
+
         if (_lightAttack._isReadyAnimating && _heavyAttack._isReadyAnimating && _ultimate._isReadyAnimating && _melee._isReadyAnimating && _shield._isReadyAnimating)
         {
             if (Input.GetKey(KeyCode.Mouse0))

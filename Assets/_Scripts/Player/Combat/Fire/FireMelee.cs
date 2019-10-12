@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class FireMelee : RaycastBased
 {
-    private PlayerCombat _playerCombat;
-
-    public override void UseMove(PlayerCombat playerCombat)
-    {
-        base.UseMove(playerCombat);
-        _playerCombat = playerCombat;
-    }
-    
     public void MeleeAttack()
     {
         RaycastHit hit;

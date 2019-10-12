@@ -7,18 +7,6 @@ public class FlameDash : Moves
     public GameObject dashEffect;
     public GameObject flameTrail;
     public int _damage;
-    private PlayerCombat _playerCombat;
-
-    public override void UseMove(PlayerCombat playerCombat)
-    {
-        base.UseMove(playerCombat);
-        _playerCombat = playerCombat;
-    }
-
-    void Update()
-    {
-
-    }
 
     public void EnableEffect()
     {

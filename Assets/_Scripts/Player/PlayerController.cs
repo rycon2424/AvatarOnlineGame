@@ -8,10 +8,13 @@ public class PlayerController : UsingOnline
     [SerializeField]
     private float _respawnTime;
 
+    [SerializeField]
+    private Transform _healthBarCanvas;
+
     private Animator anim;
     private Transform playerCamera;
     private PlayerUI pu;
-    
+
     public int _health;
 
     [HideInInspector]
@@ -19,12 +22,15 @@ public class PlayerController : UsingOnline
     [HideInInspector]
     public bool canMove = true;
     [HideInInspector]
+    public bool _isAlive = true;
+    [HideInInspector]
     public float _damageReduction = 1;
 
     public bool rotateTowardsCamera;
 
     void Start()
     {
+        _maxHealth = _health;
         anim = GetComponent<Animator>();
         playerCamera = GetComponentInChildren<OrbitCamera>().transform;
         pu = GetComponent<PlayerUI>();
@@ -34,6 +40,7 @@ public class PlayerController : UsingOnline
         //De if statement om te checken of jij de controle hebt over dat character
         if (pv.IsMine == false)
         {
+            _healthBarCanvas.gameObject.SetActive(true);
             return;
         }
 
@@ -43,13 +50,16 @@ public class PlayerController : UsingOnline
         playerCamera.GetComponent<Camera>().enabled = true;
         playerCamera.GetComponent<AudioListener>().enabled = true;
     }
-    
+
     void Update()
     {
+
+
         if (rotateTowardsCamera)
         {
             RotateToLook();
         }
+            HealthBar();
         if (pv.IsMine == false)
         {
             return;
@@ -57,6 +67,14 @@ public class PlayerController : UsingOnline
         if (canMove)
         {
             Movement();
+        }
+    }
+
+    private void HealthBar()
+    {
+        if (Camera.current != null)
+        {
+            _healthBarCanvas.LookAt(Camera.current.transform);
         }
     }
 
@@ -78,23 +96,37 @@ public class PlayerController : UsingOnline
         if (_health < 1)
         {
             Death();
-            rotateTowardsCamera = false;
-            Invoke("Respawn", _respawnTime);
         }
     }
 
     void Death()
     {
+        rotateTowardsCamera = false;
+        _isAlive = false;
         anim.Play("Death");
+        Invoke("RespawnTime", _respawnTime);
     }
 
+    void RespawnTime()
+    {
+        if (pv.IsMine == true)
+        {
+            pv.RPC("Respawn", RpcTarget.All);
+        }
+    }
+
+    [PunRPC]
     void Respawn()
     {
         rotateTowardsCamera = true;
-        transform.position = Vector3.zero;
         _health = _maxHealth;
-        pv.RPC("SyncHealth", RpcTarget.All, _health);
+        pu.UpdateHealth(_health);
+        if (pv.IsMine == true)
+        {
+            pv.RPC("SyncHealth", RpcTarget.All, _health);
+        }
         anim.Play("Walk");
+        _isAlive = true;
     }
 
     void Movement()

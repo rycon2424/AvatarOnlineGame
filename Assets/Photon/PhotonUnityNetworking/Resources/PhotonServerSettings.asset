@@ -40,5 +40,6 @@ MonoBehaviour:
   - Shield
   - SyncHealth
   - Ultimate
+  - Respawn
   DisableAutoOpenWizard: 1
   ShowSettings: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaterWhip : RaycastBased
 {
     private bool _castRays;
+    private List<PlayerController> _hitPlayer = new List<PlayerController>();
 
     public void StartWhip()
     {
@@ -15,6 +16,7 @@ public class WaterWhip : RaycastBased
     public void EndWhip()
     {
         _castRays = false;
+        _hitPlayer.Clear();
     }
     private IEnumerator CastRays()
     {
@@ -24,16 +26,29 @@ public class WaterWhip : RaycastBased
             for (int i = 0; i < _spawnPosition.Count; i++)
             {
                 RaycastHit hit;
-                //Debug.DrawRay(_spawnPosition[i].position, _spawnPosition[i].up, Color.blue, 5);
+                Debug.DrawRay(_spawnPosition[i].position, _spawnPosition[i].up, Color.blue, 5);
                 if (Physics.Raycast(_spawnPosition[i].position, _spawnPosition[i].up, out hit, _range))
                 {
-                    PlayerController player = hit.collider.GetComponent<PlayerController>();
-                    if (player != null)
-                    {
-                        player.TakeDamage(_damage);
-                    }
+                    CheckPlayer(hit);
                 }
             }
+        }
+    }
+
+    private void CheckPlayer(RaycastHit hit)
+    {
+        PlayerController player = hit.collider.GetComponent<PlayerController>();
+        if (player != null)
+        {
+            for (int i = 0; i < _hitPlayer.Count; i++)
+            {
+                if (player == _hitPlayer[i])
+                {
+
+                }
+            }
+            player.TakeDamage(_damage);
+            _hitPlayer.Add(player);
         }
     }
 }

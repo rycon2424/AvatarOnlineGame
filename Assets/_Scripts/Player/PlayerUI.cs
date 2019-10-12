@@ -9,6 +9,9 @@ public class PlayerUI : MonoBehaviour
     private GameObject UI;
 
     [SerializeField]
+    private Text _playerName;
+
+    [SerializeField]
     private List<Image> _images;
 
     [SerializeField]
@@ -22,11 +25,12 @@ public class PlayerUI : MonoBehaviour
     {
         pc = GetComponent<PlayerController>();
         healthBar.value = pc._maxHealth;
+        _playerName.text = pc.pv.Owner.NickName;
+        UpdateHealth(pc._health);
         if (pc.pv.IsMine == false)
         {
             UI.SetActive(false);
         }
-        UpdateHealth(pc._health);
     }
 
     public void UpdateHealth(int health)
