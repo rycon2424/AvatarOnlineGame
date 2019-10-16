@@ -56,7 +56,8 @@ public class Projectile : MonoBehaviour
         if (_speed != 0)
         {
             Projectile projectile = collider.gameObject.GetComponent<Projectile>();
-            if (projectile != null && !_destroyByBullet)
+            Deflector deflector = collider.gameObject.GetComponent<Deflector>();
+            if ((projectile != null && !_destroyByBullet) || deflector != null)
             {
                 return;
             }

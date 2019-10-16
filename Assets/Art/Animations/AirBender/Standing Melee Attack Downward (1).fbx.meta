@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: d383d47cf054cc548966b4023478c184
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Professor_Zei:Head
+    100002: Professor_Zei:HeadTop_End
+    100004: Professor_Zei:Hips
+    100006: Professor_Zei:LeftArm
+    100008: Professor_Zei:LeftFoot
+    100010: Professor_Zei:LeftForeArm
+    100012: Professor_Zei:LeftHand
+    100014: Professor_Zei:LeftHandIndex1
+    100016: Professor_Zei:LeftHandIndex2
+    100018: Professor_Zei:LeftHandIndex3
+    100020: Professor_Zei:LeftHandIndex4
+    100022: Professor_Zei:LeftLeg
+    100024: Professor_Zei:LeftShoulder
+    100026: Professor_Zei:LeftToe_End
+    100028: Professor_Zei:LeftToeBase
+    100030: Professor_Zei:LeftUpLeg
+    100032: Professor_Zei:Neck
+    100034: Professor_Zei:RightArm
+    100036: Professor_Zei:RightFoot
+    100038: Professor_Zei:RightForeArm
+    100040: Professor_Zei:RightHand
+    100042: Professor_Zei:RightHandIndex1
+    100044: Professor_Zei:RightHandIndex2
+    100046: Professor_Zei:RightHandIndex3
+    100048: Professor_Zei:RightHandIndex4
+    100050: Professor_Zei:RightLeg
+    100052: Professor_Zei:RightShoulder
+    100054: Professor_Zei:RightToe_End
+    100056: Professor_Zei:RightToeBase
+    100058: Professor_Zei:RightUpLeg
+    100060: Professor_Zei:Spine
+    100062: Professor_Zei:Spine1
+    100064: Professor_Zei:Spine2
+    100066: //RootNode
+    400000: Professor_Zei:Head
+    400002: Professor_Zei:HeadTop_End
+    400004: Professor_Zei:Hips
+    400006: Professor_Zei:LeftArm
+    400008: Professor_Zei:LeftFoot
+    400010: Professor_Zei:LeftForeArm
+    400012: Professor_Zei:LeftHand
+    400014: Professor_Zei:LeftHandIndex1
+    400016: Professor_Zei:LeftHandIndex2
+    400018: Professor_Zei:LeftHandIndex3
+    400020: Professor_Zei:LeftHandIndex4
+    400022: Professor_Zei:LeftLeg
+    400024: Professor_Zei:LeftShoulder
+    400026: Professor_Zei:LeftToe_End
+    400028: Professor_Zei:LeftToeBase
+    400030: Professor_Zei:LeftUpLeg
+    400032: Professor_Zei:Neck
+    400034: Professor_Zei:RightArm
+    400036: Professor_Zei:RightFoot
+    400038: Professor_Zei:RightForeArm
+    400040: Professor_Zei:RightHand
+    400042: Professor_Zei:RightHandIndex1
+    400044: Professor_Zei:RightHandIndex2
+    400046: Professor_Zei:RightHandIndex3
+    400048: Professor_Zei:RightHandIndex4
+    400050: Professor_Zei:RightLeg
+    400052: Professor_Zei:RightShoulder
+    400054: Professor_Zei:RightToe_End
+    400056: Professor_Zei:RightToeBase
+    400058: Professor_Zei:RightUpLeg
+    400060: Professor_Zei:Spine
+    400062: Professor_Zei:Spine1
+    400064: Professor_Zei:Spine2
+    400066: //RootNode
+    7400000: mixamo.com
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Professor_Zei:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Professor_Zei:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Standing Melee Attack Downward (1)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:Hips
+      parentName: Standing Melee Attack Downward (1)(Clone)
+      position: {x: 0.000021159434, y: 0.009261972, z: 0.000035191293}
+      rotation: {x: -0.10697891, y: 0.0908679, z: -0.038705, w: 0.98934346}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:Spine
+      parentName: Professor_Zei:Hips
+      position: {x: -0, y: 0.000966, z: -0.000041999996}
+      rotation: {x: 0.07358206, y: -0.026106037, z: 0.015247222, w: 0.9968308}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:Spine1
+      parentName: Professor_Zei:Spine
+      position: {x: -0, y: 0.001128, z: 0}
+      rotation: {x: 0.051300995, y: -0.051897243, z: 0.032486748, w: 0.99680465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:Spine2
+      parentName: Professor_Zei:Spine1
+      position: {x: -0, y: 0.001289, z: 0}
+      rotation: {x: -0.051849373, y: -0.05498344, z: 0.02693565, w: 0.9967763}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:Neck
+      parentName: Professor_Zei:Spine2
+      position: {x: -0, y: 0.00145, z: 0}
+      rotation: {x: 0.028308056, y: -0.027244229, z: -0.00037053373, w: 0.9992279}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:Head
+      parentName: Professor_Zei:Neck
+      position: {x: -0, y: 0.000935, z: -0.000008}
+      rotation: {x: 0.00666728, y: -0.027245559, z: 0.00021938274, w: 0.9996065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:HeadTop_End
+      parentName: Professor_Zei:Head
+      position: {x: -0, y: 0.002593, z: -0.000022}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftShoulder
+      parentName: Professor_Zei:Spine2
+      position: {x: -0.00063, y: 0.001205, z: -0.000031}
+      rotation: {x: 0.6095652, y: -0.37216362, z: 0.49729556, w: 0.49256644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftArm
+      parentName: Professor_Zei:LeftShoulder
+      position: {x: -0, y: 0.001314, z: 0}
+      rotation: {x: -0.13603117, y: 0.1011517, z: 0.050731782, w: 0.98422056}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftForeArm
+      parentName: Professor_Zei:LeftArm
+      position: {x: -0, y: 0.003173, z: 0}
+      rotation: {x: -0.0052958275, y: 0.17145546, z: -0.02838872, w: 0.98476857}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftHand
+      parentName: Professor_Zei:LeftForeArm
+      position: {x: -0, y: 0.00257, z: 0}
+      rotation: {x: -0.05644745, y: -0.02050372, z: -0.029506816, w: 0.99775887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftHandIndex1
+      parentName: Professor_Zei:LeftHand
+      position: {x: -0, y: 0.001579, z: 0}
+      rotation: {x: 0.006879277, y: 0.015957536, z: -0.049904324, w: 0.9986028}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftHandIndex2
+      parentName: Professor_Zei:LeftHandIndex1
+      position: {x: -0, y: 0.00014399999, z: 0}
+      rotation: {x: 0.008938782, y: 0.0030658243, z: -0.10646253, w: 0.9942718}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftHandIndex3
+      parentName: Professor_Zei:LeftHandIndex2
+      position: {x: -0.000052999996, y: 0.000237, z: 0.000015}
+      rotation: {x: -0.078827955, y: -0.02735349, z: 0.083296776, w: 0.9930255}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftHandIndex4
+      parentName: Professor_Zei:LeftHandIndex3
+      position: {x: -0.000008999999, y: 0.000177, z: 0.000055999997}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightShoulder
+      parentName: Professor_Zei:Spine2
+      position: {x: 0.00063, y: 0.001204, z: 0.000010000001}
+      rotation: {x: 0.58127314, y: 0.39850283, z: -0.48559198, w: 0.51722103}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightArm
+      parentName: Professor_Zei:RightShoulder
+      position: {x: -0, y: 0.001314, z: 0}
+      rotation: {x: -0.028971277, y: -0.0044297567, z: -0.1589053, w: 0.9868587}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightForeArm
+      parentName: Professor_Zei:RightArm
+      position: {x: -0, y: 0.003172, z: 0}
+      rotation: {x: -0.015060499, y: -0.12011289, z: 0.03192234, w: 0.9921326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightHand
+      parentName: Professor_Zei:RightForeArm
+      position: {x: -0, y: 0.0025709998, z: 0}
+      rotation: {x: 0.03101201, y: 0.0223702, z: 0.3098148, w: 0.9500277}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightHandIndex1
+      parentName: Professor_Zei:RightHand
+      position: {x: -0, y: 0.000714, z: 0}
+      rotation: {x: 0.06854415, y: 0.076310575, z: 0.017896976, w: 0.9945643}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightHandIndex2
+      parentName: Professor_Zei:RightHandIndex1
+      position: {x: -0, y: 0.000558, z: 0}
+      rotation: {x: 0.04648365, y: 0.034611814, z: -0.28660026, w: 0.9562957}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightHandIndex3
+      parentName: Professor_Zei:RightHandIndex2
+      position: {x: -0.000221, y: 0.00033399998, z: -0.000033}
+      rotation: {x: 0.011305929, y: 0.049409572, z: 0.22925891, w: 0.9720448}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightHandIndex4
+      parentName: Professor_Zei:RightHandIndex3
+      position: {x: -0.000065, y: 0.000547, z: -0.000057999998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftUpLeg
+      parentName: Professor_Zei:Hips
+      position: {x: -0.00091099995, y: -0.000537, z: -0.000038}
+      rotation: {x: -0.4405963, y: -0.0066687944, z: 0.89604783, w: 0.05411887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftLeg
+      parentName: Professor_Zei:LeftUpLeg
+      position: {x: -0, y: 0.0043639997, z: 0}
+      rotation: {x: -0.3192723, y: -0.18515916, z: 0.0009283421, w: 0.9293979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftFoot
+      parentName: Professor_Zei:LeftLeg
+      position: {x: -0, y: 0.004259, z: 0}
+      rotation: {x: 0.7673984, y: -0.0068165935, z: 0.029159848, w: 0.6404708}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftToeBase
+      parentName: Professor_Zei:LeftFoot
+      position: {x: -0, y: 0.0017399999, z: 0}
+      rotation: {x: 0.28533027, y: 0.065374054, z: 0.024646796, w: 0.95587945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:LeftToe_End
+      parentName: Professor_Zei:LeftToeBase
+      position: {x: -0, y: 0.00067, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightUpLeg
+      parentName: Professor_Zei:Hips
+      position: {x: 0.00091099995, y: -0.000537, z: -0.000033}
+      rotation: {x: 0.10050175, y: 0.01728181, z: 0.98821306, w: -0.11417416}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightLeg
+      parentName: Professor_Zei:RightUpLeg
+      position: {x: -0, y: 0.0043639997, z: 0}
+      rotation: {x: -0.32769623, y: 0.038389653, z: 0.034761727, w: 0.9433626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightFoot
+      parentName: Professor_Zei:RightLeg
+      position: {x: -0, y: 0.00426, z: 0}
+      rotation: {x: 0.7745211, y: -0.060750455, z: -0.09360556, w: 0.62262714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightToeBase
+      parentName: Professor_Zei:RightFoot
+      position: {x: -0, y: 0.0017339999, z: 0}
+      rotation: {x: 0.2709148, y: -0.09141418, z: -0.0030939626, w: 0.9582479}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Professor_Zei:RightToe_End
+      parentName: Professor_Zei:RightToeBase
+      position: {x: -0, y: 0.00067199994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
