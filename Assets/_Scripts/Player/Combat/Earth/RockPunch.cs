@@ -19,11 +19,6 @@ public class RockPunch : ProjectileBased
     {
         base.UseMove(playerCombat);
         _playerCombat = playerCombat;
-        _spawnedProjectile = Instantiate(_projectile, new Vector3(_spawnPosition[0].position.x, _spawnPosition[0].position.y - _rayRange, _spawnPosition[0].position.z), _spawnPosition[0].rotation);
-        if (!_playerCombat.GroundTest(_spawnPosition[0], _spawnedProjectile, _rayRange))
-        {
-            Destroy(_spawnedProjectile.gameObject);
-        }
     }
 
     public void LaunchProjectile()
@@ -36,14 +31,20 @@ public class RockPunch : ProjectileBased
         }
     }
 
-    public IEnumerator LerpProjectile()
+    public IEnumerator LerpProjectile(int LerpPoint)
     {
+        _spawnedProjectile = Instantiate(_projectile, new Vector3(_spawnPosition[0].position.x, _spawnPosition[0].position.y - _rayRange, _spawnPosition[0].position.z), _spawnPosition[0].rotation);
+        if (!_playerCombat.GroundTest(_spawnPosition[LerpPoint], _spawnedProjectile, _rayRange))
+        {
+            Destroy(_spawnedProjectile.gameObject);
+        }
+
         _lerp = true;
 
         while (_lerp && _spawnedProjectile != null)
         {
+            _spawnedProjectile.transform.position = Vector3.Lerp(_spawnedProjectile.transform.position, _spawnPosition[LerpPoint].position, _lerpSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
-            _spawnedProjectile.transform.position = Vector3.Lerp(_spawnedProjectile.transform.position, _spawnPosition[0].position, _lerpSpeed * Time.deltaTime);
 
             if (!_playerCombat._playerController._isAlive)
             {

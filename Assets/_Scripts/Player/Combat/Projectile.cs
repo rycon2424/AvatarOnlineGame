@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour
     protected int _damage = 0;
     protected float _range = 0;
 
-    public void Fired(int damage, float speed, float range)
+    public virtual void Fired(int damage, float speed, float range)
     {
         _damage = damage;
         _speed = speed;

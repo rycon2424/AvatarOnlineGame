@@ -13,7 +13,7 @@ public abstract class Moves : UsingOnline
     [SerializeField]
     private AttackEnum _attack;
 
-    public void DoneAnimating(AttackEnum attack)
+    public virtual void DoneAnimating(AttackEnum attack)
     {
         if (_attack == attack)
         {

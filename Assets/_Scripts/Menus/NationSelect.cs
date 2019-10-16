@@ -6,7 +6,8 @@ using System.IO;
 
 public class NationSelect : MonoBehaviourPun
 {
-    
+    private PlayerController player;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -28,6 +29,9 @@ public class NationSelect : MonoBehaviourPun
                 break;
             case 3:
                 PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender"), Vector3.zero, Quaternion.identity);
+                break;
+            case 4:
+                PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender2"), Vector3.zero, Quaternion.identity);
                 break;
             default:
                 break;
