@@ -1,0 +1,999 @@
+fileFormatVersion: 2
+guid: ef795d3b1ffc76e44bf70f7229d736cd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: General_Fong:Head
+    100004: General_Fong:HeadTop_End
+    100006: General_Fong:Hips
+    100008: General_Fong:LeftArm
+    100010: General_Fong:LeftFoot
+    100012: General_Fong:LeftForeArm
+    100014: General_Fong:LeftHand
+    100016: General_Fong:LeftHandIndex1
+    100018: General_Fong:LeftHandIndex2
+    100020: General_Fong:LeftHandIndex3
+    100022: General_Fong:LeftHandIndex4
+    100024: General_Fong:LeftHandMiddle1
+    100026: General_Fong:LeftHandMiddle2
+    100028: General_Fong:LeftHandMiddle3
+    100030: General_Fong:LeftHandMiddle4
+    100032: General_Fong:LeftHandPinky1
+    100034: General_Fong:LeftHandPinky2
+    100036: General_Fong:LeftHandPinky3
+    100038: General_Fong:LeftHandPinky4
+    100040: General_Fong:LeftHandRing1
+    100042: General_Fong:LeftHandRing2
+    100044: General_Fong:LeftHandRing3
+    100046: General_Fong:LeftHandRing4
+    100048: General_Fong:LeftHandThumb1
+    100050: General_Fong:LeftHandThumb2
+    100052: General_Fong:LeftHandThumb3
+    100054: General_Fong:LeftHandThumb4
+    100056: General_Fong:LeftLeg
+    100058: General_Fong:LeftShoulder
+    100060: General_Fong:LeftToe_End
+    100062: General_Fong:LeftToeBase
+    100064: General_Fong:LeftUpLeg
+    100066: General_Fong:Neck
+    100068: General_Fong:RightArm
+    100070: General_Fong:RightFoot
+    100072: General_Fong:RightForeArm
+    100074: General_Fong:RightHand
+    100076: General_Fong:RightHandIndex1
+    100078: General_Fong:RightHandIndex2
+    100080: General_Fong:RightHandIndex3
+    100082: General_Fong:RightHandIndex4
+    100084: General_Fong:RightHandMiddle1
+    100086: General_Fong:RightHandMiddle2
+    100088: General_Fong:RightHandMiddle3
+    100090: General_Fong:RightHandMiddle4
+    100092: General_Fong:RightHandPinky1
+    100094: General_Fong:RightHandPinky2
+    100096: General_Fong:RightHandPinky3
+    100098: General_Fong:RightHandPinky4
+    100100: General_Fong:RightHandRing1
+    100102: General_Fong:RightHandRing2
+    100104: General_Fong:RightHandRing3
+    100106: General_Fong:RightHandRing4
+    100108: General_Fong:RightHandThumb1
+    100110: General_Fong:RightHandThumb2
+    100112: General_Fong:RightHandThumb3
+    100114: General_Fong:RightHandThumb4
+    100116: General_Fong:RightLeg
+    100118: General_Fong:RightShoulder
+    100120: General_Fong:RightToe_End
+    100122: General_Fong:RightToeBase
+    100124: General_Fong:RightUpLeg
+    100126: General_Fong:Spine
+    100128: General_Fong:Spine1
+    100130: General_Fong:Spine2
+    400000: //RootNode
+    400002: General_Fong:Head
+    400004: General_Fong:HeadTop_End
+    400006: General_Fong:Hips
+    400008: General_Fong:LeftArm
+    400010: General_Fong:LeftFoot
+    400012: General_Fong:LeftForeArm
+    400014: General_Fong:LeftHand
+    400016: General_Fong:LeftHandIndex1
+    400018: General_Fong:LeftHandIndex2
+    400020: General_Fong:LeftHandIndex3
+    400022: General_Fong:LeftHandIndex4
+    400024: General_Fong:LeftHandMiddle1
+    400026: General_Fong:LeftHandMiddle2
+    400028: General_Fong:LeftHandMiddle3
+    400030: General_Fong:LeftHandMiddle4
+    400032: General_Fong:LeftHandPinky1
+    400034: General_Fong:LeftHandPinky2
+    400036: General_Fong:LeftHandPinky3
+    400038: General_Fong:LeftHandPinky4
+    400040: General_Fong:LeftHandRing1
+    400042: General_Fong:LeftHandRing2
+    400044: General_Fong:LeftHandRing3
+    400046: General_Fong:LeftHandRing4
+    400048: General_Fong:LeftHandThumb1
+    400050: General_Fong:LeftHandThumb2
+    400052: General_Fong:LeftHandThumb3
+    400054: General_Fong:LeftHandThumb4
+    400056: General_Fong:LeftLeg
+    400058: General_Fong:LeftShoulder
+    400060: General_Fong:LeftToe_End
+    400062: General_Fong:LeftToeBase
+    400064: General_Fong:LeftUpLeg
+    400066: General_Fong:Neck
+    400068: General_Fong:RightArm
+    400070: General_Fong:RightFoot
+    400072: General_Fong:RightForeArm
+    400074: General_Fong:RightHand
+    400076: General_Fong:RightHandIndex1
+    400078: General_Fong:RightHandIndex2
+    400080: General_Fong:RightHandIndex3
+    400082: General_Fong:RightHandIndex4
+    400084: General_Fong:RightHandMiddle1
+    400086: General_Fong:RightHandMiddle2
+    400088: General_Fong:RightHandMiddle3
+    400090: General_Fong:RightHandMiddle4
+    400092: General_Fong:RightHandPinky1
+    400094: General_Fong:RightHandPinky2
+    400096: General_Fong:RightHandPinky3
+    400098: General_Fong:RightHandPinky4
+    400100: General_Fong:RightHandRing1
+    400102: General_Fong:RightHandRing2
+    400104: General_Fong:RightHandRing3
+    400106: General_Fong:RightHandRing4
+    400108: General_Fong:RightHandThumb1
+    400110: General_Fong:RightHandThumb2
+    400112: General_Fong:RightHandThumb3
+    400114: General_Fong:RightHandThumb4
+    400116: General_Fong:RightLeg
+    400118: General_Fong:RightShoulder
+    400120: General_Fong:RightToe_End
+    400122: General_Fong:RightToeBase
+    400124: General_Fong:RightUpLeg
+    400126: General_Fong:Spine
+    400128: General_Fong:Spine1
+    400130: General_Fong:Spine2
+    7400000: mixamo.com
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 106
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: General_Fong:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: General_Fong:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Ultimate(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:Hips
+      parentName: Ultimate(Clone)
+      position: {x: 0.00012305718, y: 0.0075880056, z: 0.00006341829}
+      rotation: {x: -0.16779827, y: 0.008464935, z: -0.04345031, w: 0.984827}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:Spine
+      parentName: General_Fong:Hips
+      position: {x: -0, y: 0.001298, z: 0.000043}
+      rotation: {x: 0.11389957, y: -0.0025306905, z: 0.023245402, w: 0.99321705}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:Spine1
+      parentName: General_Fong:Spine
+      position: {x: -0, y: 0.001516, z: 0}
+      rotation: {x: 0.07344328, y: -0.0022187857, z: 0.04873329, w: 0.99610555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:Spine2
+      parentName: General_Fong:Spine1
+      position: {x: -0, y: 0.0017319999, z: 0}
+      rotation: {x: 0.07363842, y: -0.0022295748, z: 0.048728846, w: 0.99609137}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:Neck
+      parentName: General_Fong:Spine2
+      position: {x: -0, y: 0.001949, z: 0}
+      rotation: {x: -0.07016722, y: -0.078353986, z: -0.019099012, w: 0.9942698}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:Head
+      parentName: General_Fong:Neck
+      position: {x: -0, y: 0.000236, z: 0.000031}
+      rotation: {x: -0.05372328, y: -0.07802754, z: -0.020391509, w: 0.9952938}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:HeadTop_End
+      parentName: General_Fong:Head
+      position: {x: -0, y: 0.002647, z: 0.000346}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftShoulder
+      parentName: General_Fong:Spine2
+      position: {x: -0.00090000004, y: 0.0015929999, z: 0.000011}
+      rotation: {x: 0.5454796, y: -0.41054854, z: 0.5168405, w: 0.5165055}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftArm
+      parentName: General_Fong:LeftShoulder
+      position: {x: -0, y: 0.001869, z: 0}
+      rotation: {x: -0.13705721, y: 0.2125083, z: 0.031064104, w: 0.96700084}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftForeArm
+      parentName: General_Fong:LeftArm
+      position: {x: -0, y: 0.0025389998, z: 0}
+      rotation: {x: -0.020257851, y: -0.073931016, z: -0.024424046, w: 0.99675846}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHand
+      parentName: General_Fong:LeftForeArm
+      position: {x: -0, y: 0.002482, z: 0}
+      rotation: {x: -0.08398143, y: -0.17129914, z: 0.0010286584, w: 0.98163265}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandThumb1
+      parentName: General_Fong:LeftHand
+      position: {x: 0.00029899998, y: 0.00042, z: 0.000161}
+      rotation: {x: -0.005007534, y: -0.045849297, z: -0.40088427, w: 0.914967}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandThumb2
+      parentName: General_Fong:LeftHandThumb1
+      position: {x: -0.000011, y: 0.000432, z: 0}
+      rotation: {x: 0.0080139125, y: 0.10370199, z: 0.13014409, w: 0.9860245}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandThumb3
+      parentName: General_Fong:LeftHandThumb2
+      position: {x: 0.000068999994, y: 0.000417, z: 0}
+      rotation: {x: -0.017449595, y: -0.008834659, z: -0.1474267, w: 0.9888796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandThumb4
+      parentName: General_Fong:LeftHandThumb3
+      position: {x: -0.000057999998, y: 0.000343, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandIndex1
+      parentName: General_Fong:LeftHand
+      position: {x: 0.00037300002, y: 0.001415, z: 0.000061}
+      rotation: {x: -0.08855413, y: -0.11485688, z: -0.028920585, w: 0.9890044}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandIndex2
+      parentName: General_Fong:LeftHandIndex1
+      position: {x: -0, y: 0.000329, z: 0}
+      rotation: {x: 0.029796708, y: 0.002639315, z: 0.00036020752, w: 0.9995525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandIndex3
+      parentName: General_Fong:LeftHandIndex2
+      position: {x: -0, y: 0.000312, z: 0}
+      rotation: {x: 0.029278684, y: 0.0024324367, z: 0.00035451155, w: 0.99956834}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandIndex4
+      parentName: General_Fong:LeftHandIndex3
+      position: {x: -0, y: 0.00024499997, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandMiddle1
+      parentName: General_Fong:LeftHand
+      position: {x: 0.00010599999, y: 0.0015899999, z: -0.0000069999996}
+      rotation: {x: 0.0034993717, y: -0.070449375, z: -0.019778203, w: 0.99731314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandMiddle2
+      parentName: General_Fong:LeftHandMiddle1
+      position: {x: -0, y: 0.000312, z: 0}
+      rotation: {x: 0.030325493, y: 0.0007405127, z: 0.0011241108, w: 0.99953914}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandMiddle3
+      parentName: General_Fong:LeftHandMiddle2
+      position: {x: -0, y: 0.000318, z: 0}
+      rotation: {x: 0.024270698, y: -0.0023501774, z: 0.0005665482, w: 0.9997025}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandMiddle4
+      parentName: General_Fong:LeftHandMiddle3
+      position: {x: -0, y: 0.00023299998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandRing1
+      parentName: General_Fong:LeftHand
+      position: {x: -0.000119, y: 0.00168, z: 0.000015}
+      rotation: {x: 0.07244839, y: -0.041208666, z: -0.0103682475, w: 0.99646664}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandRing2
+      parentName: General_Fong:LeftHandRing1
+      position: {x: -0.000001, y: 0.000229, z: 0}
+      rotation: {x: 0.030240338, y: 0.0008014473, z: 0.0028599247, w: 0.9995383}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandRing3
+      parentName: General_Fong:LeftHandRing2
+      position: {x: -0, y: 0.000248, z: 0}
+      rotation: {x: 0.025225008, y: 0.0012911978, z: 0.004438275, w: 0.99967116}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandRing4
+      parentName: General_Fong:LeftHandRing3
+      position: {x: 0.000001, y: 0.00014, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandPinky1
+      parentName: General_Fong:LeftHand
+      position: {x: -0.000359, y: 0.0015929999, z: 0.000052}
+      rotation: {x: 0.07483402, y: 0.066102766, z: -0.006106517, w: 0.994984}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandPinky2
+      parentName: General_Fong:LeftHandPinky1
+      position: {x: -0.000001, y: 0.00020899999, z: 0}
+      rotation: {x: 0.023300003, y: -0.00056111783, z: 0.0027592648, w: 0.9997246}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandPinky3
+      parentName: General_Fong:LeftHandPinky2
+      position: {x: -0, y: 0.00018100001, z: 0}
+      rotation: {x: 0.023430282, y: -0.00069354946, z: 0.004864547, w: 0.9997135}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftHandPinky4
+      parentName: General_Fong:LeftHandPinky3
+      position: {x: 0.000001, y: 0.000110999994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightShoulder
+      parentName: General_Fong:Spine2
+      position: {x: 0.00090000004, y: 0.0015929999, z: 0.000012}
+      rotation: {x: 0.60150594, y: 0.35023996, z: -0.5284754, w: 0.48604152}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightArm
+      parentName: General_Fong:RightShoulder
+      position: {x: -0, y: 0.001869, z: 0}
+      rotation: {x: -0.083157964, y: -0.4004598, z: -0.054801777, w: 0.91088605}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightForeArm
+      parentName: General_Fong:RightArm
+      position: {x: -0, y: 0.0025389998, z: 0}
+      rotation: {x: -0.023265513, y: 0.1829322, z: 0.002914346, w: 0.9828459}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHand
+      parentName: General_Fong:RightForeArm
+      position: {x: -0, y: 0.002481, z: 0}
+      rotation: {x: -0.0446188, y: -0.09197683, z: 0.057312652, w: 0.99310863}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandThumb1
+      parentName: General_Fong:RightHand
+      position: {x: -0.000313, y: 0.000399, z: 0.000161}
+      rotation: {x: 0.12339778, y: 0.13805462, z: 0.40007424, w: 0.8975826}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandThumb2
+      parentName: General_Fong:RightHandThumb1
+      position: {x: 0.000038, y: 0.00042399997, z: 0}
+      rotation: {x: 0.00075268745, y: -0.09425954, z: -0.08167615, w: 0.9921914}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandThumb3
+      parentName: General_Fong:RightHandThumb2
+      position: {x: -0, y: 0.00044899998, z: 0}
+      rotation: {x: -0.012805789, y: -0.0064927824, z: -0.081088066, w: 0.99660355}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandThumb4
+      parentName: General_Fong:RightHandThumb3
+      position: {x: -0.000036999998, y: 0.000392, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandIndex1
+      parentName: General_Fong:RightHand
+      position: {x: -0.00037999998, y: 0.0013189999, z: 0.000024}
+      rotation: {x: -0.067545764, y: 0.17542346, z: 0.08672159, w: 0.9783371}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandIndex2
+      parentName: General_Fong:RightHandIndex1
+      position: {x: -0, y: 0.000346, z: 0}
+      rotation: {x: 0.035678275, y: -0.0019497867, z: -0.00054208643, w: 0.9993613}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandIndex3
+      parentName: General_Fong:RightHandIndex2
+      position: {x: -0, y: 0.000348, z: 0}
+      rotation: {x: 0.033351116, y: -0.0017056223, z: -0.00035398747, w: 0.9994422}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandIndex4
+      parentName: General_Fong:RightHandIndex3
+      position: {x: -0, y: 0.000292, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandMiddle1
+      parentName: General_Fong:RightHand
+      position: {x: -0.000109, y: 0.001516, z: 0.000004}
+      rotation: {x: -0.041156795, y: 0.037811484, z: 0.050680142, w: 0.99714994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandMiddle2
+      parentName: General_Fong:RightHandMiddle1
+      position: {x: -0, y: 0.000305, z: 0}
+      rotation: {x: 0.031696886, y: 0.000960227, z: -0.00084202446, w: 0.99949676}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandMiddle3
+      parentName: General_Fong:RightHandMiddle2
+      position: {x: -0, y: 0.000354, z: 0}
+      rotation: {x: 0.026594317, y: 0.004394067, z: -0.00021282087, w: 0.9996367}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandMiddle4
+      parentName: General_Fong:RightHandMiddle3
+      position: {x: -0, y: 0.000272, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandRing1
+      parentName: General_Fong:RightHand
+      position: {x: 0.000114999995, y: 0.00163, z: 0.000017}
+      rotation: {x: 0.05333133, y: -0.08165973, z: -0.030820906, w: 0.9947551}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandRing2
+      parentName: General_Fong:RightHandRing1
+      position: {x: -0, y: 0.000242, z: 0}
+      rotation: {x: 0.03203894, y: 0.00051117677, z: -0.00028049428, w: 0.9994865}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandRing3
+      parentName: General_Fong:RightHandRing2
+      position: {x: -0, y: 0.00025399998, z: 0}
+      rotation: {x: 0.028816108, y: 0.0015275538, z: -0.00066714914, w: 0.99958336}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandRing4
+      parentName: General_Fong:RightHandRing3
+      position: {x: -0, y: 0.000132, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandPinky1
+      parentName: General_Fong:RightHand
+      position: {x: 0.000375, y: 0.0014879999, z: 0.000020000001}
+      rotation: {x: 0.05180679, y: -0.20533761, z: -0.032349017, w: 0.9767836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandPinky2
+      parentName: General_Fong:RightHandPinky1
+      position: {x: -0, y: 0.000248, z: 0}
+      rotation: {x: 0.027553838, y: 0.0012582388, z: -0.0002221418, w: 0.9996195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandPinky3
+      parentName: General_Fong:RightHandPinky2
+      position: {x: -0, y: 0.00020899999, z: 0}
+      rotation: {x: 0.027707942, y: 0.0018349169, z: -0.00020453484, w: 0.99961436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightHandPinky4
+      parentName: General_Fong:RightHandPinky3
+      position: {x: -0, y: 0.000147, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftUpLeg
+      parentName: General_Fong:Hips
+      position: {x: -0.0014129999, y: -0.00072099996, z: -0.000113}
+      rotation: {x: -0.18142171, y: -0.06969275, z: 0.9793053, w: 0.056482244}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftLeg
+      parentName: General_Fong:LeftUpLeg
+      position: {x: -0, y: 0.003594, z: 0}
+      rotation: {x: -0.31420442, y: -0.05078672, z: 0.08056004, w: 0.9445668}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftFoot
+      parentName: General_Fong:LeftLeg
+      position: {x: -0, y: 0.002782, z: 0}
+      rotation: {x: 0.71163434, y: -0.18197587, z: -0.00058283645, w: 0.67857283}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftToeBase
+      parentName: General_Fong:LeftFoot
+      position: {x: -0, y: 0.0019329999, z: 0}
+      rotation: {x: 0.30932635, y: -0.052102398, z: 0.0030528172, w: 0.9495227}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:LeftToe_End
+      parentName: General_Fong:LeftToeBase
+      position: {x: -0, y: 0.00079499994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightUpLeg
+      parentName: General_Fong:Hips
+      position: {x: 0.0014129999, y: -0.00072099996, z: -0.000118}
+      rotation: {x: 0.1812314, y: -0.04381843, z: 0.97322136, w: -0.13444494}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightLeg
+      parentName: General_Fong:RightUpLeg
+      position: {x: -0, y: 0.003594, z: 0}
+      rotation: {x: -0.33080423, y: 0.06637569, z: 0.040771727, w: 0.94047886}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightFoot
+      parentName: General_Fong:RightLeg
+      position: {x: -0, y: 0.002781, z: 0}
+      rotation: {x: 0.7389787, y: 0.1104228, z: -0.10617945, w: 0.65608174}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightToeBase
+      parentName: General_Fong:RightFoot
+      position: {x: -0, y: 0.001957, z: 0}
+      rotation: {x: 0.30426288, y: 0.061501145, z: -0.0074659516, w: 0.9505714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: General_Fong:RightToe_End
+      parentName: General_Fong:RightToeBase
+      position: {x: -0, y: 0.00079099997, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

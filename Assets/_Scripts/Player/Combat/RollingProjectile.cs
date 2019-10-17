@@ -9,16 +9,22 @@ public class RollingProjectile : Projectile
     public override void Fired(int damage, float speed, float range)
     {
         base.Fired(damage, speed, range);
-        _rigidbody.isKinematic = false;
-        _rigidbody.useGravity = true;
+        if (_rigidbody != null)
+        {
+            _rigidbody.isKinematic = false;
+            _rigidbody.useGravity = true;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-        if (player != null)
+        if (_speed != 0)
         {
-            player.TakeDamage(_damage);
+            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            if (player != null)
+            {
+                player.TakeDamage(_damage);
+            }
         }
     }
 
