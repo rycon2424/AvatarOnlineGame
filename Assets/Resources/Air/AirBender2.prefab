@@ -12,16 +12,15 @@ GameObject:
   - component: {fileID: 2240347970856802250}
   - component: {fileID: 830574895842907547}
   - component: {fileID: 6021810497504790012}
-  - component: {fileID: 3649985449393317467}
   - component: {fileID: 9044593518468972424}
   - component: {fileID: 2674409166641024962}
   - component: {fileID: 8378483649735177004}
   - component: {fileID: 5545823777082883796}
+  - component: {fileID: 3649985449393317467}
   - component: {fileID: 2205935210372205191}
   - component: {fileID: 1175950841212157859}
   - component: {fileID: 7580560256742538309}
-  - component: {fileID: 350062595185404118}
-  - component: {fileID: 9193555802843824017}
+  - component: {fileID: 1573965512185451639}
   m_Layer: 9
   m_Name: AirBender2
   m_TagString: Untagged
@@ -107,29 +106,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.01, z: 0}
---- !u!114 &3649985449393317467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2240347970866160650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d5de620c7c43a40aef511a10cff13a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pv: {fileID: 0}
-  _playerController: {fileID: 830574895842907547}
-  _cameraTransform: {fileID: 3967281089656296202}
-  LayerMask:
-    serializedVersion: 2
-    m_Bits: 311
-  _lightAttack: {fileID: 2205935210372205191}
-  _heavyAttack: {fileID: 1175950841212157859}
-  _ultimate: {fileID: 350062595185404118}
-  _melee: {fileID: 7580560256742538309}
-  _shield: {fileID: 9193555802843824017}
 --- !u!114 &9044593518468972424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,9 +183,6 @@ MonoBehaviour:
   - Type: 1
     SynchronizeType: 0
     Name: Blend
-  - Type: 9
-    SynchronizeType: 0
-    Name: EndScooter
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -228,6 +201,29 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &3649985449393317467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240347970866160650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d5de620c7c43a40aef511a10cff13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pv: {fileID: 0}
+  _playerController: {fileID: 830574895842907547}
+  _cameraTransform: {fileID: 3967281089656296202}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 311
+  _lightAttack: {fileID: 2205935210372205191}
+  _heavyAttack: {fileID: 1175950841212157859}
+  _ultimate: {fileID: 1573965512185451639}
+  _melee: {fileID: 7580560256742538309}
+  _shield: {fileID: 1573965512185451639}
 --- !u!114 &2205935210372205191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,7 +297,7 @@ MonoBehaviour:
   _range: 2
   _spawnPosition:
   - {fileID: 9061295268430924133}
---- !u!114 &350062595185404118
+--- !u!114 &1573965512185451639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,39 +306,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2240347970866160650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5400f4c289fe38449e1b6f5588ac596, type: 3}
+  m_Script: {fileID: 11500000, guid: a6ae329a6853c5e45aa7918d4a71e756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 35
+  _coolDown: 45
   _attack: 3
-  _airscooterDuration: 5
-  _speed: 70
-  _animator: {fileID: 2240347970856802250}
---- !u!114 &9193555802843824017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2240347970866160650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d490f3f4d269d24b9d5a46dbf71b7f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pv: {fileID: 0}
-  _isReady: 1
-  _isReadyAnimating: 1
-  _coolDown: 7
-  _attack: 4
-  _shieldDuration: 5
-  _animator: {fileID: 2240347970856802250}
-  _shieldPosition: {fileID: 0}
-  _shield: {fileID: 7695876354203497327, guid: 01df2482f389b8d41a1efae8e8d8a62b, type: 3}
-  _lerpSpeed: 50
+  _damage: 12
+  _range: 1.8
+  _spawnPosition: []
 --- !u!1 &6747388834449435054
 GameObject:
   m_ObjectHideFlags: 0
