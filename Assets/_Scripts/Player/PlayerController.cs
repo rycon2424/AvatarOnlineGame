@@ -16,13 +16,12 @@ public class PlayerController : UsingOnline
     private PlayerUI pu;
 
     public int _health;
+    public bool _isAlive = true;
 
     [HideInInspector]
     public int _maxHealth;
     [HideInInspector]
     public bool canMove = true;
-    [HideInInspector]
-    public bool _isAlive = true;
     [HideInInspector]
     public float _damageReduction = 1;
 

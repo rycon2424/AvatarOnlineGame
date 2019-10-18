@@ -7,11 +7,21 @@ using System.IO;
 public class NationSelect : MonoBehaviourPun
 {
     private PlayerController player;
+    public GameObject pickScreen;
+
+    public static NationSelect instance;
 
     void Start()
     {
+        instance = this;
+        EnableSelection();
+    }
+
+    public void EnableSelection()
+    {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        pickScreen.SetActive(true);
     }
     
     public void CreatePlayer(int currentSelectedPlayer)
@@ -45,6 +55,6 @@ public class NationSelect : MonoBehaviourPun
             default:
                 break;
         }
-        gameObject.SetActive(false);
+        pickScreen.SetActive(false);
     }
 }

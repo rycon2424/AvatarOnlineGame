@@ -668,6 +668,7 @@ GameObject:
   - component: {fileID: 1038682742309695209}
   - component: {fileID: 72662890139955068}
   - component: {fileID: 4675268580148837491}
+  - component: {fileID: 114532697685388572}
   m_Layer: 9
   m_Name: EarthBender
   m_TagString: Untagged
@@ -732,9 +733,9 @@ MonoBehaviour:
   _respawnTime: 4
   _healthBarCanvas: {fileID: 4784859290777038460}
   _health: 100
+  _isAlive: 1
   _maxHealth: 0
   canMove: 1
-  _isAlive: 1
   _damageReduction: 1
   rotateTowardsCamera: 0
 --- !u!114 &8783688603642312896
@@ -1001,6 +1002,19 @@ MonoBehaviour:
   _wall: {fileID: 114024190521300950, guid: 03e5389e53ab60843b61e0ed321ad2fe, type: 3}
   _rayRange: 2
   _lerpSpeed: 3
+--- !u!114 &114532697685388572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5599882848003764955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdf09e0538d3d1488460ae350805ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pv: {fileID: 0}
 --- !u!1 &5599882848003764957
 GameObject:
   m_ObjectHideFlags: 0

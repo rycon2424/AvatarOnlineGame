@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 1175950841212157859}
   - component: {fileID: 7580560256742538309}
   - component: {fileID: 1573965512185451639}
+  - component: {fileID: 114557946146974022}
   m_Layer: 9
   m_Name: AirBender2
   m_TagString: Untagged
@@ -83,9 +84,9 @@ MonoBehaviour:
   _respawnTime: 3
   _healthBarCanvas: {fileID: 6827316448684357272}
   _health: 100
+  _isAlive: 1
   _maxHealth: 0
   canMove: 1
-  _isAlive: 1
   _damageReduction: 1
   rotateTowardsCamera: 1
 --- !u!143 &6021810497504790012
@@ -317,6 +318,19 @@ MonoBehaviour:
   _damage: 12
   _range: 1.8
   _spawnPosition: []
+--- !u!114 &114557946146974022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240347970866160650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdf09e0538d3d1488460ae350805ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pv: {fileID: 0}
 --- !u!1 &6747388834449435054
 GameObject:
   m_ObjectHideFlags: 0
