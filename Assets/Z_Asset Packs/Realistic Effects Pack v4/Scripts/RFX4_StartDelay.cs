@@ -8,6 +8,10 @@ public class RFX4_StartDelay : MonoBehaviour {
 
 	// Use this for initialization
 	void OnEnable () {
+        if (ActivatedGameObject == null)
+        {
+            return;
+        }
         ActivatedGameObject.SetActive(false);
         Invoke("ActivateGO", Delay);
 	}

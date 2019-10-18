@@ -33,6 +33,12 @@ public class NationSelect : MonoBehaviourPun
             case 4:
                 PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender2"), Vector3.zero, Quaternion.identity);
                 break;
+            case 5:
+                PhotonNetwork.Instantiate(Path.Combine("Fire", "FireBender2"), Vector3.zero, Quaternion.identity);
+                break;
+            case 6:
+                PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender2"), Vector3.zero, Quaternion.identity);
+                break;
             default:
                 break;
         }
