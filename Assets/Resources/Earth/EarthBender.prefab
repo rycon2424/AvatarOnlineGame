@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
-  _respawnTime: 4
+  _respawnTime: 10
   _healthBarCanvas: {fileID: 4784859290777038460}
   _health: 100
   _isAlive: 1
@@ -945,7 +945,7 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 60
   _attack: 3
-  _damage: 35
+  _damage: 45
   _range: 3
   _spawnPosition:
   - {fileID: 1243322944236293520}

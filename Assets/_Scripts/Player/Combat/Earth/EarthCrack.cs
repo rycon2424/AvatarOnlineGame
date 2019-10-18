@@ -22,11 +22,13 @@ public class EarthCrack : RaycastBased
     private PlayerCombat _playerCombat;
 
     private List<Projectile> _rocks = new List<Projectile>();
+    private List<PlayerController> _hitPlayer = new List<PlayerController>();
 
     public override void UseMove(PlayerCombat playerCombat)
     {
         base.UseMove(playerCombat);
         _playerCombat = playerCombat;
+        _hitPlayer.Clear();
     }
 
     public void Crack()
@@ -53,8 +55,7 @@ public class EarthCrack : RaycastBased
                 PlayerController player = hit.collider.GetComponent<PlayerController>();
                 if (player != null)
                 {
-                    Debug.Log("hit");
-                    player.TakeDamage(_damage);
+                    AlreadyHit(player);
                 }
                 else
                 {
@@ -72,6 +73,20 @@ public class EarthCrack : RaycastBased
 
         Invoke("DestroyRocks", _rockDuration);
     }
+
+    private void AlreadyHit(PlayerController player)
+    {
+        for (int i = 0; i < _hitPlayer.Count; i++)
+        {
+            if (player == _hitPlayer[i])
+            {
+                return;
+            }
+        }
+        player.TakeDamage(_damage);
+        _hitPlayer.Add(player);
+    }
+
 
     private void DestroyRocks()
     {

@@ -23,5 +23,6 @@ public class DamageInRange : Ranged
                 _players[i].TakeDamage(_damage);
             }
         }
+        _players.Clear();
     }
 }

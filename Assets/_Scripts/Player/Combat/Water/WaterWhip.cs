@@ -44,7 +44,7 @@ public class WaterWhip : RaycastBased
             {
                 if (player == _hitPlayer[i])
                 {
-
+                    return;
                 }
             }
             player.TakeDamage(_damage);

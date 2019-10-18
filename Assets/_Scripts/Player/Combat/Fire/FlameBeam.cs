@@ -26,6 +26,10 @@ public class FlameBeam : RaycastBased
     void Update()
     {
         firebeam.transform.rotation = playerCamera.transform.rotation;
+        if (!_playerCombat._playerController._isAlive)
+        {
+            DisableBeam();
+        }
     }
 
     public void EnableBeam()

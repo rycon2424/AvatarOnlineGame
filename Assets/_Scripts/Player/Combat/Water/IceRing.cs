@@ -34,6 +34,7 @@ public class IceRing : Ranged
                 _players[i].TakeDamage(_damage);
             }
         }
+        _players.Clear();
     }
 
     private void DestroyIce()

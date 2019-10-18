@@ -20,9 +20,11 @@ public class Airleap : RaycastBased
     protected LayerMask layerMask;
 
     private GameObject _rayPoint;
+    private List<PlayerController> _hitPlayer = new List<PlayerController>();
 
     public void AirBlast()
     {
+        _hitPlayer.Clear();
         _rayPoint = Instantiate(_spawnPosition[0].gameObject, _spawnPosition[0].position, _spawnPosition[0].rotation);
         RaycastHit main;
         if (Physics.Raycast(_rayPoint.transform.position, _rayPoint.transform.forward, out main, _range, layerMask))
@@ -44,7 +46,7 @@ public class Airleap : RaycastBased
                 PlayerController player = hit.collider.GetComponent<PlayerController>();
                 if (player != null)
                 {
-                    player.TakeDamage(_damage);
+                    AlreadyHit(player);
                 }
                 else
                 {
@@ -55,6 +57,19 @@ public class Airleap : RaycastBased
             yield return new WaitForEndOfFrame();
         }
         Destroy(_rayPoint.gameObject);
+    }
+
+    private void AlreadyHit(PlayerController player)
+    {
+        for (int i = 0; i < _hitPlayer.Count; i++)
+        {
+            if (player == _hitPlayer[i])
+            {
+                return;
+            }
+        }
+        player.TakeDamage(_damage);
+        _hitPlayer.Add(player);
     }
 
     private IEnumerator DestroyClouds(Projectile projectile)

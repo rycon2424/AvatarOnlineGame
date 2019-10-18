@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
-  _respawnTime: 3
+  _respawnTime: 10
   _healthBarCanvas: {fileID: 6827316448684357272}
   _health: 100
   _isAlive: 1
@@ -1832,7 +1832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7828522376809239043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.012, z: 0.01}
+  m_LocalPosition: {x: 0, y: 0.012, z: 0.014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2240347970865805354}

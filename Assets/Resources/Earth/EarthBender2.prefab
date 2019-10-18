@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
-  _respawnTime: 4
+  _respawnTime: 10
   _healthBarCanvas: {fileID: 4784859290777038460}
   _health: 100
   _isAlive: 1

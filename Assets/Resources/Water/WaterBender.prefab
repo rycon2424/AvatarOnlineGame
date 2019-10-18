@@ -20452,7 +20452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 0}
-  _respawnTime: 4
+  _respawnTime: 10
   _healthBarCanvas: {fileID: 4460499723441729216}
   _health: 100
   _isAlive: 1
@@ -20718,7 +20718,7 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 10
   _attack: 1
-  _damage: 22
+  _damage: 20
   _range: 0.5
   _spawnPosition:
   - {fileID: 2157295074343702659}
@@ -74890,11 +74890,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4048537254211788995, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -74904,6 +74899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.002539
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5111225475869361396, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}

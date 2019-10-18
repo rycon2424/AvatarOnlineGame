@@ -34,8 +34,8 @@ public class GroundSlam : Ranged
 
     public void Slam()
     {
-        _players.AddRange(FindObjectsOfType<PlayerController>());
         CastRays();
+        _players.AddRange(FindObjectsOfType<PlayerController>());
         for (int i = 0; i < _players.Count; i++)
         {
             if (_playerCombat._playerController != _players[i] && Vector3.Distance(transform.position, _players[i].transform.position) < _range)
@@ -43,6 +43,7 @@ public class GroundSlam : Ranged
                 _players[i].TakeDamage(_damage);
             }
         }
+        _players.Clear();
     }
 
     private void CastRays()
