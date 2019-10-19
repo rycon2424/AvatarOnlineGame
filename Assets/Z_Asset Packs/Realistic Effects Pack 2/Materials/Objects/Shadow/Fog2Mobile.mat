@@ -25,7 +25,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _CutOut:
         m_Texture: {fileID: 2800000, guid: b667237b8dfe1ad4d83055bebe0b42e5, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: e4cc47f9865824c4e86668ccb1db0c80, type: 3}
@@ -34,7 +34,7 @@ Material:
     m_Floats:
     - _BumpAmt: 20
     - _ColorStrength: -0.2
-    - _InvFade: 0
+    - _InvFade: 0.18
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TintColor: {r: 0.5179334, g: 0.9175343, b: 0.9716981, a: 0.5882353}

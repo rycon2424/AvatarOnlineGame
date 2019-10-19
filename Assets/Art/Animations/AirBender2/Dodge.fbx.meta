@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 6b807edbd6ba76e4d857dcaa7774fcae
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ukano:Head
+    100002: Ukano:HeadTop_End
+    100004: Ukano:Hips
+    100006: Ukano:LeftArm
+    100008: Ukano:LeftFoot
+    100010: Ukano:LeftForeArm
+    100012: Ukano:LeftHand
+    100014: Ukano:LeftHandIndex1
+    100016: Ukano:LeftHandIndex2
+    100018: Ukano:LeftHandIndex3
+    100020: Ukano:LeftHandIndex4
+    100022: Ukano:LeftLeg
+    100024: Ukano:LeftShoulder
+    100026: Ukano:LeftToe_End
+    100028: Ukano:LeftToeBase
+    100030: Ukano:LeftUpLeg
+    100032: Ukano:Neck
+    100034: Ukano:RightArm
+    100036: Ukano:RightFoot
+    100038: Ukano:RightForeArm
+    100040: Ukano:RightHand
+    100042: Ukano:RightHandIndex1
+    100044: Ukano:RightHandIndex2
+    100046: Ukano:RightHandIndex3
+    100048: Ukano:RightHandIndex4
+    100050: Ukano:RightLeg
+    100052: Ukano:RightShoulder
+    100054: Ukano:RightToe_End
+    100056: Ukano:RightToeBase
+    100058: Ukano:RightUpLeg
+    100060: Ukano:Spine
+    100062: Ukano:Spine1
+    100064: Ukano:Spine2
+    100066: //RootNode
+    400000: Ukano:Head
+    400002: Ukano:HeadTop_End
+    400004: Ukano:Hips
+    400006: Ukano:LeftArm
+    400008: Ukano:LeftFoot
+    400010: Ukano:LeftForeArm
+    400012: Ukano:LeftHand
+    400014: Ukano:LeftHandIndex1
+    400016: Ukano:LeftHandIndex2
+    400018: Ukano:LeftHandIndex3
+    400020: Ukano:LeftHandIndex4
+    400022: Ukano:LeftLeg
+    400024: Ukano:LeftShoulder
+    400026: Ukano:LeftToe_End
+    400028: Ukano:LeftToeBase
+    400030: Ukano:LeftUpLeg
+    400032: Ukano:Neck
+    400034: Ukano:RightArm
+    400036: Ukano:RightFoot
+    400038: Ukano:RightForeArm
+    400040: Ukano:RightHand
+    400042: Ukano:RightHandIndex1
+    400044: Ukano:RightHandIndex2
+    400046: Ukano:RightHandIndex3
+    400048: Ukano:RightHandIndex4
+    400050: Ukano:RightLeg
+    400052: Ukano:RightShoulder
+    400054: Ukano:RightToe_End
+    400056: Ukano:RightToeBase
+    400058: Ukano:RightUpLeg
+    400060: Ukano:Spine
+    400062: Ukano:Spine1
+    400064: Ukano:Spine2
+    400066: //RootNode
+    7400000: mixamo.com
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Ukano:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ukano:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Dodge(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:Hips
+      parentName: Dodge(Clone)
+      position: {x: 0.00003820609, y: 0.00835143, z: -0.00006201178}
+      rotation: {x: -0.08612504, y: 0.022773106, z: -0.035663974, w: 0.99538535}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:Spine
+      parentName: Ukano:Hips
+      position: {x: -0, y: 0.001008, z: -0.000083}
+      rotation: {x: 0.09039549, y: -0.0035021305, z: 0.036738995, w: 0.9952219}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:Spine1
+      parentName: Ukano:Spine
+      position: {x: -0, y: 0.00118, z: 0}
+      rotation: {x: 0.05108964, y: -0.008187488, z: 0.023565942, w: 0.99838245}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:Spine2
+      parentName: Ukano:Spine1
+      position: {x: -0, y: 0.001349, z: 0}
+      rotation: {x: 0.05103381, y: -0.008920033, z: 0.023942735, w: 0.99837005}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:Neck
+      parentName: Ukano:Spine2
+      position: {x: -0, y: 0.001517, z: 0}
+      rotation: {x: 0.030576808, y: -0.00409071, z: -0.010942188, w: 0.99946415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:Head
+      parentName: Ukano:Neck
+      position: {x: -0, y: 0.0009969999, z: 0.000092}
+      rotation: {x: -0.010428798, y: -0.004535663, z: -0.0107653625, w: 0.9998774}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:HeadTop_End
+      parentName: Ukano:Head
+      position: {x: -0, y: 0.0024879999, z: 0.00022999999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftShoulder
+      parentName: Ukano:Spine2
+      position: {x: -0.00064499996, y: 0.00125, z: -0.000019}
+      rotation: {x: 0.56495506, y: -0.448096, z: 0.544303, w: 0.42868423}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftArm
+      parentName: Ukano:LeftShoulder
+      position: {x: -0, y: 0.00134, z: 0}
+      rotation: {x: -0.12935068, y: 0.39553934, z: -0.04594447, w: 0.9081333}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftForeArm
+      parentName: Ukano:LeftArm
+      position: {x: -0, y: 0.002605, z: 0}
+      rotation: {x: -0.013953292, y: 0.004884509, z: -0.039517015, w: 0.99910957}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftHand
+      parentName: Ukano:LeftForeArm
+      position: {x: -0, y: 0.002212, z: 0}
+      rotation: {x: -0.003176639, y: 0.08999517, z: -0.0011165182, w: 0.9959365}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftHandIndex1
+      parentName: Ukano:LeftHand
+      position: {x: -0, y: 0.000745, z: 0}
+      rotation: {x: 0.059471965, y: -0.042661823, z: 0.011295844, w: 0.997254}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftHandIndex2
+      parentName: Ukano:LeftHandIndex1
+      position: {x: -0, y: 0.000454, z: 0}
+      rotation: {x: 0.3004252, y: -0.0051052016, z: 0.055947777, w: 0.95214945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftHandIndex3
+      parentName: Ukano:LeftHandIndex2
+      position: {x: 0.000027, y: 0.000217, z: -0.00014999999}
+      rotation: {x: -0.1723183, y: 0.000734609, z: -0.044422753, w: 0.98403883}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftHandIndex4
+      parentName: Ukano:LeftHandIndex3
+      position: {x: 0.000003, y: 0.000394, z: -0.000083}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightShoulder
+      parentName: Ukano:Spine2
+      position: {x: 0.00064499996, y: 0.001251, z: -0.000025}
+      rotation: {x: 0.61833733, y: 0.37418273, z: -0.56279975, w: 0.40112674}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightArm
+      parentName: Ukano:RightShoulder
+      position: {x: -0, y: 0.00134, z: 0}
+      rotation: {x: -0.13835604, y: 0.051437367, z: -0.0489509, w: 0.9878338}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightForeArm
+      parentName: Ukano:RightArm
+      position: {x: -0, y: 0.002605, z: 0}
+      rotation: {x: -0.008293553, y: -0.15338148, z: 0.029974276, w: 0.9876775}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightHand
+      parentName: Ukano:RightForeArm
+      position: {x: -0, y: 0.002213, z: 0}
+      rotation: {x: -0.07044394, y: -0.2522443, z: 0.044392865, w: 0.96407455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightHandIndex1
+      parentName: Ukano:RightHand
+      position: {x: -0, y: 0.0014040001, z: 0}
+      rotation: {x: 0.0068460726, y: -0.009930001, z: 0.0040307785, w: 0.9999192}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightHandIndex2
+      parentName: Ukano:RightHandIndex1
+      position: {x: -0, y: 0.000116999996, z: 0}
+      rotation: {x: -0.0764, y: -0.0043053986, z: 0.117165625, w: 0.9901599}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightHandIndex3
+      parentName: Ukano:RightHandIndex2
+      position: {x: 0.000048, y: 0.00018799999, z: 0.000046}
+      rotation: {x: 0.0437557, y: -0.01581519, z: 0.020284152, w: 0.9987111}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightHandIndex4
+      parentName: Ukano:RightHandIndex3
+      position: {x: 0.000051, y: 0.000154, z: 0.000013999999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftUpLeg
+      parentName: Ukano:Hips
+      position: {x: -0.001039, y: -0.00056, z: -0.000017999999}
+      rotation: {x: -0.199099, y: 0.00841681, z: 0.97806585, w: 0.06062945}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftLeg
+      parentName: Ukano:LeftUpLeg
+      position: {x: -0, y: 0.003862, z: 0}
+      rotation: {x: -0.31558138, y: -0.06562445, z: 0.09220373, w: 0.94212544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftFoot
+      parentName: Ukano:LeftLeg
+      position: {x: -0, y: 0.003458, z: 0}
+      rotation: {x: 0.69705606, y: -0.07830908, z: 0.07604315, w: 0.7086594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftToeBase
+      parentName: Ukano:LeftFoot
+      position: {x: -0, y: 0.0016879999, z: 0}
+      rotation: {x: 0.3509425, y: 0.069548294, z: -0.022015562, w: 0.93355113}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:LeftToe_End
+      parentName: Ukano:LeftToeBase
+      position: {x: -0, y: 0.00133, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightUpLeg
+      parentName: Ukano:Hips
+      position: {x: 0.001039, y: -0.00056, z: -0.0000069999996}
+      rotation: {x: 0.2737439, y: 0.029346567, z: 0.94914365, w: -0.15273954}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightLeg
+      parentName: Ukano:RightUpLeg
+      position: {x: -0, y: 0.003862, z: 0}
+      rotation: {x: -0.3167938, y: 0.048637927, z: -0.06258041, w: 0.94517714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightFoot
+      parentName: Ukano:RightLeg
+      position: {x: -0, y: 0.003458, z: 0}
+      rotation: {x: 0.6677642, y: 0.030958377, z: -0.16912521, w: 0.7242439}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightToeBase
+      parentName: Ukano:RightFoot
+      position: {x: -0, y: 0.001664, z: 0}
+      rotation: {x: 0.34196723, y: -0.07096195, z: 0.02590669, w: 0.93667054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ukano:RightToe_End
+      parentName: Ukano:RightToeBase
+      position: {x: -0, y: 0.001346, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
