@@ -7,54 +7,95 @@ using System.IO;
 public class NationSelect : MonoBehaviourPun
 {
     private PlayerController player;
-    public GameObject pickScreen;
+
+    [Header("GameMode")]
+    public SelectGameMode gameMode;
+    public enum SelectGameMode { freeForAll, teamBased }
+
+    [Header("Player Selection")]
+    public int currentSelectedTeam;
+
+    [Header("Canvas References")]
+    public GameObject teamPickScreen;
+    public GameObject charPickScreen;
 
     public static NationSelect instance;
 
     void Start()
     {
         instance = this;
-        EnableSelection();
+        switch (gameMode)
+        {
+            case SelectGameMode.freeForAll:
+                SwitchTeam(0);
+                EnableCharacterSelection();
+                break;
+            case SelectGameMode.teamBased:
+                EnableTeamSelection();
+                break;
+            default:
+                break;
+        }
     }
 
-    public void EnableSelection()
+    public void EnableTeamSelection()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        pickScreen.SetActive(true);
+        teamPickScreen.SetActive(true);
+        charPickScreen.SetActive(false);
+    }
+
+    public void SwitchTeam(int team)
+    {
+        currentSelectedTeam = team;
+        EnableCharacterSelection();
     }
     
+    public void EnableCharacterSelection()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        teamPickScreen.SetActive(false);
+        charPickScreen.SetActive(true);
+    }
+
+    GameObject playerRef;
+    PhotonView pv;
     public void CreatePlayer(int currentSelectedPlayer)
     {
         switch (currentSelectedPlayer)
         {
             case 0:
-                PhotonNetwork.Instantiate(Path.Combine("Fire", "FireBender"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Fire", "FireBender"), Vector3.zero, Quaternion.identity);
                 break;
             case 1:
-                PhotonNetwork.Instantiate(Path.Combine("Air", "AirBender"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Air", "AirBender"), Vector3.zero, Quaternion.identity);
                 break;
             case 2:
-                PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender"), Vector3.zero, Quaternion.identity);
                 break;
             case 3:
-                PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender"), Vector3.zero, Quaternion.identity);
                 break;
             case 4:
-                PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender2"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender2"), Vector3.zero, Quaternion.identity);
                 break;
             case 5:
-                PhotonNetwork.Instantiate(Path.Combine("Fire", "FireBender2"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Fire", "FireBender2"), Vector3.zero, Quaternion.identity);
                 break;
             case 6:
-                PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender2"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender2"), Vector3.zero, Quaternion.identity);
                 break;
             case 7:
-                PhotonNetwork.Instantiate(Path.Combine("Air", "AirBender2"), Vector3.zero, Quaternion.identity);
+                playerRef = PhotonNetwork.Instantiate(Path.Combine("Air", "AirBender2"), Vector3.zero, Quaternion.identity);
                 break;
             default:
                 break;
         }
-        pickScreen.SetActive(false);
+        PlayerController pc = playerRef.GetComponent<PlayerController>();
+        pc.StartPlayer(currentSelectedTeam);
+        charPickScreen.SetActive(false);
     }
+
 }

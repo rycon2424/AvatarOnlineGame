@@ -31,7 +31,7 @@ public class ReSelectCharacter : UsingOnline
 
     void ReSelect()
     {
-        NationSelect.instance.EnableSelection();
+        NationSelect.instance.EnableCharacterSelection();
         PhotonNetwork.Destroy(this.gameObject);
     }
 

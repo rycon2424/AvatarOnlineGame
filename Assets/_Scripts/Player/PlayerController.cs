@@ -15,6 +15,9 @@ public class PlayerController : UsingOnline
     private Transform playerCamera;
     private PlayerUI pu;
 
+    [Header("PlayerStats")]
+    public Teams currentTeam;
+    public enum Teams { noTeam, TeamRed, TeamBlue}
     public int _health;
     public bool _isAlive = true;
 
@@ -27,7 +30,7 @@ public class PlayerController : UsingOnline
 
     public bool rotateTowardsCamera;
 
-    void Start()
+    public void StartPlayer(int team)
     {
         _maxHealth = _health;
         anim = GetComponent<Animator>();
@@ -35,6 +38,7 @@ public class PlayerController : UsingOnline
         pu = GetComponent<PlayerUI>();
         rotateTowardsCamera = true;
         pu.StartUI();
+        pv.RPC("SyncMyTeam",RpcTarget.All, team);
 
         //De if statement om te checken of jij de controle hebt over dat character
         if (pv.IsMine == false)
@@ -50,10 +54,27 @@ public class PlayerController : UsingOnline
         playerCamera.GetComponent<AudioListener>().enabled = true;
     }
 
+    [PunRPC]
+    void SyncMyTeam(int team)
+    {
+        switch (team)
+        {
+            case 0:
+                currentTeam = Teams.noTeam;
+                break;
+            case 1:
+                currentTeam = Teams.TeamRed;
+                break;
+            case 2:
+                currentTeam = Teams.TeamBlue;
+                break;
+            default:
+                break;
+        }
+    }
+    
     void Update()
     {
-
-
         if (rotateTowardsCamera)
         {
             RotateToLook();
