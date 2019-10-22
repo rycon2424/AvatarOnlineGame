@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class WaveAttack : ProjectileBased
 {
-   public void WaterWave()
+    private PlayerCombat _playerCombat;
+
+    public override void UseMove(PlayerCombat playerCombat)
+    {
+        base.UseMove(playerCombat);
+        _playerCombat = playerCombat;
+    }
+
+    public void WaterWave()
     {
         for (int i = 0; i < _spawnPosition.Count; i++)
         {
             Projectile projectile = Instantiate(_projectile, _spawnPosition[i].position, _spawnPosition[i].rotation);
-            projectile.Fired(_damage,_speed,_range);
+            projectile.Fired(_damage,_speed,_range, _playerCombat._playerController.currentTeam);
         }
     }
 }

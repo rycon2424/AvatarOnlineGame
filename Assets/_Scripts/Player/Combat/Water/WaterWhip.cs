@@ -6,6 +6,13 @@ public class WaterWhip : RaycastBased
 {
     private bool _castRays;
     private List<PlayerController> _hitPlayer = new List<PlayerController>();
+    private PlayerCombat _playerCombat;
+
+    public override void UseMove(PlayerCombat playerCombat)
+    {
+        base.UseMove(playerCombat);
+        _playerCombat = playerCombat;
+    }
 
     public void StartWhip()
     {
@@ -47,7 +54,7 @@ public class WaterWhip : RaycastBased
                     return;
                 }
             }
-            player.TakeDamage(_damage);
+            player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
             _hitPlayer.Add(player);
         }
     }

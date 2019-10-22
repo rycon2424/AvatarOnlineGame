@@ -89,7 +89,7 @@ MonoBehaviour:
   destroyEffect: {fileID: 0}
   _speed: 0
   _destroyByBullet: 0
-  _growspeed: 2
+  _growspeed: 1.5
   _collider: {fileID: 0}
   _particle: {fileID: 0}
   _gameObject: {fileID: 1259813064166910925}

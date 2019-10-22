@@ -30,7 +30,7 @@ public class EarthMelee : RaycastBased
             PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.TakeDamage(_damage);
+                player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
                 return;
             }
 
@@ -39,7 +39,7 @@ public class EarthMelee : RaycastBased
             {
                 Vector3 direction = _playerCombat.GetDirection();
                 wall.transform.LookAt(new Vector3(direction.x, wall.transform.position.y, direction.z));
-                wall.Fired(_wallDamage, _wallSpeed, _wallRange);
+                wall.Fired(_wallDamage, _wallSpeed, _wallRange, _playerCombat._playerController.currentTeam);
                 return;
             }
             Debug.Log(hit.collider.name);

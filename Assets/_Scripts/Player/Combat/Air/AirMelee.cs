@@ -21,7 +21,7 @@ public class AirMelee : RaycastBased
             PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.TakeDamage(_damage);
+                player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
                 return;
             }
             Debug.Log(hit.collider.name);

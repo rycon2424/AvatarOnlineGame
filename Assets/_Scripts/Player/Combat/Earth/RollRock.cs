@@ -26,7 +26,7 @@ public class RollRock : ProjectileBased
         if (_spawnedProjectile != null)
         {
             _lerp = false;
-            _spawnedProjectile.Fired(_damage, _speed, _range);
+            _spawnedProjectile.Fired(_damage, _speed, _range, _playerCombat._playerController.currentTeam);
         }
     }
 

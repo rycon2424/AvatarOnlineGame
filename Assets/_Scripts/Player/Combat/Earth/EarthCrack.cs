@@ -83,7 +83,7 @@ public class EarthCrack : RaycastBased
                 return;
             }
         }
-        player.TakeDamage(_damage);
+        player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
         _hitPlayer.Add(player);
     }
 

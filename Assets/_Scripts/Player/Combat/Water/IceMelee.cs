@@ -30,7 +30,7 @@ public class IceMelee : RaycastBased
             PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.TakeDamage(_damage);
+                player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
                 return;
             }
 

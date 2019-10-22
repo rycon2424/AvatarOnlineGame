@@ -6,9 +6,10 @@ public class RollingProjectile : Projectile
 {
     [SerializeField]
     private Rigidbody _rigidbody;
-    public override void Fired(int damage, float speed, float range)
+
+    public override void Fired(int damage, float speed, float range , PlayerController.Teams teams)
     {
-        base.Fired(damage, speed, range);
+        base.Fired(damage, speed, range, teams);
         if (_rigidbody != null)
         {
             _rigidbody.isKinematic = false;
@@ -23,7 +24,7 @@ public class RollingProjectile : Projectile
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.TakeDamage(_damage);
+                player.TakeDamage(_damage, _teams);
             }
         }
     }

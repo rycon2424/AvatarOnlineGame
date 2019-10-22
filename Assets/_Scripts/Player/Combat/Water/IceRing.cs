@@ -31,7 +31,7 @@ public class IceRing : Ranged
         {
             if (_playerCombat._playerController != _players[i] && Vector3.Distance(transform.position, _players[i].transform.position) < _range)
             {
-                _players[i].TakeDamage(_damage);
+                _players[i].TakeDamage(_damage, _playerCombat._playerController.currentTeam);
             }
         }
         _players.Clear();

@@ -71,7 +71,7 @@ public class RockCrush : RaycastBased
     {
         _lerp = false;
         _playerCombat._playerController.rotateTowardsCamera = true;
-        _spawnedCrusherL.Fired(_damage, _closeSpeed, _distanceBetweenRocks/2);
-        _spawnedCrusherR.Fired(_damage, _closeSpeed, _distanceBetweenRocks/2);
+        _spawnedCrusherL.Fired(_damage, _closeSpeed, _distanceBetweenRocks/2 , _playerCombat._playerController.currentTeam);
+        _spawnedCrusherR.Fired(_damage, _closeSpeed, _distanceBetweenRocks/2 , _playerCombat._playerController.currentTeam);
     }
 }

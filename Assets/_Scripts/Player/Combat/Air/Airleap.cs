@@ -19,8 +19,15 @@ public class Airleap : RaycastBased
     [SerializeField]
     protected LayerMask layerMask;
 
+    private PlayerCombat _playerCombat;
     private GameObject _rayPoint;
     private List<PlayerController> _hitPlayer = new List<PlayerController>();
+
+    public override void UseMove(PlayerCombat playerCombat)
+    {
+        base.UseMove(playerCombat);
+        _playerCombat = playerCombat;
+    }
 
     public void AirBlast()
     {
@@ -68,7 +75,7 @@ public class Airleap : RaycastBased
                 return;
             }
         }
-        player.TakeDamage(_damage);
+        player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
         _hitPlayer.Add(player);
     }
 

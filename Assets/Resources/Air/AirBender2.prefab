@@ -355,13 +355,13 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 1
   _attack: 0
-  _damage: 14
-  _range: 2.5
+  _damage: 16
+  _range: 4
   _spawnPosition:
   - {fileID: 9061295268430924133}
   _projectile: {fileID: 8534714767282416524, guid: 7bbf200ef0246c94aa3f5bf62fa2d2d9,
     type: 3}
-  _speed: 5
+  _speed: 7
 --- !u!114 &4124100155303861949
 MonoBehaviour:
   m_ObjectHideFlags: 0

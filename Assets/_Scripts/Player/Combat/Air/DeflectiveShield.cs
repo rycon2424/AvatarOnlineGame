@@ -56,6 +56,7 @@ public class DeflectiveShield : Shield
 
     public void DeflectProjectile(Projectile projectile)
     {
+        projectile._teams = _playerCombat._playerController.currentTeam;
         projectile.transform.LookAt(_playerCombat.GetDirection());
     }
 }

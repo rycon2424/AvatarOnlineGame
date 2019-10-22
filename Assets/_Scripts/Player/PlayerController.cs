@@ -102,8 +102,13 @@ public class PlayerController : UsingOnline
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, Teams teams)
     {
+        if (teams != currentTeam || teams == Teams.noTeam)
+        {
+            return;
+        }
+
         damage /= _damageReduction;
         _health -= Mathf.RoundToInt(damage);
         if (pv.IsMine == true)

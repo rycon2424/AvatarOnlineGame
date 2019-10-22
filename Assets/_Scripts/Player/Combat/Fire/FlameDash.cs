@@ -7,6 +7,13 @@ public class FlameDash : Moves
     public GameObject dashEffect;
     public GameObject flameTrail;
     public int _damage;
+    private PlayerCombat _playerCombat;
+
+    public override void UseMove(PlayerCombat playerCombat)
+    {
+        base.UseMove(playerCombat);
+        _playerCombat = playerCombat;
+    }
 
     public void EnableEffect()
     {
@@ -37,7 +44,7 @@ public class FlameDash : Moves
                 PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
                 if (player != null)
                 {
-                    player.TakeDamage(_damage);
+                    player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
                 }
             }
         }

@@ -34,13 +34,13 @@ public class WaterAttack : ProjectileBased
     {
         Projectile projectile = Instantiate(_projectile, _spawnPosition[0].position, _spawnPosition[0].rotation);
         projectile.transform.LookAt(_playerCombat.GetDirection());
-        projectile.Fired(_damage, _speed, _range);
+        projectile.Fired(_damage, _speed, _range, _playerCombat._playerController.currentTeam);
     }
 
     public void RightHand()
     {
         Projectile projectile = Instantiate(_projectile, _spawnPosition[1].position, _spawnPosition[1].rotation);
         projectile.transform.LookAt(_playerCombat.GetDirection());
-        projectile.Fired(_damage, _speed, _range);
+        projectile.Fired(_damage, _speed, _range, _playerCombat._playerController.currentTeam);
     }
 }

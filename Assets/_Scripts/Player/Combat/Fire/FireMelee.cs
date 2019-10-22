@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class FireMelee : RaycastBased
 {
+    private PlayerCombat _playerCombat;
+
+    public override void UseMove(PlayerCombat playerCombat)
+    {
+        base.UseMove(playerCombat);
+        _playerCombat = playerCombat;
+    }
+
     public void MeleeAttack()
     {
         RaycastHit hit;
@@ -13,7 +21,7 @@ public class FireMelee : RaycastBased
             PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.TakeDamage(_damage);
+                player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
                 return;
             }
             Debug.Log(hit.collider.name);

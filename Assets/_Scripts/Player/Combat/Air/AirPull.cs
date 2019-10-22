@@ -36,7 +36,7 @@ public class AirPull : Ranged
 
             if (!_playerCombat._playerController._isAlive)
             {
-                _lerp = false;
+                EndPull();
             }
         }
     }
@@ -47,7 +47,7 @@ public class AirPull : Ranged
         {
             if (_playerCombat._playerController != _players[i] && Vector3.Distance(_spawnPosition[0].position, _players[i].transform.position) < _range)
             {
-                _players[i].TakeDamage(_damage);
+                _players[i].TakeDamage(_damage, _playerCombat._playerController.currentTeam);
             }
         }
 

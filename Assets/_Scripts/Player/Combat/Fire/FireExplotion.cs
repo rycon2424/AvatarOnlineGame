@@ -33,7 +33,7 @@ public class FireExplotion : ProjectileBased
             _lineRenderer.SetPosition(1, _spawnPosition[0].position + _spawnPosition[0].forward * _range);
             _firedProjectile = Instantiate(_projectile, _spawnPosition[0].position + _spawnPosition[0].forward * _range, transform.rotation);
         }
-        _firedProjectile.Fired(_damage,_speed, _speed);
+        _firedProjectile.Fired(_damage,_speed, _speed, _playerCombat._playerController.currentTeam);
         Invoke("RemoveLine", _lineTime);
     }
 
