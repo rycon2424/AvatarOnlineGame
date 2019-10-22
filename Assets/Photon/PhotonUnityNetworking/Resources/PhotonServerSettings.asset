@@ -42,5 +42,6 @@ MonoBehaviour:
   - Ultimate
   - Respawn
   - TeamAssign
+  - SyncMyTeam
   DisableAutoOpenWizard: 1
   ShowSettings: 0

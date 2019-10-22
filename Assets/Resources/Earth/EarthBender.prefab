@@ -732,6 +732,7 @@ MonoBehaviour:
   pv: {fileID: 0}
   _respawnTime: 10
   _healthBarCanvas: {fileID: 4784859290777038460}
+  currentTeam: 0
   _health: 100
   _isAlive: 1
   _maxHealth: 0
