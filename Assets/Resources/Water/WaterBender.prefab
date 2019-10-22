@@ -20637,7 +20637,7 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 0.1
+  _coolDown: 0.5
   _attack: 2
   _damage: 20
   _range: 1
