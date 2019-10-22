@@ -16,6 +16,10 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     protected bool _destroyByBullet = true;
 
+
+    [SerializeField]
+    protected bool _destroyByPlayer = true;
+
     protected int _damage = 0;
     protected float _range = 0;
     public PlayerController.Teams _teams;
@@ -55,12 +59,13 @@ public class Projectile : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(_damage, _teams);
+
         }
         if (_speed != 0)
         {
             Projectile projectile = collider.gameObject.GetComponent<Projectile>();
             Deflector deflector = collider.gameObject.GetComponent<Deflector>();
-            if ((projectile != null && !_destroyByBullet) || deflector != null)
+            if ((player != null && !_destroyByPlayer) || (projectile != null && !_destroyByBullet) || deflector != null || (player.currentTeam == _teams && _teams != PlayerController.Teams.noTeam))
             {
                 return;
             }
