@@ -30,7 +30,7 @@ public class PlayerController : UsingOnline
 
     public bool rotateTowardsCamera;
 
-    public void StartPlayer(int team)
+    void Start()
     {
         _maxHealth = _health;
         anim = GetComponent<Animator>();
@@ -38,7 +38,6 @@ public class PlayerController : UsingOnline
         pu = GetComponent<PlayerUI>();
         rotateTowardsCamera = true;
         pu.StartUI();
-        pv.RPC("SyncMyTeam",RpcTarget.All, team);
 
         //De if statement om te checken of jij de controle hebt over dat character
         if (pv.IsMine == false)
@@ -52,6 +51,11 @@ public class PlayerController : UsingOnline
 
         playerCamera.GetComponent<Camera>().enabled = true;
         playerCamera.GetComponent<AudioListener>().enabled = true;
+    }
+
+    public void AssignTeam(int team)
+    {
+        pv.RPC("SyncMyTeam", RpcTarget.All, team);
     }
 
     [PunRPC]

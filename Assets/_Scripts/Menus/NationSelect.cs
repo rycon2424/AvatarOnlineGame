@@ -94,7 +94,7 @@ public class NationSelect : MonoBehaviourPun
                 break;
         }
         PlayerController pc = playerRef.GetComponent<PlayerController>();
-        pc.StartPlayer(currentSelectedTeam);
+        pc.AssignTeam(currentSelectedTeam);
         charPickScreen.SetActive(false);
     }
 
