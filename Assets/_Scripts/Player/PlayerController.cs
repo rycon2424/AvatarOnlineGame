@@ -106,7 +106,6 @@ public class PlayerController : UsingOnline
     {
         damage /= _damageReduction;
         _health -= Mathf.RoundToInt(damage);
-        pu.UpdateHealth(_health);
         if (pv.IsMine == true)
         {
             pv.RPC("SyncHealth", RpcTarget.All, _health);
@@ -117,6 +116,7 @@ public class PlayerController : UsingOnline
     void SyncHealth(int health)
     {
         _health = health;
+        pu.UpdateHealth(_health);
         if (_health < 1)
         {
             Death();
