@@ -59,13 +59,17 @@ public class Projectile : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(_damage, _teams);
+            if (!_destroyByPlayer || (player.currentTeam == _teams && _teams != PlayerController.Teams.noTeam))
+            {
+                return;
+            }
 
         }
         if (_speed != 0)
         {
             Projectile projectile = collider.gameObject.GetComponent<Projectile>();
             Deflector deflector = collider.gameObject.GetComponent<Deflector>();
-            if ((player != null && !_destroyByPlayer) || (projectile != null && !_destroyByBullet) || deflector != null || (player.currentTeam == _teams && _teams != PlayerController.Teams.noTeam))
+            if ((projectile != null && !_destroyByBullet) || deflector != null)
             {
                 return;
             }
