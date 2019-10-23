@@ -8914,6 +8914,11 @@ PrefabInstance:
       propertyPath: _gameModeManager
       value: 
       objectReference: {fileID: 233380113}
+    - target: {fileID: 6057044477932745009, guid: 1413416bc24c1944498a79322a43ff76,
+        type: 3}
+      propertyPath: pvc
+      value: 
+      objectReference: {fileID: 233380114}
     - target: {fileID: 3911376875274334934, guid: 1413416bc24c1944498a79322a43ff76,
         type: 3}
       propertyPath: m_IsActive
@@ -9044,6 +9049,28 @@ MonoBehaviour:
   - {fileID: 1731115527}
   _spawnPointsTB2:
   - {fileID: 2118573991}
+--- !u!114 &233380114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233380111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &234748226
 PrefabInstance:
   m_ObjectHideFlags: 0

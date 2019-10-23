@@ -23,10 +23,22 @@ public class NationSelect : MonoBehaviourPun
 
     public static NationSelect instance;
 
+    public PhotonView pvc;
+
     void Awake()
     {
         gameMode = CustomMatchmakingRoomController.instanceGamemode._currentGamemode;
+        if (PhotonNetwork.IsMasterClient == true)
+        {
+            pvc.RPC("SyncGameMode", RpcTarget.AllBuffered, gameMode);
+        }
         Destroy(CustomMatchmakingRoomController.instanceGamemode.gameObject);
+    }
+    
+    [PunRPC]
+    void SyncGameMode(GameModeEnum gm)
+    {
+        gameMode = gm;
     }
 
     void Start()

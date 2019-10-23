@@ -43,5 +43,6 @@ MonoBehaviour:
   - Respawn
   - TeamAssign
   - SyncMyTeam
+  - SyncGameMode
   DisableAutoOpenWizard: 1
   ShowSettings: 0
