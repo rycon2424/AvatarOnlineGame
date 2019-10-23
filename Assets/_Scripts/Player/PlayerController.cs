@@ -55,7 +55,7 @@ public class PlayerController : UsingOnline
 
     public void AssignTeam(int team)
     {
-        pv.RPC("SyncMyTeam", RpcTarget.All, team);
+        pv.RPC("SyncMyTeam", RpcTarget.AllBuffered, team);
     }
 
     [PunRPC]
