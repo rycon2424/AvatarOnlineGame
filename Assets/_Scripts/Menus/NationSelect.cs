@@ -12,8 +12,7 @@ public class NationSelect : MonoBehaviourPun
     private GameModeManager _gameModeManager;
 
     [Header("GameMode")]
-    public SelectGameMode gameMode;
-    public enum SelectGameMode { freeForAll, teamBased }
+    public GameModeEnum gameMode;
 
     [Header("Player Selection")]
     public PlayerController.Teams currentSelectedTeam;
@@ -29,11 +28,11 @@ public class NationSelect : MonoBehaviourPun
         instance = this;
         switch (gameMode)
         {
-            case SelectGameMode.freeForAll:
+            case GameModeEnum.freeForAll:
                 SwitchTeam(0);
                 EnableCharacterSelection();
                 break;
-            case SelectGameMode.teamBased:
+            case GameModeEnum.teamDeathMatch:
                 EnableTeamSelection();
                 break;
             default:

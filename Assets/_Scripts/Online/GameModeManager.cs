@@ -27,10 +27,11 @@ public class GameModeManager : MonoBehaviour
     {
         switch (_nationSelect.gameMode)
         {
-            case NationSelect.SelectGameMode.freeForAll:
+            case GameModeEnum.freeForAll:
                 return _spawnPointsFFA[Random.Range(0, _spawnPointsFFA.Count)].position;
 
-            case NationSelect.SelectGameMode.teamBased:
+            case GameModeEnum.teamDeathMatch:
+            case GameModeEnum.controlPoint:
                 switch (team)
                 {
                     case PlayerController.Teams.TeamRed:

@@ -3,11 +3,20 @@ using Photon.Realtime;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
 {
+    public GameModeEnum _currentGamemode;
+
     [SerializeField]
-    private int multiPlayerSceneIndex; //scene index for loading multiplayer scene
+    private List<MapSettings> _maps;
+
+    private MapSettings _selectedMap;
+
+    [SerializeField]
+    private Dropdown _mapDropDown;
 
     [SerializeField]
     private GameObject lobbyPanel; //display for when in lobby
@@ -28,6 +37,19 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
     [Header("Room Settings")]
     public bool canJoinInProgress; //display for the name of the room
 
+    private void OnValidate()
+    {
+        for (int i = 0; i < _maps.Count; i++)
+        {
+            _maps[i].UpdateList();
+        }
+    }
+
+    private void Start()
+    {
+        SelectedGamemode(_mapDropDown);
+    }
+
     void ClearPlayerListings()
     {
         for (int i = playersContainer.childCount - 1; i >= 0; i--) //loop through all child object of the playersContainer, removing each child
@@ -36,7 +58,7 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
         }
     }
 
-    void ListPlayers() 
+    void ListPlayers()
     {
 
         foreach (Player player in PhotonNetwork.PlayerList) //loop through each player and create a player listing
@@ -45,7 +67,7 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
             Text tempText = tempListing.transform.GetChild(0).GetComponent<Text>();
             tempText.text = player.NickName;
         }
-        
+
     }
 
     public override void OnJoinedRoom()//called when the local player joins the room
@@ -83,13 +105,18 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
 
     public void StartGameOnClick() //paired to the start button. will load all players into the multiplayer scene through the master client and AutomaticallySyncScene
     {
-        if(PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient)
         {
             if (canJoinInProgress == false)
             {
                 PhotonNetwork.CurrentRoom.IsOpen = false; //Comment out if you want player to join after the game has started
             }
-            PhotonNetwork.LoadLevel(multiPlayerSceneIndex);   
+            if (_mapDropDown.value != 0)
+            {
+                Debug.Log("load: " + _selectedMap.SceneName);
+                Debug.Log(SceneManager.GetSceneByName(_selectedMap.SceneName).buildIndex);
+                PhotonNetwork.LoadLevel(_selectedMap.SceneName);
+            }
         }
     }
 
@@ -108,5 +135,43 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
         StartCoroutine(rejoinLobby());
     }
 
-    
+    public void SelectedGamemode(Dropdown dropdown)
+    {
+        switch (dropdown.value)
+        {
+            case 0:
+                _currentGamemode = GameModeEnum.freeForAll;
+                break;
+            case 1:
+                _currentGamemode = GameModeEnum.teamDeathMatch;
+                break;
+            case 2:
+                _currentGamemode = GameModeEnum.controlPoint;
+                break;
+        }
+        _mapDropDown.options.Clear();
+        _mapDropDown.captionText.text = "none";
+            _mapDropDown.options.Add(new Dropdown.OptionData() { text = "none" });
+
+        for (int i = 0; i < _maps.Count; i++)
+        {
+            if (_maps[i].selectGameMode[(int)_currentGamemode])
+            {
+                _mapDropDown.options.Add(new Dropdown.OptionData() { text = _maps[i].SceneName });
+            }
+        }
+        _mapDropDown.value = 0;
+        SelectedMap(_mapDropDown);
+    }
+
+    public void SelectedMap(Dropdown dropdown)
+    {
+        for (int i = 0; i < _maps.Count; i++)
+        {
+            if (dropdown.options[dropdown.value].text == _maps[i].SceneName)
+            {
+                _selectedMap = _maps[i];
+            }
+        }
+    }
 }
