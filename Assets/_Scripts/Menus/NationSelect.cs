@@ -23,6 +23,12 @@ public class NationSelect : MonoBehaviourPun
 
     public static NationSelect instance;
 
+    void Awake()
+    {
+        gameMode = CustomMatchmakingRoomController.instanceGamemode._currentGamemode;
+        Destroy(CustomMatchmakingRoomController.instanceGamemode.gameObject);
+    }
+
     void Start()
     {
         instance = this;

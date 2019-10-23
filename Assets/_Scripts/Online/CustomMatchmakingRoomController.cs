@@ -37,6 +37,8 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
     [Header("Room Settings")]
     public bool canJoinInProgress; //display for the name of the room
 
+    public static CustomMatchmakingRoomController instanceGamemode;
+    
     private void OnValidate()
     {
         for (int i = 0; i < _maps.Count; i++)
@@ -47,6 +49,8 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        instanceGamemode = this;
+        DontDestroyOnLoad(instanceGamemode);
         SelectedGamemode(_mapDropDown);
     }
 
