@@ -8,12 +8,15 @@ public class NationSelect : MonoBehaviourPun
 {
     private PlayerController player;
 
+    [SerializeField]
+    private GameModeManager _gameModeManager;
+
     [Header("GameMode")]
     public SelectGameMode gameMode;
     public enum SelectGameMode { freeForAll, teamBased }
 
     [Header("Player Selection")]
-    public int currentSelectedTeam;
+    public PlayerController.Teams currentSelectedTeam;
 
     [Header("Canvas References")]
     public GameObject teamPickScreen;
@@ -48,10 +51,23 @@ public class NationSelect : MonoBehaviourPun
 
     public void SwitchTeam(int team)
     {
-        currentSelectedTeam = team;
+        switch (team)
+        {
+            case 0:
+                currentSelectedTeam = PlayerController.Teams.noTeam;
+                break;
+            case 1:
+                currentSelectedTeam = PlayerController.Teams.TeamRed;
+                break;
+            case 2:
+                currentSelectedTeam = PlayerController.Teams.TeamBlue;
+                break;
+            default:
+                break;
+        }
         EnableCharacterSelection();
     }
-    
+
     public void EnableCharacterSelection()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -62,37 +78,10 @@ public class NationSelect : MonoBehaviourPun
 
     GameObject playerRef;
     PhotonView pv;
-    public void CreatePlayer(int currentSelectedPlayer)
+    public void CreatePlayer(string currentSelectedPlayer)
     {
-        switch (currentSelectedPlayer)
-        {
-            case 0:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Fire", "FireBender"), Vector3.zero, Quaternion.identity);
-                break;
-            case 1:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Air", "AirBender"), Vector3.zero, Quaternion.identity);
-                break;
-            case 2:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender"), Vector3.zero, Quaternion.identity);
-                break;
-            case 3:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender"), Vector3.zero, Quaternion.identity);
-                break;
-            case 4:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Earth", "EarthBender2"), Vector3.zero, Quaternion.identity);
-                break;
-            case 5:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Fire", "FireBender2"), Vector3.zero, Quaternion.identity);
-                break;
-            case 6:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Water", "WaterBender2"), Vector3.zero, Quaternion.identity);
-                break;
-            case 7:
-                playerRef = PhotonNetwork.Instantiate(Path.Combine("Air", "AirBender2"), Vector3.zero, Quaternion.identity);
-                break;
-            default:
-                break;
-        }
+        string[] words = currentSelectedPlayer.Split(' ');
+        playerRef = PhotonNetwork.Instantiate(Path.Combine(words[0], words[1]), _gameModeManager.FindSpawnPosition(currentSelectedTeam), Quaternion.identity);
         PlayerController pc = playerRef.GetComponent<PlayerController>();
         pc.AssignTeam(currentSelectedTeam);
         charPickScreen.SetActive(false);

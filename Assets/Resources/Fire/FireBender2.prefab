@@ -3263,21 +3263,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.5768177
       objectReference: {fileID: 0}
-    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.0064866664
-      objectReference: {fileID: 0}
-    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: ShapeModule.type
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: ShapeModule.m_SkinnedMeshRenderer
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
+    - target: {fileID: 10811546, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: m_Range
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19867436, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
       propertyPath: looping
@@ -3311,9 +3299,21 @@ PrefabInstance:
       propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 10811546, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: m_Range
-      value: 0
+    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.0064866664
+      objectReference: {fileID: 0}
+    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: ShapeModule.type
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: ShapeModule.m_SkinnedMeshRenderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 19871106, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198209609425588582, guid: ff6f0f6ed5fb04648a63068803ce172a,
         type: 3}

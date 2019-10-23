@@ -53,28 +53,15 @@ public class PlayerController : UsingOnline
         playerCamera.GetComponent<AudioListener>().enabled = true;
     }
 
-    public void AssignTeam(int team)
+    public void AssignTeam(Teams team)
     {
         pv.RPC("SyncMyTeam", RpcTarget.AllBuffered, team);
     }
 
     [PunRPC]
-    void SyncMyTeam(int team)
+    void SyncMyTeam(Teams team)
     {
-        switch (team)
-        {
-            case 0:
-                currentTeam = Teams.noTeam;
-                break;
-            case 1:
-                currentTeam = Teams.TeamRed;
-                break;
-            case 2:
-                currentTeam = Teams.TeamBlue;
-                break;
-            default:
-                break;
-        }
+        currentTeam = team;
     }
     
     void Update()
