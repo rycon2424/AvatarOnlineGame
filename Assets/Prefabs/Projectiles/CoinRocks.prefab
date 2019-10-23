@@ -177,6 +177,8 @@ MonoBehaviour:
   destroyEffect: {fileID: 0}
   _speed: 0
   _destroyByBullet: 0
+  _destroyByPlayer: 0
+  _teams: 0
   _rigidbody: {fileID: 1999035995351394402}
 --- !u!114 &582838327813658538
 MonoBehaviour:

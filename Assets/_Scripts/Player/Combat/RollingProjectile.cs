@@ -34,7 +34,8 @@ public class RollingProjectile : Projectile
         if (_speed != 0)
         {
             Projectile projectile = collider.gameObject.GetComponent<Projectile>();
-            if (projectile != null && !_destroyByBullet)
+            PlayerController player = collider.gameObject.GetComponent<PlayerController>();
+            if ((projectile != null && !_destroyByBullet) || (player != null && !_destroyByPlayer))
             {
                 return;
             }
