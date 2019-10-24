@@ -39,9 +39,10 @@ public class NationSelect : MonoBehaviourPun
     void SyncGameMode(GameModeEnum gm)
     {
         gameMode = gm;
+        StartSelect();
     }
 
-    void Start()
+    void StartSelect()
     {
         instance = this;
         switch (gameMode)
