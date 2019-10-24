@@ -44,7 +44,7 @@ public class FlameDash : Moves
                 PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
                 if (player != null)
                 {
-                    player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
+                    player.TakeDamage(_damage, _playerCombat._playerController);
                 }
             }
         }

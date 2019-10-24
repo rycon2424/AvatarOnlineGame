@@ -21,7 +21,7 @@ public class FireMelee : RaycastBased
             PlayerController player = hit.collider.gameObject.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
+                player.TakeDamage(_damage, _playerCombat._playerController);
                 return;
             }
             Debug.Log(hit.collider.name);

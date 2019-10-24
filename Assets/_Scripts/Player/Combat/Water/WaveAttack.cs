@@ -17,7 +17,7 @@ public class WaveAttack : ProjectileBased
         for (int i = 0; i < _spawnPosition.Count; i++)
         {
             Projectile projectile = Instantiate(_projectile, _spawnPosition[i].position, _spawnPosition[i].rotation);
-            projectile.Fired(_damage,_speed,_range, _playerCombat._playerController.currentTeam);
+            projectile.Fired(_damage,_speed,_range, _playerCombat._playerController);
         }
     }
 }
