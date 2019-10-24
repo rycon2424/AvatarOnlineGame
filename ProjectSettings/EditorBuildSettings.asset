@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OnlineScene.unity
     guid: 63067c674f66a304da5c77ea90edb299
+  - enabled: 1
+    path: Assets/Scenes/KingOfTheHill/Temple.unity
+    guid: 0e834736368ac844f8943b04e57c46b5
   m_configObjects: {}

@@ -5643,7 +5643,7 @@ PrefabInstance:
     - target: {fileID: 2915728245295630125, guid: dc700fb970a1da34cb0d5149da727c77,
         type: 3}
       propertyPath: _maps.Array.data[1].selectGameMode.Array.data[2]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2915728245295630125, guid: dc700fb970a1da34cb0d5149da727c77,
         type: 3}
