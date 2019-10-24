@@ -23,26 +23,7 @@ public class NationSelect : MonoBehaviourPun
 
     public static NationSelect instance;
 
-    public PhotonView pvc;
-
-    void Awake()
-    {
-        gameMode = CustomMatchmakingRoomController.instanceGamemode._currentGamemode;
-        if (PhotonNetwork.IsMasterClient == true)
-        {
-            pvc.RPC("SyncGameMode", RpcTarget.AllBuffered, gameMode);
-        }
-        Destroy(CustomMatchmakingRoomController.instanceGamemode.gameObject);
-    }
-    
-    [PunRPC]
-    void SyncGameMode(GameModeEnum gm)
-    {
-        gameMode = gm;
-        StartSelect();
-    }
-
-    void StartSelect()
+    void Start()
     {
         instance = this;
         switch (gameMode)
@@ -54,7 +35,8 @@ public class NationSelect : MonoBehaviourPun
             case GameModeEnum.teamDeathMatch:
                 EnableTeamSelection();
                 break;
-            default:
+            case GameModeEnum.controlPoint:
+                EnableTeamSelection();
                 break;
         }
     }
@@ -79,8 +61,6 @@ public class NationSelect : MonoBehaviourPun
                 break;
             case 2:
                 currentSelectedTeam = PlayerController.Teams.TeamBlue;
-                break;
-            default:
                 break;
         }
         EnableCharacterSelection();

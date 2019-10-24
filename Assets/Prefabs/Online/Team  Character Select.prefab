@@ -235,7 +235,7 @@ RectTransform:
   - {fileID: 996488651}
   - {fileID: 5658963500724275677}
   m_Father: {fileID: 6057044477932745008}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1201,6 +1201,8 @@ GameObject:
   - component: {fileID: 6057044477932745009}
   - component: {fileID: 233380113}
   - component: {fileID: 233380114}
+  - component: {fileID: 2665177954144213248}
+  - component: {fileID: 7582345890708426316}
   m_Layer: 5
   m_Name: Team  Character Select
   m_TagString: Untagged
@@ -1219,8 +1221,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1190145035}
   - {fileID: 693237393256805976}
+  - {fileID: 1190145035}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1301,12 +1303,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f642a39fac621674d93e087a6bc5fc26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameModeManager: {fileID: 233380113}
+  _gameModeManager: {fileID: 2665177954144213248}
   gameMode: 1
   currentSelectedTeam: 0
   teamPickScreen: {fileID: 1190145034}
   charPickScreen: {fileID: 6833608122911587760}
-  pvc: {fileID: 233380114}
 --- !u!114 &233380113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1319,7 +1320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a09b8fc0e804d044490b962b8090b7eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nationSelect: {fileID: 6057044477932745009}
   _spawnPointsFFA:
   - {fileID: 0}
   - {fileID: 0}
@@ -1327,7 +1327,74 @@ MonoBehaviour:
   - {fileID: 0}
   _spawnPointsTB2:
   - {fileID: 0}
+  _matchDurationCP: 900
+  _canvasCP: {fileID: 0}
+  _capturePoints:
+  - {fileID: 0}
+  _objectiveText: []
+  _objectiveImage: []
+  _objectiveSlider: []
 --- !u!114 &233380114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057044477932745012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &2665177954144213248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057044477932745012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09b8fc0e804d044490b962b8090b7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnPointsFFA:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _spawnPointsTB1:
+  - {fileID: 0}
+  _spawnPointsTB2:
+  - {fileID: 0}
+  _matchDurationCP: 0
+  _canvasCP: {fileID: 0}
+  _capturePoints: []
+  _objectiveText: []
+  _objectiveImage: []
+  _objectiveSlider: []
+--- !u!114 &7582345890708426316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1723,7 +1790,7 @@ RectTransform:
   - {fileID: 9034136932498381148}
   - {fileID: 8502516110130114604}
   m_Father: {fileID: 6057044477932745008}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

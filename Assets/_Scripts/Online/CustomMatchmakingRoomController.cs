@@ -36,8 +36,6 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
 
     [Header("Room Settings")]
     public bool canJoinInProgress; //display for the name of the room
-
-    public static CustomMatchmakingRoomController instanceGamemode;
     
     private void OnValidate()
     {
@@ -49,8 +47,6 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        instanceGamemode = this;
-        DontDestroyOnLoad(instanceGamemode);
         SelectedGamemode(_mapDropDown);
     }
 
@@ -117,9 +113,8 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
             }
             if (_mapDropDown.value != 0)
             {
-                Debug.Log("load: " + _selectedMap.SceneName);
-                Debug.Log(SceneManager.GetSceneByName(_selectedMap.SceneName).buildIndex);
-                PhotonNetwork.LoadLevel(_selectedMap.SceneName);
+                Debug.Log("load: " + _selectedMap.SceneName + " " + _currentGamemode);
+                PhotonNetwork.LoadLevel(_selectedMap.SceneName + " " + _currentGamemode);
             }
         }
     }
