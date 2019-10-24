@@ -594,13 +594,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Water WaterBender
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &657565900799616181
@@ -718,13 +718,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Air AirBender
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1605976714909958416
@@ -842,13 +842,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 6
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Water WaterBender2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2592764542813832427
@@ -966,13 +966,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Earth EarthBender
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3027851730077785613
@@ -1090,13 +1090,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Fire FireBender
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3911376875274334934
@@ -1199,6 +1199,8 @@ GameObject:
   - component: {fileID: 6057044477932745010}
   - component: {fileID: 6057044477932745013}
   - component: {fileID: 6057044477932745009}
+  - component: {fileID: 233380113}
+  - component: {fileID: 233380114}
   m_Layer: 5
   m_Name: Team  Character Select
   m_TagString: Untagged
@@ -1299,10 +1301,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f642a39fac621674d93e087a6bc5fc26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameMode: 0
+  _gameModeManager: {fileID: 233380113}
+  gameMode: 1
   currentSelectedTeam: 0
   teamPickScreen: {fileID: 1190145034}
   charPickScreen: {fileID: 6833608122911587760}
+  pvc: {fileID: 233380114}
+--- !u!114 &233380113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057044477932745012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09b8fc0e804d044490b962b8090b7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nationSelect: {fileID: 6057044477932745009}
+  _spawnPointsFFA:
+  - {fileID: 0}
+  - {fileID: 0}
+  _spawnPointsTB1:
+  - {fileID: 0}
+  _spawnPointsTB2:
+  - {fileID: 0}
+--- !u!114 &233380114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057044477932745012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &6060161949313198673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,13 +1464,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 7
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Air AirBender2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6215087479129607349
@@ -1629,13 +1675,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Fire FireBender2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6833608122911587760
@@ -1834,12 +1880,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6057044477932745009}
         m_MethodName: CreatePlayer
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Earth EarthBender2
           m_BoolArgument: 0
         m_CallState: 2
