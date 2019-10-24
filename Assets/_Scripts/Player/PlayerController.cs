@@ -91,9 +91,12 @@ public class PlayerController : UsingOnline
 
     public void TakeDamage(float damage, Teams teams)
     {
-        if (teams == currentTeam || teams == Teams.noTeam)
+        if (teams == currentTeam)
         {
-            return;
+            if (teams != Teams.noTeam)
+            {
+                return;
+            }
         }
 
         damage /= _damageReduction;
