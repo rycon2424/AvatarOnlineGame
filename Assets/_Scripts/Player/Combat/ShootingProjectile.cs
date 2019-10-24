@@ -10,6 +10,6 @@ public class ShootingProjectile : Projectile
     {
         Projectile projectile = Instantiate(_projectile, transform.position, transform.rotation);
         projectile.transform.LookAt(playerCombat.GetDirection());
-        projectile.Fired(damage, speed, range, playerCombat._playerController.currentTeam);
+        projectile.Fired(damage, speed, range, playerCombat._playerController);
     }
 }

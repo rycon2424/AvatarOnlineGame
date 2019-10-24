@@ -16,19 +16,26 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     protected bool _destroyByBullet = true;
 
-
     [SerializeField]
     protected bool _destroyByPlayer = true;
 
+    protected bool _hasBeenfired;
+
     protected int _damage = 0;
     protected float _range = 0;
-    public PlayerController.Teams _teams;
+    public PlayerController _owner;
 
-    public virtual void Fired(int damage, float speed, float range, PlayerController.Teams teams)
+    public virtual void Fired(int damage, float speed, float range, PlayerController owner)
     {
+        if (_hasBeenfired)
+        {
+            return;
+        }
+
         _damage = damage;
         _speed = speed;
-        _teams = teams;
+        _owner = owner;
+        _hasBeenfired = true;
 
 
         Invoke("Destroy", range / speed);
@@ -58,8 +65,8 @@ public class Projectile : MonoBehaviour
         PlayerController player = collider.gameObject.GetComponent<PlayerController>();
         if (player != null)
         {
-            player.TakeDamage(_damage, _teams);
-            if (!_destroyByPlayer || (player.currentTeam == _teams && _teams != PlayerController.Teams.noTeam))
+            player.TakeDamage(_damage, _owner);
+            if (!_destroyByPlayer || (player.currentTeam == _owner.currentTeam && _owner.currentTeam != PlayerController.Teams.noTeam))
             {
                 return;
             }

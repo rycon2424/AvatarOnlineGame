@@ -27,7 +27,7 @@ public class RockPunch : ProjectileBased
         {
             _lerp = false;
             _spawnedProjectile.transform.LookAt(_playerCombat.GetDirection());
-            _spawnedProjectile.Fired(_damage, _speed, _range, _playerCombat._playerController.currentTeam);
+            _spawnedProjectile.Fired(_damage, _speed, _range, _playerCombat._playerController);
         }
     }
 

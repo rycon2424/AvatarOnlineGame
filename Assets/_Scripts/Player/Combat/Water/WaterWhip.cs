@@ -54,7 +54,7 @@ public class WaterWhip : RaycastBased
                     return;
                 }
             }
-            player.TakeDamage(_damage, _playerCombat._playerController.currentTeam);
+            player.TakeDamage(_damage, _playerCombat._playerController);
             _hitPlayer.Add(player);
         }
     }

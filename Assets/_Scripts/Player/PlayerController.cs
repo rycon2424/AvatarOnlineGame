@@ -53,9 +53,9 @@ public class PlayerController : UsingOnline
         playerCamera.GetComponent<AudioListener>().enabled = true;
     }
 
-    public void AssignTeam(Teams team)
+    public void AssignTeam(Teams owner)
     {
-        pv.RPC("SyncMyTeam", RpcTarget.AllBuffered, team);
+        pv.RPC("SyncMyTeam", RpcTarget.AllBuffered, owner);
     }
 
     [PunRPC]
@@ -89,11 +89,11 @@ public class PlayerController : UsingOnline
         }
     }
 
-    public void TakeDamage(float damage, Teams teams)
+    public void TakeDamage(float damage, PlayerController player)
     {
-        if (teams == currentTeam)
+        if (player.currentTeam == currentTeam)
         {
-            if (teams != Teams.noTeam)
+            if (player.currentTeam != Teams.noTeam)
             {
                 return;
             }

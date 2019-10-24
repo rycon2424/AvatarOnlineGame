@@ -16,6 +16,6 @@ public class AirSlash : ProjectileBased
     {
         Projectile projectile = Instantiate(_projectile, _spawnPosition[0].position, _spawnPosition[0].rotation);
         projectile.transform.LookAt(_playerCombat.GetDirection());
-        projectile.Fired(_damage, _speed, _range, _playerCombat._playerController.currentTeam);
+        projectile.Fired(_damage, _speed, _range, _playerCombat._playerController);
     }
 }
