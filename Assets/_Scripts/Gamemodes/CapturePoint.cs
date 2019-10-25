@@ -54,6 +54,7 @@ public class CapturePoint : MonoBehaviour
 
     private IEnumerator Capturing()
     {
+
         for (progress = 0; progress < CaptureTime;)
         {
             yield return new WaitForSeconds(0.1f);
@@ -122,13 +123,16 @@ public class CapturePoint : MonoBehaviour
                 {
                     PlayerController.Teams temp = (PlayerController.Teams)i;
                     currentTeam = temp;
-                    currentState = CaptureState.capturing;
-                    StartCoroutine(Capturing());
+                    if (currentState != CaptureState.capturing)
+                    {
+                        currentState = CaptureState.capturing;
+                        StartCoroutine(Capturing());
+                    }
                     return;
                 }
             }
 
-            if (_amountOfPlayes[i] >= PlayersForBoosted && currentState == CaptureState.captured)
+            if (_amountOfPlayes[i] >= PlayersForBoosted && currentState == CaptureState.captured || currentState == CaptureState.boosted)
             {
                 currentState = CaptureState.boosted;
                 return;
