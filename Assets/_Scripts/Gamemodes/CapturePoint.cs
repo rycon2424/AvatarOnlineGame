@@ -92,7 +92,7 @@ public class CapturePoint : MonoBehaviour
                     _amountOfPlayes[j] = 0;
                     for (int k = 0; k < _onPointPlayers.Count; k++)
                     {
-                        if ((int)_onPointPlayers[k].currentTeam ==  j)
+                        if ((int)_onPointPlayers[k].currentTeam == j)
                         {
                             j++;
                         }
@@ -120,7 +120,7 @@ public class CapturePoint : MonoBehaviour
 
         for (int i = 0; i < _amountOfPlayes.Count; i++)
         {
-            if (_amountOfPlayes[i] == 0)
+            if (_amountOfPlayes[i] != 0)
             {
                 if ((int)currentTeam != i)
                 {
@@ -128,9 +128,9 @@ public class CapturePoint : MonoBehaviour
                     currentTeam = temp;
                     if (currentState != CaptureState.capturing)
                     {
-                        currentState = CaptureState.capturing;
                         StartCoroutine(Capturing());
                     }
+                    currentState = CaptureState.capturing;
                     return;
                 }
             }
