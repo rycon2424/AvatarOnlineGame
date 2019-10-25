@@ -23,9 +23,13 @@ public class NationSelect : MonoBehaviourPun
 
     public static NationSelect instance;
 
-    void Start()
+    void Awake()
     {
         instance = this;
+    }
+
+    void Start()
+    {
         switch (gameMode)
         {
             case GameModeEnum.freeForAll:
