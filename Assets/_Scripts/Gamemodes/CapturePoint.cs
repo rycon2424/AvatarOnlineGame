@@ -82,6 +82,25 @@ public class CapturePoint : MonoBehaviour
 
     private void CalculateState(PlayerController player, int point)
     {
+        for (int i = 0; i < _onPointPlayers.Count; i++)
+        {
+            if (_onPointPlayers[i] == null)
+            {
+                _onPointPlayers.Remove(_onPointPlayers[i]);
+                for (int j = 0; j < _amountOfPlayes.Count; j++)
+                {
+                    _amountOfPlayes[j] = 0;
+                    for (int k = 0; k < _onPointPlayers.Count; k++)
+                    {
+                        if ((int)_onPointPlayers[k].currentTeam ==  j)
+                        {
+                            j++;
+                        }
+                    }
+                }
+            }
+        }
+
         int teamsOnPoint = 0;
         _amountOfPlayes[(int)player.currentTeam] += point;
         for (int i = 0; i < _amountOfPlayes.Count; i++)
@@ -103,6 +122,20 @@ public class CapturePoint : MonoBehaviour
         {
             if (_amountOfPlayes[i] == 0)
             {
+                if ((int)currentTeam != i)
+                {
+                    PlayerController.Teams temp = (PlayerController.Teams)i;
+                    currentTeam = temp;
+                    if (currentState != CaptureState.capturing)
+                    {
+                        currentState = CaptureState.capturing;
+                        StartCoroutine(Capturing());
+                    }
+                    return;
+                }
+            }
+            else
+            {
                 if (currentState == CaptureState.capturing || currentState == CaptureState.contested)
                 {
                     if (_hasBeenCaptured)
@@ -117,22 +150,8 @@ public class CapturePoint : MonoBehaviour
                     }
                 }
             }
-            else
-            {
-                if ((int)currentTeam != i)
-                {
-                    PlayerController.Teams temp = (PlayerController.Teams)i;
-                    currentTeam = temp;
-                    if (currentState != CaptureState.capturing)
-                    {
-                        currentState = CaptureState.capturing;
-                        StartCoroutine(Capturing());
-                    }
-                    return;
-                }
-            }
 
-            if (_amountOfPlayes[i] >= PlayersForBoosted && currentState == CaptureState.captured || currentState == CaptureState.boosted)
+            if (_amountOfPlayes[i] >= PlayersForBoosted && (currentState == CaptureState.captured || currentState == CaptureState.boosted))
             {
                 currentState = CaptureState.boosted;
                 return;
