@@ -14560,6 +14560,10 @@ PrefabInstance:
       propertyPath: _matchPointsCP
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 233380114, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6057044477932745009, guid: 1413416bc24c1944498a79322a43ff76,
         type: 3}
       propertyPath: gameMode
@@ -14570,10 +14574,6 @@ PrefabInstance:
       propertyPath: _gameModeManager
       value: 
       objectReference: {fileID: 602481386}
-    - target: {fileID: 233380114, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
-      propertyPath: viewIdField
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7582345890708426316, guid: 1413416bc24c1944498a79322a43ff76,
         type: 3}
       propertyPath: viewIdField
@@ -16151,6 +16151,16 @@ PrefabInstance:
     - target: {fileID: 912300640414338485, guid: a2bd13f36afb5a646931c5fea209c54b,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103749827216843535, guid: a2bd13f36afb5a646931c5fea209c54b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644825668942902568, guid: a2bd13f36afb5a646931c5fea209c54b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -41868,6 +41878,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CapturePoint
       objectReference: {fileID: 0}
+    - target: {fileID: 7864664016987133012, guid: cb435b9b0050f9341bda66d2c9f510d5,
+        type: 3}
+      propertyPath: _gameModeManager
+      value: 
+      objectReference: {fileID: 602481386}
     - target: {fileID: 7864664016987133013, guid: cb435b9b0050f9341bda66d2c9f510d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41933,11 +41948,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 7864664016987133012, guid: cb435b9b0050f9341bda66d2c9f510d5,
-        type: 3}
-      propertyPath: _gameModeManager
-      value: 
-      objectReference: {fileID: 602481386}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb435b9b0050f9341bda66d2c9f510d5, type: 3}
 --- !u!114 &1607629526 stripped
