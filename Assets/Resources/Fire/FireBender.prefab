@@ -48,7 +48,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3489494955851596581
 Transform:
   m_ObjectHideFlags: 0
@@ -20381,11 +20381,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: 6125066530671849996, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_Name
-      value: CanvasHolder
-      objectReference: {fileID: 0}
     - target: {fileID: 2373745692489501034, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20456,6 +20451,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0999998
       objectReference: {fileID: 0}
+    - target: {fileID: 6125066530671849996, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_Name
+      value: CanvasHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4048537254211788995, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -20465,11 +20470,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.002539
-      objectReference: {fileID: 0}
-    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5111225475869361396, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
@@ -20577,6 +20577,10 @@ PrefabInstance:
       propertyPath: ShapeModule.m_MeshRenderer
       value: 
       objectReference: {fileID: 669377282274325872}
+    - target: {fileID: 10805636, guid: efae5e56ebb7cd04f8e5de57add5d41f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efae5e56ebb7cd04f8e5de57add5d41f, type: 3}
 --- !u!4 &8625823134607396043 stripped
