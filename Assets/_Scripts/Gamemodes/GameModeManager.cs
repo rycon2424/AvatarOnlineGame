@@ -31,6 +31,9 @@ public class GameModeManager : MonoBehaviour
     private Canvas _canvasCP;
 
     [SerializeField]
+    private Text _timerText;
+
+    [SerializeField]
     private List<CapturePoint> _capturePoints;
 
     [SerializeField]
@@ -50,7 +53,7 @@ public class GameModeManager : MonoBehaviour
 
     private NationSelect _nationSelect;
 
-    private List<int> _amountOfPlayes = new List<int>();
+    private List<int> _teamPoints = new List<int>();
 
     public static GameModeManager instance;
 
@@ -62,9 +65,9 @@ public class GameModeManager : MonoBehaviour
     private void Start()
     {
         StartGamemode();
-        for (int i = 0; i < GameModeEnum.GetNames(typeof(GameModeEnum)).Length; i++)
+        for (int i = 0; i < PlayerController.Teams.GetNames(typeof(PlayerController.Teams)).Length; i++)
         {
-            _amountOfPlayes.Add(0);
+            _teamPoints.Add(0);
         }
     }
 
@@ -175,10 +178,18 @@ public class GameModeManager : MonoBehaviour
     {
         for (int TimeLeft = time; TimeLeft > 0; TimeLeft--)
         {
-            Debug.Log(TimeLeft + " sec left");
+            if (TimeLeft % 60 < 10)
+            {
+                _timerText.text = ((int)TimeLeft / 60).ToString() + ":0" + (TimeLeft % 60).ToString();
+            }
+            else
+            {
+                _timerText.text = ((int)TimeLeft / 60).ToString() + ":" + (TimeLeft % 60).ToString();
+            }
             yield return new WaitForSeconds(1);
             ManagePoints();
         }
+        EndGame();
     }
 
     private void ManagePoints()
@@ -192,16 +203,36 @@ public class GameModeManager : MonoBehaviour
                     {
                         if (_capturePoints[i].currentState == CapturePoint.CaptureState.boosted)
                         {
-                            _amountOfPlayes[(int)_capturePoints[i].currentTeam]++;
+                            _teamPoints[(int)_capturePoints[i].currentTeam]++;
                         }
-                        _amountOfPlayes[(int)_capturePoints[i].currentTeam]++;
-                        _TeamPointText[(int)_capturePoints[i].currentTeam - 1].text = _amountOfPlayes[(int)_capturePoints[i].currentTeam].ToString();
-                        _TeamPointSlider[(int)_capturePoints[i].currentTeam - 1].value = _amountOfPlayes[(int)_capturePoints[i].currentTeam];
+                        _teamPoints[(int)_capturePoints[i].currentTeam]++;
+                        _TeamPointText[(int)_capturePoints[i].currentTeam - 1].text = _teamPoints[(int)_capturePoints[i].currentTeam].ToString();
+                        _TeamPointSlider[(int)_capturePoints[i].currentTeam - 1].value = _teamPoints[(int)_capturePoints[i].currentTeam];
 
+                        if (_teamPoints[(int)_capturePoints[i].currentTeam] >= _matchPointsCP)
+                        {
+                            EndGame();
+                        }
                     }
                 }
                 return;
         }
+    }
+
+    private void EndGame()
+    {
+        int mostPoints = 0;
+        PlayerController.Teams winningTeam;
+
+        for (int i = 0; i < _teamPoints.Count; i++)
+        {
+            if (mostPoints < _teamPoints[i])
+            {
+                mostPoints = _teamPoints[i];
+                winningTeam = (PlayerController.Teams)i;
+            }
+        }
+        //do whatever needs to be done with winning team
     }
 }
 

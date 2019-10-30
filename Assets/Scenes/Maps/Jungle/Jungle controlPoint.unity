@@ -9069,6 +9069,10 @@ PrefabInstance:
       propertyPath: _spawnPointsTB2.Array.data[0]
       value: 
       objectReference: {fileID: 2118573991}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _timerText
+      value: 
+      objectReference: {fileID: 912300639735440121}
     - target: {fileID: 233380114, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
       propertyPath: viewIdField
       value: 2
@@ -76020,6 +76024,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 912300640895547713, guid: a2bd13f36afb5a646931c5fea209c54b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5178800729611588090, guid: a2bd13f36afb5a646931c5fea209c54b,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -76042,6 +76051,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2bd13f36afb5a646931c5fea209c54b, type: 3}
+--- !u!114 &912300639735440121 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4192854451153342093, guid: a2bd13f36afb5a646931c5fea209c54b,
+    type: 3}
+  m_PrefabInstance: {fileID: 912300639735440120}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1839239573481439905
 PrefabInstance:
   m_ObjectHideFlags: 0
