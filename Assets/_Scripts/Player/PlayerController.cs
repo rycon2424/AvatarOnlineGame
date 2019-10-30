@@ -30,11 +30,14 @@ public class PlayerController : UsingOnline
 
     public bool rotateTowardsCamera;
 
+    private CharacterController characterController;
+
     void Start()
     {
         _maxHealth = _health;
         anim = GetComponent<Animator>();
         playerCamera = GetComponentInChildren<OrbitCamera>().transform;
+        characterController = GetComponent<CharacterController>();
         pu = GetComponent<PlayerUI>();
         rotateTowardsCamera = true;
         pu.StartUI();
@@ -66,6 +69,7 @@ public class PlayerController : UsingOnline
     
     void Update()
     {
+
         if (rotateTowardsCamera)
         {
             RotateToLook();
@@ -78,6 +82,12 @@ public class PlayerController : UsingOnline
         if (canMove)
         {
             Movement();
+        }
+
+        //debuging
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            pv.RPC("SyncHealth", RpcTarget.All, 0);
         }
     }
 
@@ -122,14 +132,19 @@ public class PlayerController : UsingOnline
     {
         rotateTowardsCamera = false;
         _isAlive = false;
+        characterController.detectCollisions = false;
         anim.Play("Death");
-        Invoke("RespawnTime", _respawnTime);
+        StartCoroutine(RespawnTime());
     }
 
-    void RespawnTime()
+    private IEnumerator RespawnTime()
     {
         if (pv.IsMine == true)
         {
+            yield return new WaitForSeconds(_respawnTime - 1);
+            anim.applyRootMotion = false;
+            transform.position = GameModeManager.instance.FindSpawnPosition(currentTeam);
+            yield return new WaitForSeconds(1);
             pv.RPC("Respawn", RpcTarget.All);
         }
     }
@@ -137,6 +152,10 @@ public class PlayerController : UsingOnline
     [PunRPC]
     void Respawn()
     {
+        anim.rootPosition = Vector3.zero;
+        anim.applyRootMotion = true;
+        characterController.detectCollisions = true;
+
         rotateTowardsCamera = true;
         _health = _maxHealth;
         pu.UpdateHealth(_health);

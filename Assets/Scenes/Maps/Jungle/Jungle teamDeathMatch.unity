@@ -8942,6 +8942,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
       propertyPath: _canvasCP
       value: 
       objectReference: {fileID: 0}
@@ -8960,6 +8964,92 @@ PrefabInstance:
     - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
       propertyPath: _objectiveImage.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[0]
+      value: 
+      objectReference: {fileID: 197605619}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[1]
+      value: 
+      objectReference: {fileID: 1505487981}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[2]
+      value: 
+      objectReference: {fileID: 431408579}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[3]
+      value: 
+      objectReference: {fileID: 389003940}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[4]
+      value: 
+      objectReference: {fileID: 812162772}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[5]
+      value: 
+      objectReference: {fileID: 902555123}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[6]
+      value: 
+      objectReference: {fileID: 1687223236}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[7]
+      value: 
+      objectReference: {fileID: 1079022344}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[8]
+      value: 
+      objectReference: {fileID: 1959132833}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[9]
+      value: 
+      objectReference: {fileID: 1378523859}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[10]
+      value: 
+      objectReference: {fileID: 622671249}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[11]
+      value: 
+      objectReference: {fileID: 220720304}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[12]
+      value: 
+      objectReference: {fileID: 245118790}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[13]
+      value: 
+      objectReference: {fileID: 896850814}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsFFA.Array.data[14]
+      value: 
+      objectReference: {fileID: 350082494}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsTB1.Array.data[0]
+      value: 
+      objectReference: {fileID: 1731115527}
+    - target: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: _spawnPointsTB2.Array.data[0]
+      value: 
+      objectReference: {fileID: 2118573991}
+    - target: {fileID: 233380114, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: viewIdField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057044477932745009, guid: 1413416bc24c1944498a79322a43ff76,
+        type: 3}
+      propertyPath: _gameModeManager
+      value: 
+      objectReference: {fileID: 233380111}
+    - target: {fileID: 7582345890708426316, guid: 1413416bc24c1944498a79322a43ff76,
+        type: 3}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190145034, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2665177954144213248, guid: 1413416bc24c1944498a79322a43ff76,
         type: 3}
@@ -9046,21 +9136,21 @@ PrefabInstance:
       propertyPath: _spawnPointsTB2.Array.data[0]
       value: 
       objectReference: {fileID: 2118573991}
-    - target: {fileID: 233380114, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
-      propertyPath: viewIdField
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7582345890708426316, guid: 1413416bc24c1944498a79322a43ff76,
-        type: 3}
-      propertyPath: viewIdField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1190145034, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2665177954144213248, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1413416bc24c1944498a79322a43ff76, type: 3}
+--- !u!114 &233380111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 233380113, guid: 1413416bc24c1944498a79322a43ff76,
+    type: 3}
+  m_PrefabInstance: {fileID: 233380110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09b8fc0e804d044490b962b8090b7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &234748226
 PrefabInstance:
   m_ObjectHideFlags: 0

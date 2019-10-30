@@ -18,7 +18,7 @@ public class CapturePoint : MonoBehaviour
 
 
     private List<PlayerController> _onPointPlayers = new List<PlayerController>();
-    private List<int> _amountOfPlayes = new List<int>();
+    private List<int> _teams = new List<int>();
 
     private PlayerController.Teams owningTeam;
     private bool _hasBeenCaptured = false;
@@ -28,7 +28,7 @@ public class CapturePoint : MonoBehaviour
     {
         for (int i = 0; i < GameModeEnum.GetNames(typeof(GameModeEnum)).Length; i++)
         {
-            _amountOfPlayes.Add(0);
+            _teams.Add(0);
         }
     }
 
@@ -54,7 +54,6 @@ public class CapturePoint : MonoBehaviour
 
     private IEnumerator Capturing()
     {
-
         for (progress = 0; progress < CaptureTime;)
         {
             yield return new WaitForSeconds(0.1f);
@@ -69,11 +68,12 @@ public class CapturePoint : MonoBehaviour
         }
         if (currentState == CaptureState.capturing)
         {
+            progress = 0;
             _hasBeenCaptured = true;
             owningTeam = currentTeam;
 
             currentState = CaptureState.captured;
-            if (_amountOfPlayes[(int)currentTeam] >= PlayersForBoosted)
+            if (_teams[(int)currentTeam] >= PlayersForBoosted)
             {
                 currentState = CaptureState.boosted;
             }
@@ -82,14 +82,24 @@ public class CapturePoint : MonoBehaviour
 
     private void CalculateState(PlayerController player, int point)
     {
+        int teamsOnPoint = 0;
+        _teams[(int)player.currentTeam] += point;
+        for (int i = 0; i < _teams.Count; i++)
+        {
+            if (_teams[i] != 0)
+            {
+                teamsOnPoint++;
+            }
+        }
+
         for (int i = 0; i < _onPointPlayers.Count; i++)
         {
             if (_onPointPlayers[i] == null)
             {
                 _onPointPlayers.Remove(_onPointPlayers[i]);
-                for (int j = 0; j < _amountOfPlayes.Count; j++)
+                for (int j = 0; j < _teams.Count; j++)
                 {
-                    _amountOfPlayes[j] = 0;
+                    _teams[j] = 0;
                     for (int k = 0; k < _onPointPlayers.Count; k++)
                     {
                         if ((int)_onPointPlayers[k].currentTeam == j)
@@ -101,16 +111,6 @@ public class CapturePoint : MonoBehaviour
             }
         }
 
-        int teamsOnPoint = 0;
-        _amountOfPlayes[(int)player.currentTeam] += point;
-        for (int i = 0; i < _amountOfPlayes.Count; i++)
-        {
-            if (_amountOfPlayes[i] != 0)
-            {
-                teamsOnPoint++;
-            }
-        }
-
         if (teamsOnPoint > 1)
         {
             currentState = CaptureState.contested;
@@ -118,9 +118,9 @@ public class CapturePoint : MonoBehaviour
         }
 
 
-        for (int i = 0; i < _amountOfPlayes.Count; i++)
+        for (int i = 0; i < _teams.Count; i++)
         {
-            if (_amountOfPlayes[i] != 0)
+            if (_teams[i] != 0)
             {
                 if ((int)currentTeam != i)
                 {
@@ -128,9 +128,21 @@ public class CapturePoint : MonoBehaviour
                     currentTeam = temp;
                     if (currentState != CaptureState.capturing)
                     {
+                        currentState = CaptureState.capturing;
                         StartCoroutine(Capturing());
                     }
-                    currentState = CaptureState.capturing;
+                    return;
+                }
+                Debug.Log("PlayersOnPoint: " + _teams[i] + "PlayersForBoosted: " + PlayersForBoosted);
+
+                if (_teams[i] >= PlayersForBoosted && currentState == CaptureState.captured)
+                {
+                    currentState = CaptureState.boosted;
+                    return;
+                }
+                if (_teams[i] < PlayersForBoosted && currentState == CaptureState.boosted)
+                {
+                    currentState = CaptureState.captured;
                     return;
                 }
             }
@@ -149,18 +161,12 @@ public class CapturePoint : MonoBehaviour
                         currentTeam = PlayerController.Teams.noTeam;
                     }
                 }
-            }
 
-            if (_amountOfPlayes[i] >= PlayersForBoosted && (currentState == CaptureState.captured || currentState == CaptureState.boosted))
-            {
-                currentState = CaptureState.boosted;
-                return;
-            }
-
-            if (_amountOfPlayes[i] < PlayersForBoosted && currentState == CaptureState.boosted)
-            {
-                currentState = CaptureState.captured;
-                return;
+                if ((int)currentTeam == i && _teams[i] < PlayersForBoosted && currentState == CaptureState.boosted)
+                {
+                    currentState = CaptureState.captured;
+                    return;
+                }
             }
         }
     }

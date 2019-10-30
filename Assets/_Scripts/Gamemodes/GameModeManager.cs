@@ -52,6 +52,13 @@ public class GameModeManager : MonoBehaviour
 
     private List<int> _amountOfPlayes = new List<int>();
 
+    public static GameModeManager instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         StartGamemode();
