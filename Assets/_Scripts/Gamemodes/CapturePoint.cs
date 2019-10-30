@@ -147,7 +147,7 @@ public class CapturePoint : MonoBehaviour
             }
             else
             {
-                if ((int)currentTeam == i && (currentState == CaptureState.capturing || currentState == CaptureState.contested))
+                if (((int)currentTeam == i && currentState == CaptureState.capturing) || currentState == CaptureState.contested)
                 {
                     if (_hasBeenCaptured)
                     {
