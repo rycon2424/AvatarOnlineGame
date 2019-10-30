@@ -133,7 +133,6 @@ public class CapturePoint : MonoBehaviour
                     }
                     return;
                 }
-                Debug.Log("PlayersOnPoint: " + _teams[i] + "PlayersForBoosted: " + PlayersForBoosted);
 
                 if (_teams[i] >= PlayersForBoosted && currentState == CaptureState.captured)
                 {
@@ -148,7 +147,7 @@ public class CapturePoint : MonoBehaviour
             }
             else
             {
-                if (currentState == CaptureState.capturing || currentState == CaptureState.contested)
+                if ((int)currentTeam == i && (currentState == CaptureState.capturing || currentState == CaptureState.contested))
                 {
                     if (_hasBeenCaptured)
                     {
