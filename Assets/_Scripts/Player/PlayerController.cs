@@ -128,6 +128,10 @@ public class PlayerController : UsingOnline
             if (ScoreBoard.Instance != null)
             {
                 ScoreBoard.Instance.AddValues(player, this, _hitBy);
+            }
+            if (KillFeed.killfeedInstance != null)
+            {
+                Debug.Log("Kill");
                 KillFeed.killfeedInstance.UpdateBattleLog("killed", player.pv.Owner.NickName, pv.Owner.NickName);
             }
         }
