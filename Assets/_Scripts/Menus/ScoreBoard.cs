@@ -49,7 +49,7 @@ public class ScoreBoard : MonoBehaviour
             if (_teams[i]._team == player.currentTeam)
             {
                 PlayerScore playerScore = Instantiate(_playerScorePrefab, _teams[i].spawn);
-                _gridLayout.spacing += new Vector2(0,_gridLayout.cellSize.y);
+                _gridLayout.spacing = new Vector2(0, _gridLayout.cellSize.y * _playerScores.Count);
                 playerScore._player = player;
                 playerScore.UpdateUI();
                 _playerScores.Add(playerScore);
