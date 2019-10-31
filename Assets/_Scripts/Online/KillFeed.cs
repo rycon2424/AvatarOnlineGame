@@ -45,7 +45,7 @@ public class KillFeed : MonoBehaviourPun
     [PunRPC]
     void SyncChatToClients(string stringtoSync)
     {
-        killFeed.text += stringtoSync;
+        killFeed.text = stringtoSync;
         killFeedString = killFeed.text;
     }
 
