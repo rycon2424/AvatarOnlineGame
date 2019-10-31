@@ -32,6 +32,8 @@ public class PlayerController : UsingOnline
 
     private CharacterController characterController;
 
+    private List<PlayerController> _hitBy = new List<PlayerController>();
+
     void Start()
     {
         _maxHealth = _health;
@@ -48,7 +50,10 @@ public class PlayerController : UsingOnline
             _healthBarCanvas.gameObject.SetActive(true);
             return;
         }
-
+        if (ScoreBoard.Instance != null)
+        {
+            ScoreBoard.Instance.AddPlayer(this);
+        }
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -113,18 +118,24 @@ public class PlayerController : UsingOnline
         _health -= Mathf.RoundToInt(damage);
         if (pv.IsMine == true)
         {
-            pv.RPC("SyncHealth", RpcTarget.All, _health);
+            pv.RPC("SyncHealth", RpcTarget.All, _health, player);
         }
     }
 
     [PunRPC]
-    void SyncHealth(int health)
+    void SyncHealth(int health, PlayerController player)
     {
         _health = health;
         pu.UpdateHealth(_health);
+        _hitBy.Add(player);
+
         if (_health < 1)
         {
             Death();
+            if (ScoreBoard.Instance != null)
+            {
+                ScoreBoard.Instance.AddValues(player,this,_hitBy);
+            }
         }
     }
 
