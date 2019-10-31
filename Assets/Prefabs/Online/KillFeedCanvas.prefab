@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 7377844535396423727}
   - component: {fileID: 7377844535396423712}
   - component: {fileID: 1738137512875309763}
+  - component: {fileID: 4158122596707586047}
   m_Layer: 5
   m_Name: KillFeedCanvas
   m_TagString: Untagged
@@ -416,6 +417,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ade88e70781e2d4d841a69be9b177ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pv: {fileID: 0}
   killFeed: {fileID: 7377844534590231502}
+  pv: {fileID: 4158122596707586047}
   killFeedString: 
+--- !u!114 &4158122596707586047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377844535396423713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents: []
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

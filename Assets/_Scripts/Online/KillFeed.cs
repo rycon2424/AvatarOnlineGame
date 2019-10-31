@@ -31,7 +31,7 @@ public class KillFeed : MonoBehaviourPun
 
     public void UpdateBattleLog(string weapon, string killer, string playerWhoDied)
     {
-        killFeedString += killer + " " + weapon + " " + playerWhoDied;
+        killFeedString += killer + " " + weapon + " " + playerWhoDied + "\n";
         Debug.Log("killFeedString");
         pv.RPC("SyncChatToMaster", RpcTarget.MasterClient, killFeedString);
     }
