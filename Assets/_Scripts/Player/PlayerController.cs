@@ -114,6 +114,11 @@ public class PlayerController : UsingOnline
             }
         }
 
+        if (_isAlive == false)
+        {
+            return;
+        }
+
         damage /= _damageReduction;
         _health -= Mathf.RoundToInt(damage);
         _hitBy.Add(player);
@@ -123,6 +128,7 @@ public class PlayerController : UsingOnline
             if (ScoreBoard.Instance != null)
             {
                 ScoreBoard.Instance.AddValues(player, this, _hitBy);
+                KillFeed.killfeedInstance.UpdateBattleLog("killed", player.pv.Owner.NickName, pv.Owner.NickName);
             }
         }
 
