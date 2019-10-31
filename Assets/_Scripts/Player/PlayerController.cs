@@ -43,16 +43,16 @@ public class PlayerController : UsingOnline
         pu = GetComponent<PlayerUI>();
         rotateTowardsCamera = true;
         pu.StartUI();
+        if (ScoreBoard.Instance != null)
+        {
+            ScoreBoard.Instance.AddPlayer(this);
+        }
 
         //De if statement om te checken of jij de controle hebt over dat character
         if (pv.IsMine == false)
         {
             _healthBarCanvas.gameObject.SetActive(true);
             return;
-        }
-        if (ScoreBoard.Instance != null)
-        {
-            ScoreBoard.Instance.AddPlayer(this);
         }
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -116,6 +116,16 @@ public class PlayerController : UsingOnline
 
         damage /= _damageReduction;
         _health -= Mathf.RoundToInt(damage);
+        _hitBy.Add(player);
+
+        if (_health < 1)
+        {
+            if (ScoreBoard.Instance != null)
+            {
+                ScoreBoard.Instance.AddValues(player, this, _hitBy);
+            }
+        }
+
         if (pv.IsMine == true)
         {
             pv.RPC("SyncHealth", RpcTarget.All, _health, player);
@@ -123,19 +133,14 @@ public class PlayerController : UsingOnline
     }
 
     [PunRPC]
-    void SyncHealth(int health, PlayerController player)
+    void SyncHealth(int health)
     {
         _health = health;
         pu.UpdateHealth(_health);
-        _hitBy.Add(player);
 
         if (_health < 1)
         {
             Death();
-            if (ScoreBoard.Instance != null)
-            {
-                ScoreBoard.Instance.AddValues(player,this,_hitBy);
-            }
         }
     }
 
