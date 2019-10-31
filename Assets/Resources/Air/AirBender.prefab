@@ -582,7 +582,7 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 35
+  _coolDown: 25
   _attack: 3
   _airscooterDuration: 5
   _speed: 70

@@ -114,6 +114,7 @@ public class PlayerController : UsingOnline
             }
         }
 
+        Debug.Log("_isAlive " + _isAlive);
         if (_isAlive == false)
         {
             return;
@@ -121,17 +122,17 @@ public class PlayerController : UsingOnline
 
         damage /= _damageReduction;
         _health -= Mathf.RoundToInt(damage);
-        _hitBy.Add(player);
+        AddHitBy(player);
 
         if (_health < 1)
         {
             if (ScoreBoard.Instance != null)
             {
                 ScoreBoard.Instance.AddValues(player, this, _hitBy);
+                _hitBy.Clear();
             }
             if (KillFeed.killfeedInstance != null)
             {
-                Debug.Log("Kill");
                 KillFeed.killfeedInstance.UpdateBattleLog("killed", player.pv.Owner.NickName, pv.Owner.NickName);
             }
         }
@@ -140,6 +141,18 @@ public class PlayerController : UsingOnline
         {
             pv.RPC("SyncHealth", RpcTarget.All, _health);
         }
+    }
+
+    private void AddHitBy(PlayerController player)
+    {
+        for (int i = 0; i < _hitBy.Count; i++)
+        {
+            if (_hitBy[i] == player)
+            {
+                return;
+            }
+        }
+        _hitBy.Add(player);
     }
 
     [PunRPC]
