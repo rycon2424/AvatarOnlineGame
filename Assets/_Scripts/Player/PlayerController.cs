@@ -128,7 +128,7 @@ public class PlayerController : UsingOnline
 
         if (pv.IsMine == true)
         {
-            pv.RPC("SyncHealth", RpcTarget.All, _health, player);
+            pv.RPC("SyncHealth", RpcTarget.All, _health);
         }
     }
 
