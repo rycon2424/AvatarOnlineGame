@@ -4,11 +4,12 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
 
-public class KillFeed : UsingOnline
+public class KillFeed : MonoBehaviourPun
 {
     public static KillFeed killfeedInstance;
 
     public Text killFeed;
+    public PhotonView pv;
     public string killFeedString;
 
     void Awake()
