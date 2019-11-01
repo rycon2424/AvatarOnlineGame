@@ -6688,7 +6688,7 @@ MonoBehaviour:
   _respawnTime: 10
   _healthBarCanvas: {fileID: 4460499723441729216}
   currentTeam: 0
-  _health: 100
+  _health: 70
   _isAlive: 1
   _maxHealth: 0
   canMove: 1
@@ -6847,8 +6847,8 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 1
   _attack: 0
-  _damage: 3
-  _range: 10
+  _damage: 5
+  _range: 12
   _spawnPosition:
   - {fileID: 4927802895230912911}
   firebeam: {fileID: 5734991945395026189}
@@ -6868,13 +6868,13 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 15
+  _coolDown: 13
   _attack: 1
-  _damage: 15
-  _range: 3
+  _damage: 25
+  _range: 3.5
   _spawnPosition:
   - {fileID: 8561076252117688070}
-  _iceDuration: 5
+  _iceDuration: 5.2
   _iceEffect: {fileID: 121928, guid: 313e5c5f850e5be429d4a6787a725f73, type: 3}
 --- !u!114 &7044370106239579836
 MonoBehaviour:
@@ -6893,13 +6893,13 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 60
   _attack: 3
-  _damage: 12
+  _damage: 13
   _range: 30
   _spawnPosition:
   - {fileID: 1274583612046282946}
   _projectile: {fileID: 7199992201689080442, guid: c50f741a91d172746983d701befe650c,
     type: 3}
-  _speed: 15
+  _speed: 17
 --- !u!114 &3430237480544198648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6917,13 +6917,13 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 0.2
   _attack: 2
-  _damage: 8
+  _damage: 14
   _range: 2
   _spawnPosition:
   - {fileID: 3549112774486826218}
-  _wallDamage: 15
-  _wallSpeed: 15
-  _wallRange: 25
+  _wallDamage: 20
+  _wallSpeed: 20
+  _wallRange: 40
 --- !u!114 &114460751789174336
 MonoBehaviour:
   m_ObjectHideFlags: 0

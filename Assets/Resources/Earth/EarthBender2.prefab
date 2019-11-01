@@ -363,7 +363,7 @@ MonoBehaviour:
   _respawnTime: 10
   _healthBarCanvas: {fileID: 4784859290777038460}
   currentTeam: 0
-  _health: 100
+  _health: 160
   _isAlive: 1
   _maxHealth: 0
   canMove: 1
@@ -549,9 +549,9 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 5
+  _coolDown: 6
   _attack: 1
-  _damage: 30
+  _damage: 40
   _range: 100
   _spawnPosition:
   - {fileID: 6415473399485200318}
@@ -575,10 +575,10 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 0.25
+  _coolDown: 0.5
   _attack: 2
   _damage: 20
-  _range: 1
+  _range: 2
   _spawnPosition:
   - {fileID: 1243322944236293520}
 --- !u!114 &1947499089302585094
@@ -598,14 +598,14 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 50
   _attack: 3
-  _damage: 22
-  _range: 4
+  _damage: 25
+  _range: 3.5
   _spawnPosition:
   - {fileID: 3558879975577564691}
   _crusher: {fileID: 111969432394602984, guid: 6b948eea705e83d4eabbd1f5aec172ed, type: 3}
   _lerpSpeed: 10
-  _closeSpeed: 15
-  _distanceBetweenRocks: 4
+  _closeSpeed: 16
+  _distanceBetweenRocks: 5
   _spawnDept: 3
   _center: {fileID: 497230095185126899}
 --- !u!114 &3283500598013735944

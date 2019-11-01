@@ -511,7 +511,7 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 1
   _attack: 0
-  _damage: 10
+  _damage: 20
   _range: 20
   _spawnPosition:
   - {fileID: 7543002636720579183}
@@ -535,7 +535,7 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 7
   _attack: 1
-  _damage: 25
+  _damage: 30
   _range: 20
   _spawnPosition:
   - {fileID: 8138482262734820316}
@@ -563,7 +563,7 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 1
   _attack: 2
-  _damage: 20
+  _damage: 40
   _range: 2
   _spawnPosition:
   - {fileID: 261411286738603129}
@@ -584,8 +584,7 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 25
   _attack: 3
-  _airscooterDuration: 5
-  _speed: 70
+  _airscooterDuration: 6
   _animator: {fileID: 2240347970856802250}
 --- !u!114 &9193555802843824017
 MonoBehaviour:
@@ -602,9 +601,9 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 7
+  _coolDown: 5
   _attack: 4
-  _shieldDuration: 5
+  _shieldDuration: 3
   _animator: {fileID: 2240347970856802250}
   _shieldPosition: {fileID: 8910902611763949650}
   _shield: {fileID: 7695876354203497327, guid: 01df2482f389b8d41a1efae8e8d8a62b, type: 3}

@@ -733,7 +733,7 @@ MonoBehaviour:
   _respawnTime: 10
   _healthBarCanvas: {fileID: 4784859290777038460}
   currentTeam: 0
-  _health: 100
+  _health: 110
   _isAlive: 1
   _maxHealth: 0
   canMove: 1
@@ -890,17 +890,17 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 1
+  _coolDown: 1.1
   _attack: 0
-  _damage: 25
-  _range: 20
+  _damage: 28
+  _range: 35
   _spawnPosition:
   - {fileID: 3252693238255255570}
   _projectile: {fileID: 7976008820172081025, guid: a7afa9ae17ae0c74baca9437857f001a,
     type: 3}
-  _speed: 20
+  _speed: 23
   _rayRange: 2
-  _lerpSpeed: 10
+  _lerpSpeed: 11
 --- !u!114 &8582401963814299963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,14 +918,14 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 8
   _attack: 1
-  _damage: 25
+  _damage: 32
   _range: 15
   _spawnPosition:
   - {fileID: 8828326394297190324}
   _downwardRayRange: 3
   _betweenRayRange: 0.35
   _rock: {fileID: 114695434049342314, guid: c60c9b03b022f354f8f7d89a0b3bf4b4, type: 3}
-  _rockDuration: 3
+  _rockDuration: 4
   layerMask:
     serializedVersion: 2
     m_Bits: 1335
@@ -946,14 +946,14 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 60
   _attack: 3
-  _damage: 45
-  _range: 3
+  _damage: 50
+  _range: 2.5
   _spawnPosition:
   - {fileID: 1243322944236293520}
   StoneCount: 30
   _downwardRayRange: 3
   _rock: {fileID: 114695434049342314, guid: c60c9b03b022f354f8f7d89a0b3bf4b4, type: 3}
-  _rockDuration: 3
+  _rockDuration: 4
   _layerMask:
     serializedVersion: 2
     m_Bits: 311
@@ -972,15 +972,15 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 0.1
+  _coolDown: 1
   _attack: 2
-  _damage: 20
-  _range: 1.25
+  _damage: 35
+  _range: 1.5
   _spawnPosition:
   - {fileID: 2602301671960695927}
   _wallDamage: 40
-  _wallSpeed: 10
-  _wallRange: 20
+  _wallSpeed: 9
+  _wallRange: 32
 --- !u!114 &4675268580148837491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,9 +996,9 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 10
+  _coolDown: 11
   _attack: 4
-  _shieldDuration: 8
+  _shieldDuration: 9
   _spawnPosition: {fileID: 3252693238255255570}
   _wall: {fileID: 114024190521300950, guid: 03e5389e53ab60843b61e0ed321ad2fe, type: 3}
   _rayRange: 2
@@ -2043,6 +2043,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CanvasHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366906175439401366, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2373745692489501034, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}

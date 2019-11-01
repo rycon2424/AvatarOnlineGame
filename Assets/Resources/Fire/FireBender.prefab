@@ -19756,14 +19756,14 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 1
   _attack: 0
-  _damage: 5
-  _range: 20
+  _damage: 12
+  _range: 25
   _spawnPosition:
   - {fileID: 3446853432355662676}
   - {fileID: 3446853432355662706}
   _projectile: {fileID: 1232666572101488849, guid: 0fe34efc7abeb2241a6a3d96eb8c7063,
     type: 3}
-  _speed: 10
+  _speed: 12
 --- !u!114 &6289377909693504688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19781,13 +19781,13 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 11
   _attack: 1
-  _damage: 33
+  _damage: 38
   _range: 11
   _spawnPosition:
   - {fileID: 3446853432355662706}
   _projectile: {fileID: 48214397825631708, guid: eb975d0e847492f44bdef08f7a87ed98,
     type: 3}
-  _speed: 5
+  _speed: 5.5
 --- !u!114 &7620323468395822612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19823,7 +19823,7 @@ MonoBehaviour:
   _isReadyAnimating: 1
   _coolDown: 60
   _attack: 3
-  _damage: 10
+  _damage: 11
   _range: 20
   _spawnPosition:
   - {fileID: 3057767012534113059}
@@ -19844,10 +19844,10 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 0.1
+  _coolDown: 1
   _attack: 2
-  _damage: 15
-  _range: 1.25
+  _damage: 28
+  _range: 1.5
   _spawnPosition:
   - {fileID: 5171544948285652049}
 --- !u!114 &114909597700112984
@@ -20366,6 +20366,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3446853432355662620}
     m_Modifications:
+    - target: {fileID: 6125066530671849996, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_Name
+      value: CanvasHolder
+      objectReference: {fileID: 0}
     - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -20451,16 +20456,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0999998
       objectReference: {fileID: 0}
-    - target: {fileID: 6125066530671849996, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_Name
-      value: CanvasHolder
-      objectReference: {fileID: 0}
-    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4048537254211788995, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -20470,6 +20465,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.002539
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5111225475869361396, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}

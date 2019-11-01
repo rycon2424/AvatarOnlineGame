@@ -3053,10 +3053,10 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 2
+  _coolDown: 3
   _attack: 0
-  _damage: 20
-  _range: 100
+  _damage: 14
+  _range: 14
   _spawnPosition:
   - {fileID: 8993990906905837824}
   _projectile: {fileID: 1232666572101488849, guid: 61f5ce3d210474945a34800371fa660c,
@@ -3126,9 +3126,9 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 0.5
+  _coolDown: 1
   _attack: 2
-  _damage: 35
+  _damage: 40
   _range: 1
   _spawnPosition:
   - {fileID: 1006344381434900086}
@@ -3147,10 +3147,10 @@ MonoBehaviour:
   pv: {fileID: 0}
   _isReady: 1
   _isReadyAnimating: 1
-  _coolDown: 5
+  _coolDown: 3
   _attack: 4
-  _shieldDuration: 2
-  _damageReduction: 10
+  _shieldDuration: 1
+  _damageReduction: 12
 --- !u!33 &232200040224666042
 MeshFilter:
   m_ObjectHideFlags: 0
