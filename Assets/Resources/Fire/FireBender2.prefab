@@ -3179,11 +3179,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3446853432355662620}
     m_Modifications:
-    - target: {fileID: 6125066530671849996, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_Name
-      value: CanvasHolder
-      objectReference: {fileID: 0}
     - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -3269,6 +3264,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0999998
       objectReference: {fileID: 0}
+    - target: {fileID: 6125066530671849996, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_Name
+      value: CanvasHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4048537254211788995, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3278,11 +3283,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.002539
-      objectReference: {fileID: 0}
-    - target: {fileID: 3350595159462159422, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5111225475869361396, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
@@ -3333,14 +3333,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3446853432355662620}
     m_Modifications:
-    - target: {fileID: 198776, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: m_Name
-      value: FlameDash
-      objectReference: {fileID: 0}
-    - target: {fileID: 198776, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 415794, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3396,6 +3388,14 @@ PrefabInstance:
     - target: {fileID: 415794, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 198776, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: m_Name
+      value: FlameDash
+      objectReference: {fileID: 0}
+    - target: {fileID: 198776, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11420126, guid: ff6f0f6ed5fb04648a63068803ce172a, type: 3}
       propertyPath: m_Enabled

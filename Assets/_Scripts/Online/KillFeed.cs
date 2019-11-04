@@ -24,6 +24,18 @@ public class KillFeed : MonoBehaviourPun
         }
     }
 
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext(killFeedString);
+        }
+        else
+        {
+            killFeedString = (string)stream.ReceiveNext();
+        }
+    }
+
     void Start()
     {
         pv = GetComponent<PhotonView>();
@@ -32,21 +44,13 @@ public class KillFeed : MonoBehaviourPun
     public void UpdateBattleLog(string weapon, string killer, string playerWhoDied)
     {
         killFeedString += killer + " " + weapon + " " + playerWhoDied + "\n";
-        Debug.Log("killFeedString");
-        pv.RPC("SyncChatToMaster", RpcTarget.MasterClient, killFeedString);
+        pv.RPC("SyncScoreboard", RpcTarget.All, killFeedString);
     }
 
     [PunRPC]
-    void SyncChatToMaster(string stringtoSync)
+    void SyncScoreboard(string Sync)
     {
-        pv.RPC("SyncChatToClients", RpcTarget.AllViaServer, stringtoSync);
-    }
-
-    [PunRPC]
-    void SyncChatToClients(string stringtoSync)
-    {
-        killFeed.text = stringtoSync;
-        killFeedString = killFeed.text;
+        killFeed.text = Sync;
     }
 
 }

@@ -36,15 +36,12 @@ MonoBehaviour:
   - HeavyAttack
   - LightAttack
   - Melee
+  - Respawn
   - RespawnSpaceship
   - Shield
   - SyncHealth
-  - Ultimate
-  - Respawn
-  - TeamAssign
   - SyncMyTeam
-  - SyncGameMode
-  - SyncChatToClients
-  - SyncChatToMaster
+  - SyncScoreboard
+  - Ultimate
   DisableAutoOpenWizard: 1
   ShowSettings: 0
