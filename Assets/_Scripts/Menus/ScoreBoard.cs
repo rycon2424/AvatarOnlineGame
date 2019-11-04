@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Photon.Pun;
 
-public class ScoreBoard : MonoBehaviourPun, IPunObservable
+public class ScoreBoard : MonoBehaviour
 {
     public static ScoreBoard Instance;
 
@@ -24,26 +23,6 @@ public class ScoreBoard : MonoBehaviourPun, IPunObservable
 
     private List<PlayerScore> _playerScores = new List<PlayerScore>();
 
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        for (int i = 0; i < _playerScores.Count; i++)
-        {
-            if (stream.IsWriting)
-            {
-                stream.SendNext(_playerScores[i]._kills);
-                stream.SendNext(_playerScores[i]._assits);
-                stream.SendNext(_playerScores[i]._deaths);
-            }
-            else
-            {
-                _playerScores[i]._kills = (int)stream.ReceiveNext();
-                _playerScores[i]._assits = (int)stream.ReceiveNext();
-                _playerScores[i]._deaths = (int)stream.ReceiveNext();
-                _playerScores[i].UpdateUI();
-            }
-        }
-    }
 
     private void Awake()
     {
