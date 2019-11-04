@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
 
-public class KillFeed : MonoBehaviourPun
+public class KillFeed : MonoBehaviourPun, IPunObservable
 {
     public static KillFeed killfeedInstance;
 
