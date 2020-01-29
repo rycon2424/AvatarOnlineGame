@@ -26,7 +26,15 @@ public class PlayerScore : MonoBehaviour
 
     public void UpdateUI()
     {
-        _nameText.text = _player.pv.Owner.NickName;
+        if (_player.pv == null)
+        {
+            _nameText.text = "TestDummy";
+
+        }
+        else
+        {
+            _nameText.text = _player.pv.Owner.NickName;
+        }
         _killsText.text = _kills.ToString();
         _assitsText.text = _assits.ToString();
         _deathsText.text = _deaths.ToString();

@@ -26,7 +26,15 @@ public class PlayerUI : MonoBehaviour
         pc = GetComponent<PlayerController>();
         healthBar.value = pc._maxHealth;
         healthBar.maxValue = pc._maxHealth;
-        _playerName.text = pc.pv.Owner.NickName;
+        if (pc.pv == null)
+        {
+            _playerName.text = "TestDummy";
+
+        }
+        else
+        {
+            _playerName.text = pc.pv.Owner.NickName;
+        }
         UpdateHealth(pc._health);
         Color teamColor = Color.red;
         switch (pc.currentTeam)
@@ -45,7 +53,7 @@ public class PlayerUI : MonoBehaviour
         }
         healthBar.fillRect.GetComponent<Image>().color = teamColor;
 
-        if (pc.pv.IsMine == false)
+        if (pc.pv != null && pc.pv.IsMine == false)
         {
             UI.SetActive(false);
         }

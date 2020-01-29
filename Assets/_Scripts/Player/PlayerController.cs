@@ -38,7 +38,10 @@ public class PlayerController : UsingOnline
     {
         _maxHealth = _health;
         anim = GetComponent<Animator>();
-        playerCamera = GetComponentInChildren<OrbitCamera>().transform;
+        if (GetComponentInChildren<OrbitCamera>() != null)
+        {
+            playerCamera = GetComponentInChildren<OrbitCamera>().transform;
+        }
         characterController = GetComponent<CharacterController>();
         pu = GetComponent<PlayerUI>();
         rotateTowardsCamera = true;
@@ -49,16 +52,20 @@ public class PlayerController : UsingOnline
         }
 
         //De if statement om te checken of jij de controle hebt over dat character
-        if (pv.IsMine == false)
-        {
-            _healthBarCanvas.gameObject.SetActive(true);
+
+            if (pv != null && pv.IsMine == false)
+            {
+                _healthBarCanvas.gameObject.SetActive(true);
             return;
         }
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        playerCamera.GetComponent<Camera>().enabled = true;
-        playerCamera.GetComponent<AudioListener>().enabled = true;
+        if (playerCamera != null)
+        {
+            playerCamera.GetComponent<Camera>().enabled = true;
+            playerCamera.GetComponent<AudioListener>().enabled = true;
+        }
     }
 
     public void AssignTeam(Teams owner)
@@ -80,7 +87,7 @@ public class PlayerController : UsingOnline
             RotateToLook();
         }
             HealthBar();
-        if (pv.IsMine == false)
+        if (pv == null || pv.IsMine == false)
         {
             return;
         }
@@ -115,31 +122,32 @@ public class PlayerController : UsingOnline
         }
 
         Debug.Log("_isAlive " + _isAlive);
-        if (_isAlive == false)
+        if (pv == null || pv.IsMine == true)
         {
-            return;
-        }
 
-        damage /= _damageReduction;
-        _health -= Mathf.RoundToInt(damage);
-        AddHitBy(player);
+            damage /= _damageReduction;
+            _health -= Mathf.RoundToInt(damage);
+            AddHitBy(player);
 
-        if (_health < 1)
-        {
-            if (ScoreBoard.Instance != null)
+            if (_health < 1)
             {
-                ScoreBoard.Instance.AddValues(player, this, _hitBy);
-                _hitBy.Clear();
+                if (ScoreBoard.Instance != null)
+                {
+                    ScoreBoard.Instance.AddValues(player, this, _hitBy);
+                    _hitBy.Clear();
+                }
+                if (KillFeed.killfeedInstance != null)
+                {
+                    KillFeed.killfeedInstance.UpdateBattleLog("killed", player.pv.Owner.NickName, pv.Owner.NickName);
+                }
             }
-            if (KillFeed.killfeedInstance != null)
-            {
-                KillFeed.killfeedInstance.UpdateBattleLog("killed", player.pv.Owner.NickName, pv.Owner.NickName);
-            }
-        }
 
-        if (pv.IsMine == true)
-        {
-            pv.RPC("SyncHealth", RpcTarget.All, _health);
+            if (pv != null)
+            {
+                pv.RPC("SyncHealth", RpcTarget.All, _health);
+                return;
+            }
+            SyncHealth(_health);
         }
     }
 
@@ -178,7 +186,7 @@ public class PlayerController : UsingOnline
 
     private IEnumerator RespawnTime()
     {
-        if (pv.IsMine == true)
+        if (pv != null && pv.IsMine == true)
         {
             yield return new WaitForSeconds(_respawnTime - 1);
             anim.applyRootMotion = false;
@@ -198,7 +206,7 @@ public class PlayerController : UsingOnline
         rotateTowardsCamera = true;
         _health = _maxHealth;
         pu.UpdateHealth(_health);
-        if (pv.IsMine == true)
+        if (pv != null && pv.IsMine == true)
         {
             pv.RPC("SyncHealth", RpcTarget.All, _health);
         }
@@ -226,10 +234,13 @@ public class PlayerController : UsingOnline
     
     void RotateToLook()
     {
-        var CharacterRotation = playerCamera.transform.rotation;
-        CharacterRotation.x = 0;
-        CharacterRotation.z = 0;
-        transform.rotation = CharacterRotation;
+        if (playerCamera != null)
+        {
+            var CharacterRotation = playerCamera.transform.rotation;
+            CharacterRotation.x = 0;
+            CharacterRotation.z = 0;
+            transform.rotation = CharacterRotation;
+        }
     }
 
 }
