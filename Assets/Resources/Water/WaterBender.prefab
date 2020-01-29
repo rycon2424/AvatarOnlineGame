@@ -74821,21 +74821,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 2373745692489501034, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -74890,6 +74875,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603983379902067112, guid: 946d93eb45485ff439f91e83ee4bacf2,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4048537254211788995, guid: 946d93eb45485ff439f91e83ee4bacf2,
         type: 3}
